@@ -1,14 +1,18 @@
 {
   "id": "firefly",
-  "name": "Firefly",
+  "name": "流萤",
   "nameEn": "Firefly",
   "rarity": 5,
   "element": "Fire",
   "path": "Destruction",
   "faction": "Stellaron Hunter",
   "releaseVersion": "2.3",
-  "releaseDate": "2024-06-19",
-  "description": "Firefly is a 5-star Fire character following the Path of Destruction. She is a member of the Stellaron Hunters who pilots the mecha SAM and excels as a Break Effect DPS with enhanced state mechanics.",
-  "role": "Break DPS",
-  "tags": ["Break Effect", "Enhanced State", "AoE", "Fire"]
+  "releaseDate": "",
+  "description": "Firefly is a 5-star Fire character following the Path of Destruction.",
+  "role": "DPS",
+  "tags": [
+    "DPS",
+    "AoE",
+    "Burn"
+  ]
 }

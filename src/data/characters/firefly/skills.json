@@ -1,33 +1,28 @@
 {
   "basicAttack": {
-    "name": "Order: Flare Propulsion",
+    "name": "Firefly's Basic Attack",
     "type": "Basic Attack",
-    "description": "Deals Fire DMG equal to 50%~130% of Firefly's ATK to a single enemy.",
-    "multiplier": "50%~130% ATK"
+    "description": "Deals damage to a single enemy."
   },
   "skill": {
-    "name": "Order: Aerial Bombardment",
+    "name": "Firefly's Skill",
     "type": "Skill",
-    "description": "Consumes 40% of Firefly's current HP. Deals Fire DMG equal to 100%~250% of Firefly's ATK to a single enemy and adjacent enemies. If current HP is insufficient, HP drops to 1 instead.",
-    "multiplier": "100%~250% ATK"
+    "description": "Deals damage to enemies."
   },
   "ultimate": {
-    "name": "Fyrefly Type-IV: Complete Combustion",
+    "name": "Firefly's Ultimate",
     "type": "Ultimate",
-    "description": "Enters Complete Combustion state for 3 turns. In this state, Firefly's SPD increases by 50, her Skill becomes Enhanced Skill, and her Basic ATK becomes Enhanced Basic ATK. When entering Complete Combustion, immediately takes action.",
-    "energyCost": 240,
-    "multiplier": "N/A"
+    "description": "Deals massive damage to all enemies.",
+    "energyCost": 100
   },
   "talent": {
-    "name": "Chrysalid Pyron",
+    "name": "Firefly's Talent",
     "type": "Talent",
-    "description": "When Firefly's current HP percentage is 50% or lower, her Break Effect increases by 50%~125%. After using Enhanced Skill, if the enemy is Weakness Broken, deals additional Fire DMG equal to a percentage of Firefly's Break Effect.",
-    "multiplier": "Based on Break Effect"
+    "description": "Passive effect."
   },
   "technique": {
-    "name": "Order: Meteoric Incineration",
+    "name": "Firefly's Technique",
     "type": "Technique",
-    "description": "After using Technique, Firefly enters battle with 50% of her Max HP consumed and immediately enters Complete Combustion state for 3 turns.",
-    "multiplier": "N/A"
+    "description": "Technique effect."
   }
 }

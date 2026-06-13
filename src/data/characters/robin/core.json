@@ -1,0 +1,18 @@
+{
+  "id": "robin",
+  "name": "知更鸟",
+  "nameEn": "Robin",
+  "rarity": 5,
+  "element": "Physical",
+  "path": "Harmony",
+  "faction": "Penacony",
+  "releaseVersion": "2.2",
+  "releaseDate": "",
+  "description": "Robin is a 5-star Physical character following the Path of Harmony.",
+  "role": "Support",
+  "tags": [
+    "Support",
+    "Buffer",
+    "Bleed"
+  ]
+}

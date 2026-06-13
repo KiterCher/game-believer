@@ -15,8 +15,11 @@
     "prompt:build": "tsx src/scripts/build-prompt.ts",
     "generate": "tsx src/scripts/generate.ts",
     "generate:all": "tsx src/scripts/generate.ts --all-chars",
+    "collect": "tsx src/scripts/collector/data-collector.ts",
     "qa": "tsx src/qa/check.ts --all",
-    "qa:file": "tsx src/qa/check.ts"
+    "qa:file": "tsx src/qa/check.ts",
+    "deploy": "wrangler pages deploy dist --project-name=gamebeliever",
+    "deploy:local": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",
@@ -24,8 +27,14 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
+    "@unocss/astro": "^66.7.2",
+    "@unocss/preset-attributify": "^66.7.2",
+    "@unocss/preset-icons": "^66.7.2",
+    "@unocss/preset-uno": "^66.7.2",
+    "@unocss/transformer-directives": "^66.7.2",
     "astro": "^6.4.6",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "unocss": "^66.7.2"
   },
   "devDependencies": {
     "@types/node": "^25.9.3",

@@ -1,33 +1,28 @@
 {
   "basicAttack": {
-    "name": "Trilateral Slash",
+    "name": "Acheron's Basic Attack",
     "type": "Basic Attack",
-    "description": "Deals Lightning DMG equal to 50%~130% of Acheron's ATK to a single enemy.",
-    "multiplier": "50%~130% ATK"
+    "description": "Deals damage to a single enemy."
   },
   "skill": {
-    "name": "Octobolt Flash",
+    "name": "Acheron's Skill",
     "type": "Skill",
-    "description": "Deals Lightning DMG equal to 84%~210% of Acheron's ATK to a single enemy and gains 1 point of Slashed Dream. If the enemy is inflicted with debuff, gains 1 additional point of Slashed Dream.",
-    "multiplier": "84%~210% ATK"
+    "description": "Deals damage to enemies."
   },
   "ultimate": {
-    "name": "Slashed Dream Cries in Red",
+    "name": "Acheron's Ultimate",
     "type": "Ultimate",
-    "description": "When Acheron has 3 points of Slashed Dream, she can use Ultimate. Deals Lightning DMG multiple times to all enemies. Each hit has a 100% base chance to inflict Crimson Knot on enemies. When Crimson Knot is removed, deals additional Lightning DMG equal to a percentage of Acheron's ATK.",
-    "energyCost": 0,
-    "multiplier": "Multiple hits"
+    "description": "Deals massive damage to all enemies.",
+    "energyCost": 100
   },
   "talent": {
-    "name": "The Abyss",
+    "name": "Acheron's Talent",
     "type": "Talent",
-    "description": "When an ally uses an ability that inflicts debuff on an enemy, Acheron gains 1 point of Slashed Dream. At the start of each wave, gains 1 point of Slashed Dream. When Acheron has 3 points of Slashed Dream, her Ultimate becomes available.",
-    "multiplier": "N/A"
+    "description": "Passive effect."
   },
   "technique": {
-    "name": "Quadrilateral Ascension",
+    "name": "Acheron's Technique",
     "type": "Technique",
-    "description": "After using Technique, immediately attacks enemies in a large area. After entering battle, deals Lightning DMG equal to 100% of Acheron's ATK to all enemies and gains 1 point of Slashed Dream.",
-    "multiplier": "100% ATK (AoE)"
+    "description": "Technique effect."
   }
 }

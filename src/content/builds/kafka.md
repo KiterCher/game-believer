@@ -1,116 +1,172 @@
 ---
 title: "Kafka Build Guide | GameBeliever"
-description: "Ultimate kafka build guide for HSR. Best relics, light cones, stats, and team synergies. Updated for 2026."
-updatedAt: "2026-06-12"
+description: "Ultimate kafka build guide for Honkai Star Rail. Best relics, light cones, stat priorities, and team synergies. Updated for 2026."
+updatedAt: "2026-06-13"
 type: "build"
 character: "kafka"
 ---
 
-# Kafka Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+# H1: 卡芙卡 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
 
-Kafka, the enigmatic Stellaron Hunter, is one of Honkai: Star Rail's most powerful and unique Damage over Time (DoT) specialists. This guide will provide the definitive **Kafka build**, detailing the optimal **Kafka relics**, light cones, team compositions, and stat priorities to maximize her ability to shock and obliterate enemies. Whether you're a seasoned player or new to her kit, this data-backed guide will ensure your Kafka is performing at her peak.
+## H2: Kafka Build Overview
 
-## Best Kafka Build Overview
+Kafka, a 5-star Lightning Nihility character, is the premier Damage-over-Time (DoT) enabler in Honkai: Star Rail. Her unique role revolves around a core philosophy: **she doesn't just apply Shock; she detonates it on command**. Unlike traditional debuffers who amplify existing DoTs, Kafka's Skill and Ultimate can instantly trigger all currently applied DoT effects on enemies, dealing a massive portion of their damage instantly. This makes her the centerpiece of the game's most potent DoT compositions.
 
-**Role:** DoT DPS / Sub-DPS | **Element:** Lightning | **Path:** Nihility
-Kafka's entire kit revolves around applying and detonating DoT effects, specifically Shock. She serves as the engine for DoT-focused teams, where her Ultimate's ability to instantly trigger existing DoTs on all enemies provides unmatched burst potential, while her Skill and Talent provide consistent Shock application and follow-up damage. A proper **Kafka build** focuses on maximizing her ATK, Break Effect, and ensuring she is fast enough to apply and detonate debuffs before her allies and enemies act.
+**Build Philosophy:** The **Kafka Best Build** focuses on maximizing her ATK to boost the base damage of her DoT detonations, while ensuring she has enough Effect Hit Rate (EHR) to consistently apply Shock. Speed is paramount to give her more turns to detonate, and Energy Regeneration Rate (ERR) helps cycle her powerful Ultimate more frequently. This isn't a CRIT build; Kafka's DoT damage cannot crit.
 
-## Best Relics for Kafka
+**Why This Build Works:** By stacking ATK, EHR, and SPD, you transform Kafka from a mere applicator into a relentless DoT engine. Her Skill becomes a devastating nuke that scales with the number of debuffs on the enemy, and her Ultimate shreds entire waves. She synergizes perfectly with other DoT characters, creating a synergistic loop of application and detonation.
 
-Kafka's relic choices are defined by her need for ATK%, Speed, and Break Effect to amplify her DoT damage and Shock application.
+## H2: Best Relics for Kafka
 
-### Primary Set: 4pc Prisoner in Confinement
-This is the undisputed best-in-slot set for Kafka. The 2-piece set grants a flat 12% ATK boost, which directly increases her base damage and all DoT scaling. The 4-piece set effect is tailor-made for her playstyle: for each DoT currently on the target, the wearer's attacks ignore 6% of the target's DEF. Since Kafka's teams will always have multiple DoTs active (from her, allies like Black Swan, and Light Cones), this set provides a massive, multiplicative damage increase. This is the cornerstone of the best **Kafka build**.
+### H3: Best 4pc Set
+The **Best Kafka Relics** set is unequivocally the 4-piece **Prisoner in Deep Confinement**.
 
-### Alternative Sets (2pc+2pc)
-If the Prisoner domain isn't yielding results, a transitional 2pc+2pc combo can work:
-*   **2pc Musketeer of Wild Wheat / 2pc Thief of Shooting Meteor:** The classic ATK% + Break Effect combo. It provides a solid baseline for her damage output.
-*   **2pc Musketeer of Wild Wheat / 2pc Watchmaker, Master of Dream Machinations:** Use this if you are running her in a Break Effect-focused team. The Break Effect from Watchmaker synergizes with her talent and Light Cones.
+*   **Set Bonus (4pc):** For each DoT effect on the target, the wearer's ATK increases by 6% (max 3 stacks). Furthermore, when the wearer inflicts DoT on an enemy, the target receives 12% increased damage from DoT effects for 2 turns.
+*   **Why It's Perfect:** This set is tailor-made for Kafka. The first bonus provides a massive, unconditional ATK% boost (up to 18%) that directly amplifies her Skill and Ultimate detonation damage. The second bonus is the true prize: it increases the DoT damage *taken* by the enemy by 12%, effectively buffing the entire team's Shock, Wind Shear, Bleed, and Burn damage. It is the definitive set for maximizing her role as a DoT amplifier and detonator.
 
-### Planar Ornaments: Firmament Frontline: Glamoth
-This is the premier set for a DPS-focused Kafka. After SPD reaches 135/160, the wearer deals 12%/18% increased DMG. Hitting these breakpoints is crucial for Kafka to maximize her personal damage and to ensure she can act frequently enough to maintain Shock uptime. It is the best offensive ornament set.
-**Alternative:** Pan-Cosmic Commercial Enterprise (8% ATK + 25% Effect Hit Rate) is a great option if you need help meeting the 120% EHR cap for guaranteed Shock application on her Skill.
+### H3: Alternative Sets
+If you lack a full 4-piece **Prisoner** set, the 2pc + 2pc alternative offers strong, accessible power.
 
-For a deeper dive into relic stats, visit our **[Honkai: Star Rail Relic Guide](https://gamebeliever.com/guides/relics)**.
+*   **2pc Musketeer of Wild Wheat + 2pc Thief of Shooting Meteor:** This combination provides a 12% ATK boost and an extra 10% ATK against Shocked enemies. It's a straightforward damage increase that is easy to farm from early-game domains.
+*   **When to Use:** Use this transitional set while farming for the Prisoner domain. The Thief 2pc bonus is less universally useful if enemies aren't always Shocked, making it a stepping stone.
 
-## Best Light Cones for Kafka
+### H3: Best Planar Ornaments
+The **Best Kafka Light Cone** synergy extends to her planar ornaments, where **Firmament Frontline: Glamoth** is the undisputed Best-in-Slot (BiS).
 
-Her Light Cone choice dramatically impacts her role as a pure DoT detonator or a more hybrid damage dealer.
+*   **Best-in-Slot: Firmament Frontline: Glamoth (2pc).** Requires 135+ SPD to activate, granting 12% ATK. At 145+ SPD, it grants an additional 8% DMG. Kafka easily hits these breakpoints, gaining both stats.
+*   **Alternative Options:**
+    *   **Sprightly Vonwacq (2pc):** Provides 5% ERR and advances Kafka's action by 40% when her ERR is at 120% or higher. Excellent for ensuring she gets her first turn quickly and cycles her Ultimate faster, especially in shorter fights.
+    *   **Pan-Cosmic Commercial Enterprise (2pc):** Increases EHR by 10%. When EHR is 50% or higher, ATK increases by 25%. A good option if you struggle to reach the EHR substat requirement, trading SPD for raw ATK.
 
-### Best-in-Slight Light Cone: Patience Is All You Need (Signature)
-This is Kafka's signature and the absolute best **Kafka light cone**. It provides a massive ATK% boost and a unique stacking SPD buff, helping her reach important breakpoints. The signature effect causes her attacks to ignore a portion of enemy DEF when hitting targets with Shock, perfectly synergizing with her kit for devastating DoT detonations.
+### H3: Recommended Main Stats
+Choosing the correct main stats is critical. Here are the optimal choices for each slot:
 
-### F2P / Alternative Options
-*   **Reforged Remembrance (5★):** An excellent alternative from the Herta Store. It grants large ATK% and Break Effect stacks, boosting both her personal damage and Shock potency.
-*   **Fermata (4★):** The best F2P option. This Light Cone significantly increases Break Effect against enemies affected by Shock or Wind Shear. Since Kafka ensures Shock is always active, she gains the full 32% DMG increase, making it incredibly potent.
-*   **Eyes of the Prey (4★):** A strong choice if you struggle to meet Effect Hit Rate requirements for her traces or Light Cones. It provides a hefty 24% EHR and boosts DoT DMG.
+| Slot | Main Stat | Reason |
+| :--- | :--- | :--- |
+| **Body** | ATK% | Directly increases the base damage of all her abilities and DoT detonations. |
+| **Feet** | SPD | Essential for more turns, more Skill uses, and activating planar ornament bonuses. |
+| **Planar Sphere** | Lightning DMG Boost | The single biggest multiplier for her own Skill and Ultimate damage. |
+| **Link Rope** | Energy Regeneration Rate | Allows Kafka to use her game-changing Ultimate more frequently. |
 
-Check out our full list of options in the **[Best Light Cones Tier List](https://gamebeliever.com/lightcones/best-lightcones)**.
+### H3: Substats Priority
+When farming relics, prioritize these substats in the following order:
 
-## Recommended Stats & Substats
+1.  **SPD:** To reach key breakpoints (135 for Glamoth, 145 for more turns).
+2.  **Effect Hit Rate (EHR):** You need **at least 57% EHR** to guarantee her Shock application against standard enemies (28% RES). More provides a safety net.
+3.  **ATK%:** Every point directly boosts your detonation damage.
+4.  **Speed (Flat):** Each point contributes to your total SPD.
+Avoid CRIT Rate, CRIT DMG, and Break Effect as they provide minimal value.
 
-**Body:** ATK% - Her damage scales entirely from ATK.
-**Feet:** SPD - Essential for turn frequency and reaching Glamoth breakpoints. Aim for 134 or 160 SPD.
-**Planar Sphere:** Lightning DMG Boost - Directly increases all her damage.
-**Link Rope:** ATK% - Further multiplies her base damage.
+## H2: Best Light Cones for Kafka
 
-### Substat Priority Order
-1.  **SPD:** Your most important stat until you hit 134/160.
-2.  **ATK%:** The core of her damage.
-3.  **Break Effect:** Amplifies the damage from Shock and her own Breaks. Aim for 50-80% for solid returns.
-4.  **Effect Hit Rate (EHR):** Kafka needs **~120% EHR** to guarantee her Skill (100% base chance) applies Shock to enemies of the same level. The 4pc Prisoner set makes EHR less critical, but you still need some from substats or Light Cones.
-5.  **Flat ATK** is a last resort.
+The **Kafka Light Cone** choice is vital for maximizing her damage and utility.
 
-**Key Stat Thresholds:**
-*   **SPD:** 134 (for an extra action in the first 2 cycles) or 160 (for the maximum 18% DMG boost from Glamoth).
-*   **EHR:** ~120% to guarantee Shock application.
+### H3: 5★ Light Cones
+*   **Signature LC: Patience Is All You Need:** This is Kafka's signature weapon and her undisputed Best-in-Slot. It grants a massive 36% ATK boost. Its unique effect stacks when allies attack, increasing the wearer's DMG by up to 18% and providing a 12% SPD boost for 2 turns. It perfectly encapsulates her need for ATK and SPD, while the DMG boost applies to her detonations.
+*   **Other 5★ Options:**
+    *   **In the Name of the World:** A strong generalist option. Grants 24% EHR and 24% DMG to debuffed enemies. Excellent if you need to meet EHR thresholds while boosting her personal damage.
+    *   **But the Battle Isn't Over:** The ER rope alternative. Provides 10% ERR and a powerful Skill Point refresh and 30% DMG buff to the next character, making Kafka a hybrid support/detonator.
 
-## Best Team Compositions
+### H3: 4★ Light Cones
+*   **Best Choice: Fermata (Event/Battle Pass):** The best 4-star option. Increases DoT damage by 16/20/24/28/32% and grants 12/15/18/21/24% ATK against Shocked enemies. It directly scales her core mechanic.
+*   **Alternative: Resolution Shines As Pearls of Sweat:** A supportive choice. After the wearer attacks a debuffed enemy, they become Ensnared, increasing the DMG they take from DoT effects by 12/15/18/21/24% for 2 turns. Boosts the entire team's damage.
 
-Kafka is the centerpiece of dedicated DoT teams, which are among the strongest archetypes in the game.
+### H3: F2P Light Cones
+*   **Budget Choice: Eyes of the Prey (Gacha 4★):** Provides a flat 20/25/30/35/40% EHR increase. This is a fantastic option for early-game or for players who lack EHR substats, allowing you to focus on ATK and SPD in other slots.
+*   **Other F2P: Loop (3★):** Surprisingly effective early on. Increases DMG dealt to enemies with lower SPD by 16/20/24/28/32%. If your Kafka is fast, this provides a consistent damage boost against slower elites.
 
-### Team 1: The Core DoT Engine
-*   **Kafka** (DoT Detonator)
-*   **Black Swan** (DoT Application - Arcana)
-*   **Ruan Mei** (Universal Buffer - Break Efficiency, DMG, RES PEN)
-*   **Huohuo** (Sustain - Energy Battery, ATK Buff, Cleanse)
-This is the premier, meta-defining **Kafka team**. Ruan Mei's Break Efficiency directly increases DoT damage, while Huohuo's energy funneling allows for more frequent Kafka ultimates, detonating Black Swan's powerful Arcana stacks.
+### H3: Light Cone Comparison
 
-### Team 2: Lightning-Focused
-*   **Kafka**
-*   **Sampo / Luka / Guinaifen** (Alternative DoT Application)
-*   **Asta / Bronya** (SPD/ATK Buffer)
-*   **Gallagher / Luocha** (Sustain)
-A powerful and more accessible variant. Asta provides massive team-wide SPD, allowing Kafka to act constantly, while a second DoT applier like Sampo provides Wind Shear to further boost the 4pc Prisoner set.
+| Light Cone | Rarity | Key Stat | Primary Effect | Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **Patience Is All You Need** | 5★ | ATK% | Massive ATK, DMG boost & SPD from allies' attacks | Maximum personal damage & team synergy |
+| **In the Name of the World** | 5★ | EHR | EHR & DMG vs debuffed enemies | Balancing EHR needs with damage |
+| **Fermata** | 4★ | ATK/DoT DMG | Increases DoT DMG & ATK vs Shocked | Best overall 4-star for detonations |
+| **Eyes of the Prey** | 4★ | EHR | Huge EHR boost | Solving EHR substat issues |
+| **Loop** | 3★ | DMG | DMG boost vs slower enemies | Early-game budget option |
 
-For more team ideas, explore our **[Team Building Guide](https://gamebeliever.com/teams/dot-team)**.
+## H2: Stats Breakpoints & Targets
 
-## Kafka Pull Recommendation
+To function at peak efficiency, aim for these **Kafka Best Build** targets at Level 80:
 
-**Is Kafka worth pulling in the current meta?** Absolutely. Kafka is the linchpin of the DoT archetype, which has evolved into one of the most consistent and powerful damage-dealing styles in Honkai: Star Rail. Her unique ability to instantly trigger all DoTs on her Ultimate makes her irreplaceable for this playstyle. She is relatively easy to build and excels in all content, especially Memory of Chaos and Pure Fiction where sustained AoE damage is key. If you enjoy strategic teambuilding focused on debuffs and damage-over-time, Kafka is one of the highest-value pulls in the game. For more detailed advice, see our **[HSR Pull Guide](https://gamebeliever.com/pull-advice/kafka)**.
+*   **CRIT Rate / CRIT DMG:** **Do Not Build.** Kafka's DoT and detonation damage cannot crit. Focus on other stats.
+*   **SPD Target:** **135 minimum** to activate **Firmament Frontline: Glamoth**. **145+** is ideal for more actions and higher DMG from the same set.
+*   **Effect Hit Rate (EHR) Target:** **Minimum 57%** for guaranteed Shock application. **72%** is a comfortable safety net for enemies with higher resistance.
+*   **ATK Target:** While there's no hard cap, aim for **3500+ ATK** post-combat buffs. The higher, the better for detonation scaling.
+*   **Energy Regeneration Rate:** 19.4% (from a 5-star Link Rope) is standard. With **Sprightly Vonwacq**, you can reach 120% ERR to guarantee her Ultimate every 3 turns.
 
-## FAQ
+## H2: Best Team Compositions
+
+Kafka's true power is unlocked in dedicated DoT teams, where she acts as the detonator for other DoT applicators.
+
+### H3: Premium Team
+*   **Members:** **Kafka, Black Swan, Ruan Mei, Huohuo**
+*   **Why It Works:** This is the ultimate **Kafka Team**. Black Swan applies powerful Arcana DoTs that Kafka detonates. Ruan Mei provides universal DMG boost, Break Efficiency, and All-Type RES PEN, massively amplifying everyone's damage. Huohuo offers energy, ATK% buff, and cleansing. The team has incredible synergy, applying and detonating multiple DoTs while being nearly unstoppable.
+
+### H3: F2P Team
+*   **Members:** **Kafka, Sampo/Luka, Asta, Gallagher/Lynx**
+*   **How to Play:** Sampo or Luka apply Wind Shear/Bleed. Asta provides massive SPD and ATK buffs, letting Kafka detonate more often. Gallagher or Lynx sustain and provide debuffs (Besotted) or buffs (ATK%). This team is accessible and effective, demonstrating Kafka's core function.
+
+### H3: Alternative Teams
+*   **Kafka/Black Swan Double DoT:** Uses both premier DoT units for overwhelming pressure.
+*   **Kafka Hypercarry:** Places Kafka with three supports (e.g., Ruan Mei, Asta, Huohuo) to maximize her personal detonation damage. Less efficient but viable.
+*   **Break-Focused:** Paired with characters like **Xueyi** or **Hook** to capitalize on Lightning weakness breaks that Kafka can trigger.
+
+## H2: Gameplay Tips & Rotation
+
+*   **Skill Rotation:** The core is simple: **Use Kafka's Skill on enemies with DoT debuffs** to instantly detonate them. Use her Basic Attack on enemies without DoTs or when you need to conserve Skill Points. Her Ultimate is a massive AoE detonation.
+*   **Key Combos:**
+    1.  Start with Kafka's Technique to apply Shock before battle.
+    2.  Have allies apply their DoTs (e.g., Black Swan's Arcana, Sampo's Wind Shear).
+    3.  Use Kafka's Skill to detonate all DoTs for immediate burst damage.
+    4.  Use her Ultimate on 3+ enemies for massive AoE detonation.
+*   **Common Mistakes to Avoid:**
+    *   **Building CRIT Stats:** This wastes relic potential. Focus on ATK, EHR, SPD.
+    *   **Ignoring EHR:** Without enough, her Shock fails, crippling her damage.
+    *   **Using Skill on Single Targets Without DoTs:** This wastes SP and deals low damage. Apply DoTs first.
+    *   **Building a Slow Kafka:** SPD is non-negotiable. More turns = more detonations.
+
+## H2: Investment Priority
+
+*   **E0 Viable?:** Absolutely. Kafka is fully functional and powerful at E0. She is a complete character whose core mechanic works from the base kit.
+*   **Key Eidolons:**
+    *   **E1:** Increases the DMG multiplier of her Skill's detonation by 30%. A significant personal damage boost.
+    *   **E2:** Increases the DMG dealt by all allies' DoT effects by 25% against enemies Shocked by Kafka. A massive team-wide buff.
+    *   **E6:** When Kafka triggers a DoT detonation, her ATK increases by 10% for 2 turns (stacks 2 times). Provides sustained high ATK.
+    *   **Verdict:** E2 is her most impactful Eidolon, transforming her into a true team amplifier. E1 and E6 are great luxury upgrades.
+*   **Light Cone Priority:** For players deciding between eidolons and the light cone, **her Signature Light Cone "Patience Is All You Need" is generally more impactful than going for E1.** It provides a bigger, more immediate boost to her personal damage and team utility. After securing her signature, E2 is the next major upgrade.
+
+## H2: FAQ
 
 **1. What is the best build for Kafka in HSR?**
-The best **Kafka build** prioritizes ATK% and SPD. Use the 4pc Prisoner in Confinement relic set with a Firmament Frontline: Glamoth planar ornament set. Main stats should be ATK% Body, SPD Feet, Lightning DMG Sphere, and ATK% Rope. Her signature Light Cone, Patience Is All You Need, is ideal, but F2P options like Fermata are excellent.
+The **Kafka Best Build** uses the 4pc **Prisoner in Deep Confinement** relic set and **Firmament Frontline: Glamoth** planar ornaments. Main stats are ATK% Body, SPD Feet, Lightning DMG Sphere, and ERR Rope. Substat priority is SPD, EHR (to 57%+), then ATK%.
 
 **2. What relics should I use for Kafka?**
-For **Kafka relics**, the **4pc Prisoner in Confinement** is her best-in-slot. It boosts her ATK and lets her ignore enemy DEF based on active DoTs. Alternatively, a 2pc Musketeer of Wild Wheat + 2pc Thief of Shooting Meteor combo is a strong transitional set.
+The **best Kafka Relics** are the 4-piece **Prisoner in Deep Confinement**. If unavailable, a 2pc Musketeer + 2pc Thief set works as a transitional option.
 
 **3. What is Kafka's best light cone?**
-Her signature, **Patience Is All You Need**, is the best **Kafka light cone**. It provides ATK%, SPD, and DEF ignore. For free-to-play players, **Fermata** (from the Forgotten Hall shop) is the top recommendation, offering a massive DMG boost against Shocked enemies.
+Her Best-in-Slot is her signature 5-star light cone, **Patience Is All You Need**. The best 4-star alternative is **Fermata**, which directly boosts DoT and ATK against Shocked enemies.
 
 **4. What team is best for Kafka?**
-The best **Kafka team** is a dedicated DoT composition. The top-tier setup is **Kafka + Black Swan + Ruan Mei + Huohuo**. A more accessible team is **Kafka + Sampo + Asta + a Sustain**.
+The premium **Kafka Team** is **Kafka, Black Swan, Ruan Mei, and Huohuo**. This team maximizes DoT application and detonation with top-tier synergy and buffs.
 
-**5. Is Kafka good in Honkai: Star Rail?**
-Yes, **Honkai Star Rail Kafka** is an excellent character and a core meta unit. She is the engine of powerful DoT teams and is highly effective in all endgame content.
+**5. Is Kafka good in Honkai Star Rail?**
+Yes, Kafka is an excellent and unique character. She is the core of one of the strongest team archetypes (DoT) and provides a distinct, powerful playstyle focused on detonating debuffs.
 
 **6. What does Kafka scale with in HSR?**
-Kafka scales primarily with **ATK**. Her DoT damage (Shock) scales from her ATK stat. Additionally, **Break Effect** directly increases the damage of the Shock she inflicts via her Break. **Effect Hit Rate** is needed to ensure her debuffs land.
+Kafka scales primarily with **ATK** (for her detonation damage), **Effect Hit Rate** (to ensure Shock lands), and **Speed** (for more actions and detonations). Her DoT damage cannot crit.
 
 **7. Is Kafka a DPS or support?**
-Kafka is a **DoT DPS / Sub-DPS**. While she applies debuffs, her primary role is dealing damage—either directly or by detonating existing DoTs on enemies. She is the centerpiece around which teams are built.
+Kafka is a hybrid **Debuffer/Sub-DPS**. While she contributes personal damage, her primary role is to amplify the team's total damage by detonating all DoT effects. She enables other DoT characters.
 
-**8. How to build Kafka for DoT team?**
-To build **Kafka for DoT team**, focus on the 4pc Prisoner relic set and Glamoth ornaments. Prioritize SPD to reach 134/160, then stack ATK% and Break Effect. Ensure you have enough Effect Hit Rate (~120%) to guarantee Shock. Pair her with other Nihility characters who apply different DoTs (like Black Swan or Sampo) to maximize her damage.
+**8. What is Kafka's best F2P light cone?**
+The best F2P light cone for Kafka is **Eyes of the Prey** (4-star gacha), which provides a huge EHR boost to meet her requirements. The 3-star **Loop** is a decent early damage option.
+
+**9. How to build Kafka for maximum damage?**
+For maximum damage, equip the 4-piece **Prisoner** set, **Glamoth** ornaments, and her signature light cone. Ensure 57%+ EHR, then stack as much ATK% and SPD as possible. Play her in a team with other DoT applicators like Black Swan.
+
+**10. Is Kafka worth pulling in 2026?**
+While the meta evolves, Kafka's unique mechanic as a DoT detonator has timeless utility. She enables a powerful team archetype that continues to receive support (like Black Swan). If you enjoy DoT playstyles, she remains a fantastic and fun investment.
+
+---
+*Ready to master other Stellaron Hunters? Check out our guide for [Silver Wolf's Quantum Debuff Build](/silver-wolf-build) or optimize your team with our [HSR Tier List](/honkai-star-rail-tier-list).*

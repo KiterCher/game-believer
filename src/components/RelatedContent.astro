@@ -1,0 +1,32 @@
+---
+export interface Props {
+  currentSlug: string;
+  currentType: string;
+}
+
+const { currentSlug, currentType } = Astro.props;
+
+const relatedLinks = [
+  { type: 'characters', label: 'Character Guide', icon: '👤' },
+  { type: 'builds', label: 'Build Guide', icon: '⚔️' },
+  { type: 'teams', label: 'Team Guide', icon: '👥' },
+  { type: 'pull-advice', label: 'Pull Advice', icon: '🎰' },
+].filter(link => link.type !== currentType);
+---
+
+<div class="sticky top-20 p-4 bg-[#1a1a1a] rounded-lg border border-[#333]">
+  <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Related Guides</h4>
+  <ul class="space-y-3">
+    {relatedLinks.map(link => (
+      <li>
+        <a
+          href={`/${link.type}/${currentSlug}`}
+          class="flex items-center gap-3 p-2 rounded hover:bg-[#2a2a2a] transition-colors group"
+        >
+          <span class="text-xl">{link.icon}</span>
+          <span class="text-sm text-[#999] group-hover:text-white transition-colors">{link.label}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>

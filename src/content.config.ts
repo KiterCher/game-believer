@@ -1,42 +1,47 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const charactersCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/characters' }),
   schema: z.object({
-    name: z.string(),
-    nameEn: z.string(),
-    rarity: z.number().min(4).max(5),
-    element: z.enum(['Physical', 'Fire', 'Ice', 'Lightning', 'Wind', 'Quantum', 'Imaginary']),
-    path: z.enum(['Destruction', 'Hunt', 'Erudition', 'Harmony', 'Nihility', 'Preservation', 'Abundance']),
-    image: z.string().optional(),
-    releaseDate: z.string().optional(),
-    tags: z.array(z.string()).optional(),
+    title: z.string(),
+    description: z.string(),
+    updatedAt: z.string(),
+    type: z.string(),
+    character: z.string(),
   }),
 });
 
 const buildsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/builds' }),
   schema: z.object({
-    characterId: z.string(),
     title: z.string(),
     description: z.string(),
-    tier: z.enum(['S', 'A', 'B', 'C']),
-    recommendedLightCones: z.array(z.string()).optional(),
-    recommendedRelics: z.array(z.string()).optional(),
-    stats: z.object({
-      body: z.string().optional(),
-      feet: z.string().optional(),
-      sphere: z.string().optional(),
-      rope: z.string().optional(),
-    }).optional(),
+    updatedAt: z.string(),
+    type: z.string(),
+    character: z.string(),
   }),
 });
 
 const teamsCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/teams' }),
   schema: z.object({
-    characterId: z.string(),
-    teamName: z.string(),
+    title: z.string(),
     description: z.string(),
-    members: z.array(z.string()),
-    difficulty: z.enum(['Easy', 'Medium', 'Hard']).optional(),
+    updatedAt: z.string(),
+    type: z.string(),
+    character: z.string(),
+  }),
+});
+
+const pullAdviceCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/pull-advice' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    updatedAt: z.string(),
+    type: z.string(),
+    character: z.string(),
   }),
 });
 
@@ -44,4 +49,5 @@ export const collections = {
   characters: charactersCollection,
   builds: buildsCollection,
   teams: teamsCollection,
+  'pull-advice': pullAdviceCollection,
 };

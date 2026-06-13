@@ -1,0 +1,18 @@
+{
+  "id": "aventurine",
+  "name": "砂金",
+  "nameEn": "Aventurine",
+  "rarity": 5,
+  "element": "Imaginary",
+  "path": "Preservation",
+  "faction": "Interastral Peace Corporation",
+  "releaseVersion": "2.1",
+  "releaseDate": "",
+  "description": "Aventurine is a 5-star Imaginary character following the Path of Preservation.",
+  "role": "Tank",
+  "tags": [
+    "Tank",
+    "Shield",
+    "Imprisonment"
+  ]
+}

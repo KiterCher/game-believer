@@ -7,6 +7,15 @@ export interface Props {
 
 const { title, description = 'GameBeliever - Your Ultimate Gaming Guide', image = '/og-default.png' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Google Analytics ID (替换为你的实际 ID)
+const GA_ID = import.meta.env.PUBLIC_GA_ID || 'G-XXXXXXXXXX';
+
+// Google Search Console Verification (替换为你的实际验证码)
+const GSC_VERIFICATION = import.meta.env.PUBLIC_GSC_VERIFICATION || '';
+
+// Bing Webmaster Verification (替换为你的实际验证码)
+const BING_VERIFICATION = import.meta.env.PUBLIC_BING_VERIFICATION || '';
 ---
 
 <!doctype html>
@@ -24,6 +33,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.url)} />
+    <meta property="og:site_name" content="GameBeliever" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -32,10 +42,43 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
+    {GSC_VERIFICATION && (
+      <meta name="google-site-verification" content={GSC_VERIFICATION} />
+    )}
+
+    {BING_VERIFICATION && (
+      <meta name="msvalidate.01" content={BING_VERIFICATION} />
+    )}
+
+    <!-- Google Analytics -->
+    {GA_ID && GA_ID !== 'G-XXXXXXXXXX' && (
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+      <script define:vars={{ GA_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+      </script>
+    )}
+
     <title>{title}</title>
   </head>
-  <body class="bg-[#111111] text-white min-h-screen">
+  <body class="bg-dark-300 text-white min-h-screen font-sans">
     <slot />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "GameBeliever",
+      "url": "https://gamebeliever.com",
+      "description": "Your ultimate gaming guide platform for Honkai Star Rail",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://gamebeliever.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    })} />
   </body>
 </html>
 
@@ -44,5 +87,41 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
   body {
     font-family: "PingFang SC", "Microsoft YaHei", "Rajdhani", sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #111;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E53935;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus styles */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #E53935;
+    outline-offset: 2px;
+  }
+
+  /* Selection */
+  ::selection {
+    background: rgba(229, 57, 53, 0.3);
+    color: white;
   }
 </style>

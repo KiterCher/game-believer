@@ -1,0 +1,59 @@
+---
+export interface Props {
+  character: string;
+  currentPage: 'character' | 'build' | 'team' | 'pull-advice';
+}
+
+const { character, currentPage } = Astro.props;
+
+// 定义所有可能的链接
+const allLinks = {
+  character: {
+    type: 'characters',
+    label: `${character.charAt(0).toUpperCase() + character.slice(1)} Guide`,
+    icon: '👤',
+  },
+  build: {
+    type: 'builds',
+    label: `Best ${character.charAt(0).toUpperCase() + character.slice(1)} Build`,
+    icon: '⚔️',
+  },
+  team: {
+    type: 'teams',
+    label: `${character.charAt(0).toUpperCase() + character.slice(1)} Team Compositions`,
+    icon: '👥',
+  },
+  'pull-advice': {
+    type: 'pull-advice',
+    label: `Should You Pull ${character.charAt(0).toUpperCase() + character.slice(1)}?`,
+    icon: '🎰',
+  },
+};
+
+// 过滤掉当前页面
+const links = Object.entries(allLinks)
+  .filter(([type]) => type !== currentPage)
+  .map(([type, data]) => ({
+    href: `/${data.type}/${character}`,
+    label: data.label,
+    icon: data.icon,
+    isCurrent: type === currentPage,
+  }));
+---
+
+<div class="bg-dark-200 rounded-xl p-6 border border-gray-800 mb-8">
+  <h3 class="text-white font-bold text-lg mb-4">Related Guides</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    {links.map(link => (
+      <a
+        href={link.href}
+        class="flex items-center gap-3 p-3 rounded-lg bg-dark-100 hover:bg-primary/20 hover:border-primary border border-transparent transition-all group"
+      >
+        <span class="text-2xl">{link.icon}</span>
+        <span class="text-sm text-gray-400 group-hover:text-white transition-colors">
+          {link.label}
+        </span>
+      </a>
+    ))}
+  </div>
+</div>

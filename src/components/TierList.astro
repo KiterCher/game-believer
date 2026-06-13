@@ -1,0 +1,78 @@
+---
+// Tier List 组件
+const tiers = [
+  {
+    rank: 'S',
+    color: 'bg-yellow-500',
+    characters: [
+      { name: 'Kafka', slug: 'kafka', role: 'DoT DPS' },
+      { name: 'Acheron', slug: 'acheron', role: 'Hypercarry' },
+      { name: 'Firefly', slug: 'firefly', role: 'Break DPS' },
+      { name: 'Ruan Mei', slug: 'ruan-mei', role: 'Support' },
+    ],
+  },
+  {
+    rank: 'A',
+    color: 'bg-orange-500',
+    characters: [
+      { name: 'Dan Heng IL', slug: 'dan-heng-imbibitor-lunae', role: 'Hypercarry' },
+      { name: 'Black Swan', slug: 'black-swans', role: 'DoT DPS' },
+      { name: 'Sparkle', slug: 'sparkle', role: 'Support' },
+      { name: 'Robin', slug: 'robin', role: 'Support' },
+    ],
+  },
+  {
+    rank: 'B',
+    color: 'bg-blue-500',
+    characters: [
+      { name: 'Blade', slug: 'blade', role: 'DPS' },
+      { name: 'Jing Yuan', slug: 'jing-yuan', role: 'AoE DPS' },
+      { name: 'Seele', slug: 'seele', role: 'Single-T DPS' },
+      { name: 'Fu Xuan', slug: 'fu-xuan', role: 'Tank' },
+    ],
+  },
+];
+---
+
+<div class="bg-dark-200 rounded-xl p-6 border border-gray-800">
+  <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+    <span class="text-2xl">🏆</span>
+    Tier List
+  </h2>
+
+  <div class="space-y-4">
+    {tiers.map(tier => (
+      <div class="flex items-start gap-4">
+        {/* Tier Rank */}
+        <div class={`w-10 h-10 rounded-lg ${tier.color} flex items-center justify-center flex-shrink-0`}>
+          <span class="text-white font-bold text-lg">{tier.rank}</span>
+        </div>
+
+        {/* Characters */}
+        <div class="flex-1">
+          <div class="flex flex-wrap gap-2">
+            {tier.characters.map(char => (
+              <a
+                href={`/characters/${char.slug}`}
+                class="group flex items-center gap-2 px-3 py-2 bg-dark-100 rounded-lg hover:bg-primary/20 hover:border-primary border border-transparent transition-all"
+              >
+                <span class="text-white text-sm font-medium group-hover:text-primary transition-colors">
+                  {char.name}
+                </span>
+                <span class="text-xs text-gray-500">
+                  {char.role}
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="mt-6 pt-4 border-t border-gray-800">
+    <a href="/tier-list" class="text-primary hover:text-red-400 text-sm font-medium transition-colors">
+      View Full Tier List →
+    </a>
+  </div>
+</div>

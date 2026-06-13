@@ -1,14 +1,153 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import CharacterCard from '../components/CharacterCard.astro';
+import TierList from '../components/TierList.astro';
+import CurrentBanner from '../components/CurrentBanner.astro';
+import PopularBuilds from '../components/PopularBuilds.astro';
+
+const characters = await getCollection('characters');
+
+// 角色数据
+const characterData: Record<string, { rarity: number; element: string; path: string }> = {
+  kafka: { rarity: 5, element: 'Lightning', path: 'Nihility' },
+  acheron: { rarity: 5, element: 'Lightning', path: 'Nihility' },
+  firefly: { rarity: 5, element: 'Fire', path: 'Destruction' },
+  'dan-heng-imbibitor-lunae': { rarity: 5, element: 'Imaginary', path: 'Destruction' },
+  blade: { rarity: 5, element: 'Wind', path: 'Destruction' },
+  'jing-yuan': { rarity: 5, element: 'Lightning', path: 'Erudition' },
+  seele: { rarity: 5, element: 'Quantum', path: 'Hunt' },
+  'silver-wolf': { rarity: 5, element: 'Quantum', path: 'Nihility' },
+  'fu-xuan': { rarity: 5, element: 'Quantum', path: 'Preservation' },
+  'ruan-mei': { rarity: 5, element: 'Ice', path: 'Harmony' },
+  robin: { rarity: 5, element: 'Physical', path: 'Harmony' },
+  sparkle: { rarity: 5, element: 'Quantum', path: 'Harmony' },
+  'black-swans': { rarity: 5, element: 'Wind', path: 'Nihility' },
+  aventurine: { rarity: 5, element: 'Imaginary', path: 'Preservation' },
+  boothill: { rarity: 5, element: 'Physical', path: 'Hunt' },
+  gallagher: { rarity: 4, element: 'Fire', path: 'Abundance' },
+  'harmony-mc': { rarity: 4, element: 'Imaginary', path: 'Harmony' },
+  'march-7th': { rarity: 4, element: 'Ice', path: 'Preservation' },
+  trailblazer: { rarity: 4, element: 'Physical', path: 'Destruction' },
+};
 ---
 
-<BaseLayout title="GameBeliever - 首页">
-  <main class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-center mb-8">
-      Welcome to <span class="text-[#E53935]">GameBeliever</span>
-    </h1>
-    <p class="text-center text-[#999999] text-lg">
-      Your Ultimate Gaming Guide Platform
-    </p>
+<BaseLayout title="GameBeliever - Your Ultimate Gaming Guide" description="Your ultimate gaming guide platform for Honkai Star Rail. Find character builds, team compositions, and pull recommendations.">
+  <Navbar />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(229,57,53,0.1),transparent_70%)]"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+            Welcome to <span class="text-primary">GameBeliever</span>
+          </h1>
+          <p class="text-xl text-gray-400 mb-8">
+            Your ultimate gaming guide platform for Honkai Star Rail. Find character builds, team compositions, and pull recommendations.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="/characters" class="btn-primary">
+              Browse Characters
+            </a>
+            <a href="/builds" class="btn-secondary">
+              View Builds
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tier List + Current Banner -->
+    <section class="py-12 container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <TierList />
+        <CurrentBanner />
+      </div>
+    </section>
+
+    <!-- Featured Characters -->
+    <section class="py-12 container mx-auto px-4">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Featured Characters</h2>
+        <a href="/characters" class="text-primary hover:text-red-400 transition-colors font-medium">
+          View All →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        {characters.map(character => {
+          const data = characterData[character.id] || { rarity: 5, element: 'Unknown', path: 'Unknown' };
+          return (
+            <CharacterCard
+              name={character.data.character}
+              slug={character.id}
+              rarity={data.rarity}
+              element={data.element}
+              path={data.path}
+            />
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Popular Builds -->
+    <section class="py-12 container mx-auto px-4">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Popular Builds</h2>
+        <a href="/builds" class="text-primary hover:text-red-400 transition-colors font-medium">
+          View All →
+        </a>
+      </div>
+
+      <PopularBuilds />
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-dark-200">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-12">Explore Guides</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="/characters" class="group">
+            <div class="card p-6 text-center group-hover:border-primary transition-colors">
+              <div class="text-4xl mb-4">👤</div>
+              <h3 class="text-white font-bold text-lg mb-2 group-hover:text-primary transition-colors">Characters</h3>
+              <p class="text-gray-400 text-sm">Detailed character guides and overviews</p>
+            </div>
+          </a>
+
+          <a href="/builds" class="group">
+            <div class="card p-6 text-center group-hover:border-primary transition-colors">
+              <div class="text-4xl mb-4">⚔️</div>
+              <h3 class="text-white font-bold text-lg mb-2 group-hover:text-primary transition-colors">Builds</h3>
+              <p class="text-gray-400 text-sm">Optimal relics, light cones, and stats</p>
+            </div>
+          </a>
+
+          <a href="/teams" class="group">
+            <div class="card p-6 text-center group-hover:border-primary transition-colors">
+              <div class="text-4xl mb-4">👥</div>
+              <h3 class="text-white font-bold text-lg mb-2 group-hover:text-primary transition-colors">Teams</h3>
+              <p class="text-gray-400 text-sm">Best team compositions and synergies</p>
+            </div>
+          </a>
+
+          <a href="/pull-advice" class="group">
+            <div class="card p-6 text-center group-hover:border-primary transition-colors">
+              <div class="text-4xl mb-4">🎰</div>
+              <h3 class="text-white font-bold text-lg mb-2 group-hover:text-primary transition-colors">Pull Advice</h3>
+              <p class="text-gray-400 text-sm">Should you pull? Expert recommendations</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <Footer />
 </BaseLayout>

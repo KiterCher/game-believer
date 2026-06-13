@@ -97,11 +97,11 @@ function generateFrontmatter(slug: string, type: ContentType): string {
   };
 
   const descriptions: Record<ContentType, string> = {
-    'character': `Best ${slug} guide for Honkai Star Rail. Builds, relics, light cones, teams, and more. Updated for 2026.`,
-    'build': `Ultimate ${slug} build guide for HSR. Best relics, light cones, stats, and team synergies. Updated for 2026.`,
-    'team': `Best ${slug} team compositions for HSR. Optimal setups, rotations, and synergies. Updated for 2026.`,
-    'pull-advice': `Should you pull ${slug} in HSR? Pull guide with value analysis and team synergies. Updated for 2026.`,
-    'faq': `FAQ about ${slug} in Honkai Star Rail. Common questions about builds, teams, and gameplay.`,
+    'character': `Complete ${slug} guide for Honkai Star Rail. Best builds, relics, light cones, team compositions, and gameplay tips. Updated for 2026.`,
+    'build': `Ultimate ${slug} build guide for Honkai Star Rail. Best relics, light cones, stat priorities, and team synergies. Updated for 2026.`,
+    'team': `Best ${slug} team compositions for Honkai Star Rail. Optimal team setups, rotation guides, and character synergies. Updated for 2026.`,
+    'pull-advice': `Should you pull ${slug} in Honkai Star Rail? Complete pull guide with value analysis and team synergies. Updated for 2026.`,
+    'faq': `Frequently asked questions about ${slug} in Honkai Star Rail. Get answers about builds, teams, and gameplay strategies.`,
   };
 
   return `---

@@ -2,126 +2,220 @@
 You are an expert HSR theorycrafter writing for GameBeliever.com.
 
 # Task
-Write a build guide based on the JSON data below.
+Write a COMPREHENSIVE build guide based on the JSON data below. This guide must be the DEFINITIVE guide for this character.
 
 # Requirements
 - Language: English (US spelling)
 - Tone: Authoritative, data-backed, actionable
-- Min words: 800~1200
+- Min words: 1200~1500
 - FAQ count: 5~8 questions
 - Internal links: ≥ 5 links to related pages
 
-# Structure
-## H1: Firefly Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+# IMPORTANT: Build Guide Must Include
 
-## H2: Best {Character Name} Build Overview
-- Role: Break DPS | Element: Fire | Path: Destruction
-- Build focus in 1~2 sentences
+## 1. Build Overview
+- Character role and playstyle
+- Why this build works
+- What stats to prioritize
+
+## 2. Best Relics (Detailed)
+- **4pc Set Recommendation**
+  - Which set and why
+  - Set bonus explanation
+- **2pc + 2pc Alternative**
+  - Which combinations work
+  - When to use each
+- **Planar Ornaments**
+  - Best-in-Slot
+  - Alternative options
+- **Main Stats**
+  - Body: What stat
+  - Feet: What stat
+  - Sphere: What stat
+  - Rope: What stat
+- **Sub Stats Priority**
+  - Which substats to look for
+  - Minimum breakpoints
+
+## 3. Best Light Cones (Detailed)
+- **5★ Options**
+  - Signature Light Cone
+  - Other 5★ options
+- **4★ Options**
+  - Best 4★ choices
+  - Event Light Cones
+- **3★ F2P Options**
+  - Budget choices
+- **Light Cone Comparison Table**
+
+## 4. Stats Breakpoints
+- CRIT Rate target
+- CRIT DMG target
+- SPD breakpoints
+- ATK/EHR/ERR targets
+
+## 5. Team Compositions
+- **Premium Team**
+- **F2P Team**
+- **Alternative Teams**
+- Why each team works
+
+## 6. Gameplay Tips
+- Rotation guide
+- Key combos
+- Common mistakes to avoid
+
+## 7. Investment Priority
+- E0 viable?
+- Key Eidolons
+- Light Cone priority
+
+## 8. FAQ
+
+# Structure (MUST follow this structure)
+
+## H1: 流萤 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+
+## H2: {Character Name} Build Overview
+- Role, Element, Path
+- Build philosophy
+- What makes this build work
 
 ## H2: Best Relics for {Character Name}
-- Primary set (4pc) with reasoning
-- Alternative sets (2pc+2pc)
-- Planar Ornaments recommendation
-- Link to /relics/{best-relic-slug}
+
+### H3: Best 4pc Set
+- Set name and why
+- Set bonus explanation
+
+### H3: Alternative Sets
+- 2pc + 2pc combinations
+- When to use each
+
+### H3: Best Planar Ornaments
+- Best-in-Slot
+- Alternatives
+
+### H3: Recommended Main Stats
+- Body / Feet / Sphere / Rope
+
+### H3: Substats Priority
+- Priority order
+- Minimum breakpoints
 
 ## H2: Best Light Cones for {Character Name}
-- Best-in-Slot Light Cone with explanation
-- F2P / Alternative options
-- Link to /lightcones/{best-cone-slug}
 
-## H2: Recommended Stats & Substats
-- Body / Feet / Sphere / Rope main stats
-- Substats priority order
-- Key stat thresholds (e.g., SPD breakpoint)
+### H3: 5★ Light Cones
+- Signature LC
+- Other options
+
+### H3: 4★ Light Cones
+- Best choices
+- Event options
+
+### H3: F2P Light Cones
+- Budget options
+
+### H3: Light Cone Comparison
+- Comparison table
+
+## H2: Stats Breakpoints & Targets
+- CRIT Rate target
+- CRIT DMG target
+- SPD breakpoints
+- Other important stats
 
 ## H2: Best Team Compositions
-- 2~3 team setups
-- Link to /teams/{team-slug}-team
 
-## H2: {Character Name} Pull Recommendation
-- Is Firefly worth pulling in current meta?
-- Link to /pull-advice/{char}
+### H3: Premium Team
+- Team members
+- Why it works
+
+### H3: F2P Team
+- Budget options
+- How to play
+
+### H3: Alternative Teams
+- Other compositions
+
+## H2: Gameplay Tips & Rotation
+- Skill rotation
+- Key combos
+- Common mistakes
+
+## H2: Investment Priority
+- E0 viability
+- Key Eidolons
+- Light Cone priority
 
 ## H2: FAQ
-- 5~8 questions from longTailFAQs
 
 # Keyword Requirements
-- H1 MUST contain: {char} build
+- H1 MUST contain: 流萤 build
 - At least 3 H2s must contain: best {char}, {char} relics, {char} light cone
 
 --- DATA INPUT ---
 ## Character Basic Info
-- Name: Firefly
+- Name: 流萤
 - Rarity: 5★
 - Element: Fire
 - Path: Destruction
 - Faction: Stellaron Hunter
-- Role: Break DPS
+- Role: DPS
 - Release Version: 2.3
-- Tags: Break Effect, Enhanced State, AoE, Fire
+- Tags: DPS, AoE, Burn
 
 ## Description
-Firefly is a 5-star Fire character following the Path of Destruction. She is a member of the Stellaron Hunters who pilots the mecha SAM and excels as a Break Effect DPS with enhanced state mechanics.
+Firefly is a 5-star Fire character following the Path of Destruction.
 
 ## Skills
-### Basic Attack: Order: Flare Propulsion
-Deals Fire DMG equal to 50%~130% of Firefly's ATK to a single enemy.
+### Basic Attack: Firefly's Basic Attack
+Deals damage to a single enemy.
 
-### Skill: Order: Aerial Bombardment
-Consumes 40% of Firefly's current HP. Deals Fire DMG equal to 100%~250% of Firefly's ATK to a single enemy and adjacent enemies. If current HP is insufficient, HP drops to 1 instead.
+### Skill: Firefly's Skill
+Deals damage to enemies.
 
-### Ultimate: Fyrefly Type-IV: Complete Combustion
-Enters Complete Combustion state for 3 turns. In this state, Firefly's SPD increases by 50, her Skill becomes Enhanced Skill, and her Basic ATK becomes Enhanced Basic ATK. When entering Complete Combustion, immediately takes action.
-Energy Cost: 240
+### Ultimate: Firefly's Ultimate
+Deals massive damage to all enemies.
+Energy Cost: 100
 
-### Talent: Chrysalid Pyron
-When Firefly's current HP percentage is 50% or lower, her Break Effect increases by 50%~125%. After using Enhanced Skill, if the enemy is Weakness Broken, deals additional Fire DMG equal to a percentage of Firefly's Break Effect.
+### Talent: Firefly's Talent
+Passive effect.
 
-### Technique: Order: Meteoric Incineration
-After using Technique, Firefly enters battle with 50% of her Max HP consumed and immediately enters Complete Combustion state for 3 turns.
+### Technique: Firefly's Technique
+Technique effect.
 
 ## Major Traces
-- **Heat Vent** (A2): When Firefly is in Complete Combustion state, her CRIT Rate increases by 15% and CRIT DMG increases by 30%.
-- **Molten Core** (A4): When Firefly's current HP is 50% or lower, her DMG increases by 40%.
-- **Fuel Injection** (A6): After entering Complete Combustion state, Firefly's Weakness Break Efficiency increases by 50% for 3 turns.
+- **Major Trace 1** (A2): Unlock at A2.
+- **Major Trace 2** (A4): Unlock at A4.
+- **Major Trace 3** (A6): Unlock at A6.
 
 ## Eidolons
-- **E1 Inflammable**: When Firefly enters Complete Combustion state, her ATK increases by 30% for 3 turns.
-- **E2 Self-Combustion**: When Firefly's current HP drops below 50%, she gains 1 extra turn. This effect can only trigger 1 time per battle.
-- **E3 Cauterization**: Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10.
-- **E4 Melting Point**: When Firefly is in Complete Combustion state, her Weakness Break Efficiency increases by 30%.
-- **E5 Flashover**: Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15.
-- **E6 Super Nova**: When Firefly uses Enhanced Skill, she ignores 20% of enemy DEF. Additionally, if the enemy is Weakness Broken, the damage of Enhanced Skill increases by 50%.
+- **E1 Eidolon 1**: Effect for Eidolon 1.
+- **E2 Eidolon 2**: Effect for Eidolon 2.
+- **E3 Eidolon 3**: Effect for Eidolon 3.
+- **E4 Eidolon 4**: Effect for Eidolon 4.
+- **E5 Eidolon 5**: Effect for Eidolon 5.
+- **E6 Eidolon 6**: Effect for Eidolon 6.
 
 ## Base Stats (Level 80)
-- HP: 1680
-- ATK: 850
-- DEF: 620
-- SPD: 104
+- HP: undefined
+- ATK: undefined
+- DEF: undefined
+- SPD: 100
 
 ## Materials
 ### Ascension Materials
-- Extinguished Core: 15
-- Glimmering Core: 15
-- Squirming Core: 15
-- Raging Heart: 65
-- Traveler's Guide: 308
-- Credit: 308,000
+
 
 ### Trace Materials
-- Endurance of Bronze: 18
-- Oath of Steel: 69
-- Safeguard of Amber: 139
-- Lost Echo of the Shared Wish: 12
-- Tracks of Destiny: 8
-- Credit: 3,000,000
+
 
 --- KEYWORDS ---
 ## Main Keyword
 Firefly Build
 
 ## Secondary Keywords
-Firefly Best Build, Firefly Relics, Firefly Light Cone, Firefly Team, Firefly Guide, Honkai Star Rail Firefly, HSR Firefly, Firefly Break Effect, Firefly Destruction, Firefly Best Team
+Firefly Best Build, Firefly Relics, Firefly Light Cone, Firefly Team, Firefly Guide, Honkai Star Rail Firefly, HSR Firefly, Firefly Destruction, Firefly Best Team, Firefly Fire
 
 ## Long-Tail FAQs (use these for FAQ section)
 1. What is the best build for Firefly in HSR?
@@ -132,5 +226,5 @@ Firefly Best Build, Firefly Relics, Firefly Light Cone, Firefly Team, Firefly Gu
 6. What does Firefly scale with in HSR?
 7. Is Firefly a DPS or support?
 8. What is Firefly's best F2P light cone?
-9. How to build Firefly for Break Effect?
+9. How to build Firefly for maximum damage?
 10. Is Firefly worth pulling in 2026?

@@ -1,0 +1,18 @@
+{
+  "id": "harmony-mc",
+  "name": "同谐主角",
+  "nameEn": "Harmony Trailblazer",
+  "rarity": 4,
+  "element": "Imaginary",
+  "path": "Harmony",
+  "faction": "Astral Express",
+  "releaseVersion": "2.2",
+  "releaseDate": "",
+  "description": "Harmony Trailblazer is a 4-star Imaginary character following the Path of Harmony.",
+  "role": "Support",
+  "tags": [
+    "Support",
+    "Buffer",
+    "Imprisonment"
+  ]
+}

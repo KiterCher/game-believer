@@ -2,126 +2,220 @@
 You are an expert HSR theorycrafter writing for GameBeliever.com.
 
 # Task
-Write a build guide based on the JSON data below.
+Write a COMPREHENSIVE build guide based on the JSON data below. This guide must be the DEFINITIVE guide for this character.
 
 # Requirements
 - Language: English (US spelling)
 - Tone: Authoritative, data-backed, actionable
-- Min words: 800~1200
+- Min words: 1200~1500
 - FAQ count: 5~8 questions
 - Internal links: ≥ 5 links to related pages
 
-# Structure
-## H1: Kafka Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+# IMPORTANT: Build Guide Must Include
 
-## H2: Best {Character Name} Build Overview
-- Role: DoT DPS / Sub-DPS | Element: Lightning | Path: Nihility
-- Build focus in 1~2 sentences
+## 1. Build Overview
+- Character role and playstyle
+- Why this build works
+- What stats to prioritize
+
+## 2. Best Relics (Detailed)
+- **4pc Set Recommendation**
+  - Which set and why
+  - Set bonus explanation
+- **2pc + 2pc Alternative**
+  - Which combinations work
+  - When to use each
+- **Planar Ornaments**
+  - Best-in-Slot
+  - Alternative options
+- **Main Stats**
+  - Body: What stat
+  - Feet: What stat
+  - Sphere: What stat
+  - Rope: What stat
+- **Sub Stats Priority**
+  - Which substats to look for
+  - Minimum breakpoints
+
+## 3. Best Light Cones (Detailed)
+- **5★ Options**
+  - Signature Light Cone
+  - Other 5★ options
+- **4★ Options**
+  - Best 4★ choices
+  - Event Light Cones
+- **3★ F2P Options**
+  - Budget choices
+- **Light Cone Comparison Table**
+
+## 4. Stats Breakpoints
+- CRIT Rate target
+- CRIT DMG target
+- SPD breakpoints
+- ATK/EHR/ERR targets
+
+## 5. Team Compositions
+- **Premium Team**
+- **F2P Team**
+- **Alternative Teams**
+- Why each team works
+
+## 6. Gameplay Tips
+- Rotation guide
+- Key combos
+- Common mistakes to avoid
+
+## 7. Investment Priority
+- E0 viable?
+- Key Eidolons
+- Light Cone priority
+
+## 8. FAQ
+
+# Structure (MUST follow this structure)
+
+## H1: 卡芙卡 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+
+## H2: {Character Name} Build Overview
+- Role, Element, Path
+- Build philosophy
+- What makes this build work
 
 ## H2: Best Relics for {Character Name}
-- Primary set (4pc) with reasoning
-- Alternative sets (2pc+2pc)
-- Planar Ornaments recommendation
-- Link to /relics/{best-relic-slug}
+
+### H3: Best 4pc Set
+- Set name and why
+- Set bonus explanation
+
+### H3: Alternative Sets
+- 2pc + 2pc combinations
+- When to use each
+
+### H3: Best Planar Ornaments
+- Best-in-Slot
+- Alternatives
+
+### H3: Recommended Main Stats
+- Body / Feet / Sphere / Rope
+
+### H3: Substats Priority
+- Priority order
+- Minimum breakpoints
 
 ## H2: Best Light Cones for {Character Name}
-- Best-in-Slot Light Cone with explanation
-- F2P / Alternative options
-- Link to /lightcones/{best-cone-slug}
 
-## H2: Recommended Stats & Substats
-- Body / Feet / Sphere / Rope main stats
-- Substats priority order
-- Key stat thresholds (e.g., SPD breakpoint)
+### H3: 5★ Light Cones
+- Signature LC
+- Other options
+
+### H3: 4★ Light Cones
+- Best choices
+- Event options
+
+### H3: F2P Light Cones
+- Budget options
+
+### H3: Light Cone Comparison
+- Comparison table
+
+## H2: Stats Breakpoints & Targets
+- CRIT Rate target
+- CRIT DMG target
+- SPD breakpoints
+- Other important stats
 
 ## H2: Best Team Compositions
-- 2~3 team setups
-- Link to /teams/{team-slug}-team
 
-## H2: {Character Name} Pull Recommendation
-- Is Kafka worth pulling in current meta?
-- Link to /pull-advice/{char}
+### H3: Premium Team
+- Team members
+- Why it works
+
+### H3: F2P Team
+- Budget options
+- How to play
+
+### H3: Alternative Teams
+- Other compositions
+
+## H2: Gameplay Tips & Rotation
+- Skill rotation
+- Key combos
+- Common mistakes
+
+## H2: Investment Priority
+- E0 viability
+- Key Eidolons
+- Light Cone priority
 
 ## H2: FAQ
-- 5~8 questions from longTailFAQs
 
 # Keyword Requirements
-- H1 MUST contain: {char} build
+- H1 MUST contain: 卡芙卡 build
 - At least 3 H2s must contain: best {char}, {char} relics, {char} light cone
 
 --- DATA INPUT ---
 ## Character Basic Info
-- Name: Kafka
+- Name: 卡芙卡
 - Rarity: 5★
 - Element: Lightning
 - Path: Nihility
 - Faction: Stellaron Hunter
-- Role: DoT DPS / Sub-DPS
+- Role: Debuffer/Sub-DPS
 - Release Version: 1.2
-- Tags: DoT, Shock, Debuff, AoE
+- Tags: Debuff, DoT, Shock
 
 ## Description
-Kafka is a 5-star Lightning character following the Path of Nihility. She is a core member of the Stellaron Hunters and excels as a DoT (Damage over Time) specialist who can apply and detonate Shock effects on enemies.
+Kafka is a 5-star Lightning character following the Path of Nihility.
 
 ## Skills
-### Basic Attack: Midnight Threnody
-Deals Lightning DMG equal to 50%~130% of Kafka's ATK to a single enemy.
+### Basic Attack: Kafka's Basic Attack
+Deals damage to a single enemy.
 
-### Skill: Caressing Moonlight
-Deals Lightning DMG equal to 80%~200% of Kafka's ATK to a single enemy and Lightning DMG equal to 30%~75% of Kafka's ATK to adjacent enemies. There is a 100% base chance to inflict Shock on the target and adjacent enemies for 2 turns.
+### Skill: Kafka's Skill
+Deals damage to enemies.
 
-### Ultimate: Twilight Trill
-Deals Lightning DMG equal to 48%~120% of Kafka's ATK to all enemies. Immediately causes DoT effects on the target to deal 1 instance of DMG equal to 75%~100% of their original DMG.
-Energy Cost: 120
+### Ultimate: Kafka's Ultimate
+Deals massive damage to all enemies.
+Energy Cost: 100
 
-### Talent: Gentle but Cruel
-After an ally uses Basic ATK on an enemy target, Kafka immediately launches a follow-up attack, dealing Lightning DMG equal to 42%~105% of Kafka's ATK to that enemy. This effect can only be triggered 1 time per turn.
+### Talent: Kafka's Talent
+Passive effect.
 
-### Technique: Mercy Is No Mercy
-Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to inflict Shock on all enemies for 3 turns.
+### Technique: Kafka's Technique
+Technique effect.
 
 ## Major Traces
-- **Plunder** (A2): If an enemy target is currently receiving DoT, when Kafka's Skill hits this enemy, she deals additional Lightning DMG equal to 25% of her ATK to this enemy.
-- **Fortissimo** (A4): When using her Ultimate, Kafka's ATK increases by 30% for 2 turns.
-- **Tick-Tock** (A6): When entering battle, if there are teammates following the Path of Nihility, Kafka's DMG increases by 30% for each Nihility teammate (up to 2).
+- **Major Trace 1** (A2): Unlock at A2.
+- **Major Trace 2** (A4): Unlock at A4.
+- **Major Trace 3** (A6): Unlock at A6.
 
 ## Eidolons
-- **E1 Recitatif of Crepuscule**: When an enemy target with Shock is attacked by Kafka, the target's Shock status immediately deals 1 instance of DMG equal to 30% of the original DMG.
-- **E2 Recitatif of Fishes**: When an ally is attacked, Kafka has a 100% base chance to inflict Shock on the attacker for 2 turns. This effect can only trigger 1 time per turn.
-- **E3 Recitatif of Cocoons**: Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10.
-- **E4 Recitatif of Something**: When Kafka's Talent triggers a follow-up attack, there is a 100% base chance to inflict Shock on the enemy for 2 turns.
-- **E5 Recitatif of Birds**: Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15.
-- **E6 Recitatif of the Beginning**: When using Ultimate, the DMG multiplier for immediately triggering DoT increases by 50%.
+- **E1 Eidolon 1**: Effect for Eidolon 1.
+- **E2 Eidolon 2**: Effect for Eidolon 2.
+- **E3 Eidolon 3**: Effect for Eidolon 3.
+- **E4 Eidolon 4**: Effect for Eidolon 4.
+- **E5 Eidolon 5**: Effect for Eidolon 5.
+- **E6 Eidolon 6**: Effect for Eidolon 6.
 
 ## Base Stats (Level 80)
-- HP: 1590
-- ATK: 890
-- DEF: 590
+- HP: undefined
+- ATK: undefined
+- DEF: undefined
 - SPD: 100
 
 ## Materials
 ### Ascension Materials
-- Extinguished Core: 15
-- Glimmering Core: 15
-- Squirming Core: 15
-- Lightning Crown of the Past Shadow: 65
-- Traveler's Guide: 308
-- Credit: 308,000
+
 
 ### Trace Materials
-- Obsidian of Desolation: 18
-- Obsidian of Dread: 69
-- Obsidian of Obsession: 139
-- Destroyer's Final Road: 12
-- Tracks of Destiny: 8
-- Credit: 3,000,000
+
 
 --- KEYWORDS ---
 ## Main Keyword
 Kafka Build
 
 ## Secondary Keywords
-Kafka Best Build, Kafka Relics, Kafka Light Cone, Kafka Team, Kafka Guide, Honkai Star Rail Kafka, HSR Kafka, Kafka DoT, Kafka Nihility, Kafka Best Team
+Kafka Best Build, Kafka Relics, Kafka Light Cone, Kafka Team, Kafka Guide, Honkai Star Rail Kafka, HSR Kafka, Kafka Nihility, Kafka Best Team, Kafka Lightning
 
 ## Long-Tail FAQs (use these for FAQ section)
 1. What is the best build for Kafka in HSR?
@@ -132,5 +226,5 @@ Kafka Best Build, Kafka Relics, Kafka Light Cone, Kafka Team, Kafka Guide, Honka
 6. What does Kafka scale with in HSR?
 7. Is Kafka a DPS or support?
 8. What is Kafka's best F2P light cone?
-9. How to build Kafka for DoT team?
+9. How to build Kafka for maximum damage?
 10. Is Kafka worth pulling in 2026?

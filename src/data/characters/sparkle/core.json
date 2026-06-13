@@ -1,0 +1,18 @@
+{
+  "id": "sparkle",
+  "name": "花火",
+  "nameEn": "Sparkle",
+  "rarity": 5,
+  "element": "Quantum",
+  "path": "Harmony",
+  "faction": "Masked Fools",
+  "releaseVersion": "2.0",
+  "releaseDate": "",
+  "description": "Sparkle is a 5-star Quantum character following the Path of Harmony.",
+  "role": "Support",
+  "tags": [
+    "Support",
+    "Buffer",
+    "Entanglement"
+  ]
+}

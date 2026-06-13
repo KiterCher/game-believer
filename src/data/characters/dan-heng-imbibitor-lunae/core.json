@@ -1,0 +1,18 @@
+{
+  "id": "dan-heng-imbibitor-lunae",
+  "name": "丹恒·饮月",
+  "nameEn": "Dan Heng • Imbibitor Lunae",
+  "rarity": 5,
+  "element": "Imaginary",
+  "path": "Destruction",
+  "faction": "Train Crew",
+  "releaseVersion": "1.3",
+  "releaseDate": "",
+  "description": "Dan Heng • Imbibitor Lunae is a 5-star Imaginary character following the Path of Destruction.",
+  "role": "DPS",
+  "tags": [
+    "DPS",
+    "AoE",
+    "Imprisonment"
+  ]
+}

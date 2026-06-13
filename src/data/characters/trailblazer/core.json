@@ -1,0 +1,18 @@
+{
+  "id": "trailblazer",
+  "name": "开拓者",
+  "nameEn": "Trailblazer",
+  "rarity": 4,
+  "element": "Physical",
+  "path": "Destruction",
+  "faction": "Astral Express",
+  "releaseVersion": "1.0",
+  "releaseDate": "",
+  "description": "Trailblazer is a 4-star Physical character following the Path of Destruction.",
+  "role": "DPS",
+  "tags": [
+    "DPS",
+    "AoE",
+    "Bleed"
+  ]
+}

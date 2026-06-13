@@ -1,18 +1,4 @@
 {
-  "ascension": [
-    { "name": "Extinguished Core", "amount": 15 },
-    { "name": "Glimmering Core", "amount": 15 },
-    { "name": "Squirming Core", "amount": 15 },
-    { "name": "Raging Heart", "amount": 65 },
-    { "name": "Traveler's Guide", "amount": 308 },
-    { "name": "Credit", "amount": "308,000" }
-  ],
-  "traces": [
-    { "name": "Endurance of Bronze", "amount": 18 },
-    { "name": "Oath of Steel", "amount": 69 },
-    { "name": "Safeguard of Amber", "amount": 139 },
-    { "name": "Lost Echo of the Shared Wish", "amount": 12 },
-    { "name": "Tracks of Destiny", "amount": 8 },
-    { "name": "Credit", "amount": "3,000,000" }
-  ]
+  "ascension": [],
+  "traces": []
 }

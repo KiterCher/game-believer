@@ -1,0 +1,18 @@
+{
+  "id": "black-swans",
+  "name": "黑天鹅",
+  "nameEn": "Black Swan",
+  "rarity": 5,
+  "element": "Wind",
+  "path": "Nihility",
+  "faction": "Garden of Recollection",
+  "releaseVersion": "2.0",
+  "releaseDate": "",
+  "description": "Black Swan is a 5-star Wind character following the Path of Nihility.",
+  "role": "Debuffer/Sub-DPS",
+  "tags": [
+    "Debuff",
+    "DoT",
+    "Wind Shear"
+  ]
+}

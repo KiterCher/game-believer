@@ -1,0 +1,18 @@
+{
+  "id": "jing-yuan",
+  "name": "景元",
+  "nameEn": "Jing Yuan",
+  "rarity": 5,
+  "element": "Lightning",
+  "path": "Erudition",
+  "faction": "Luocha",
+  "releaseVersion": "1.0",
+  "releaseDate": "",
+  "description": "Jing Yuan is a 5-star Lightning character following the Path of Erudition.",
+  "role": "AoE DPS",
+  "tags": [
+    "AoE",
+    "DoT",
+    "Shock"
+  ]
+}

@@ -2,33 +2,33 @@
   "eidolons": [
     {
       "level": 1,
-      "name": "Recitatif of Crepuscule",
-      "description": "When an enemy target with Shock is attacked by Kafka, the target's Shock status immediately deals 1 instance of DMG equal to 30% of the original DMG."
+      "name": "Eidolon 1",
+      "description": "Effect for Eidolon 1."
     },
     {
       "level": 2,
-      "name": "Recitatif of Fishes",
-      "description": "When an ally is attacked, Kafka has a 100% base chance to inflict Shock on the attacker for 2 turns. This effect can only trigger 1 time per turn."
+      "name": "Eidolon 2",
+      "description": "Effect for Eidolon 2."
     },
     {
       "level": 3,
-      "name": "Recitatif of Cocoons",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+      "name": "Eidolon 3",
+      "description": "Effect for Eidolon 3."
     },
     {
       "level": 4,
-      "name": "Recitatif of Something",
-      "description": "When Kafka's Talent triggers a follow-up attack, there is a 100% base chance to inflict Shock on the enemy for 2 turns."
+      "name": "Eidolon 4",
+      "description": "Effect for Eidolon 4."
     },
     {
       "level": 5,
-      "name": "Recitatif of Birds",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+      "name": "Eidolon 5",
+      "description": "Effect for Eidolon 5."
     },
     {
       "level": 6,
-      "name": "Recitatif of the Beginning",
-      "description": "When using Ultimate, the DMG multiplier for immediately triggering DoT increases by 50%."
+      "name": "Eidolon 6",
+      "description": "Effect for Eidolon 6."
     }
   ]
 }

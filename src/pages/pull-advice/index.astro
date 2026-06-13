@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+
+const pullAdvice = await getCollection('pull-advice');
+---
+
+<BaseLayout title="Pull Advice | GameBeliever" description="Get expert pull recommendations for Honkai Star Rail banners. Know which characters are worth your Stellar Jade.">
+  <Navbar />
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- Page Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Pull Advice</h1>
+      <p class="text-[#999] text-lg">Expert recommendations on which characters are worth pulling for.</p>
+    </div>
+
+    <!-- Pull Advice Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {pullAdvice.map(advice => (
+        <a href={`/pull-advice/${advice.id}`} class="block group">
+          <div class="bg-[#1a1a1a] rounded-xl p-6 border border-[#333] hover:border-[#E53935] transition-all duration-300 hover:shadow-[0_0_20px_rgba(229,57,53,0.3)]">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-3xl">🎰</span>
+              <div>
+                <h3 class="text-white font-bold text-lg group-hover:text-[#E53935] transition-colors">
+                  {advice.data.character}
+                </h3>
+                <p class="text-[#999] text-sm">Pull Guide</p>
+              </div>
+            </div>
+            <p class="text-[#999] text-sm line-clamp-2">{advice.data.description}</p>
+            <div class="mt-4 text-xs text-[#666]">Updated: {advice.data.updatedAt}</div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {/* Empty state */}
+    {pullAdvice.length === 0 && (
+      <div class="text-center py-16">
+        <div class="text-6xl mb-4">🎰</div>
+        <h2 class="text-2xl font-bold text-white mb-2">No Pull Advice Yet</h2>
+        <p class="text-[#999]">Pull recommendation guides will appear here once generated.</p>
+      </div>
+    )}
+  </main>
+
+  <Footer />
+</BaseLayout>

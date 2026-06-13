@@ -1,0 +1,59 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Characters', path: '/characters' },
+  { name: 'Builds', path: '/builds' },
+  { name: 'Teams', path: '/teams' },
+  { name: 'Pull Advice', path: '/pull-advice' },
+];
+---
+
+<nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2 group">
+        <span class="text-primary font-bold text-xl group-hover:text-red-400 transition-colors">🎮 GameBeliever</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-6">
+        {navItems.map(item => (
+          <a
+            href={item.path}
+            class={`text-sm font-medium transition-colors relative py-1 ${
+              currentPath === item.path || currentPath.startsWith(item.path + '/')
+                ? 'text-primary'
+                : 'text-gray-400 hover:text-white'
+            }`}
+          >
+            {item.name}
+            {currentPath === item.path || currentPath.startsWith(item.path + '/') ? (
+              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full"></span>
+            ) : null}
+          </a>
+        ))}
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Search characters..."
+            class="bg-dark-100 text-white text-sm rounded-full px-4 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 transition-all focus:w-64"
+          />
+          <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-gray-400 hover:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

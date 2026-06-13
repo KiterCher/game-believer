@@ -1,16 +1,27 @@
 {
   "baseStats": {
-    "hp": [168, 336, 504, 672, 840, 1008, 1176, 1344, 1512, 1680],
-    "atk": [85, 170, 255, 340, 425, 510, 595, 680, 765, 850],
-    "def": [62, 124, 186, 248, 310, 372, 434, 496, 558, 620],
-    "spd": 104
+    "hp": [
+      100,
+      200,
+      300,
+      400,
+      500
+    ],
+    "atk": [
+      50,
+      100,
+      150,
+      200,
+      250
+    ],
+    "def": [
+      30,
+      60,
+      90,
+      120,
+      150
+    ],
+    "spd": 100
   },
-  "ascensionStats": [
-    { "level": 1, "stat": "Break Effect", "value": "0%" },
-    { "level": 2, "stat": "Break Effect", "value": "5.3%" },
-    { "level": 3, "stat": "Break Effect", "value": "10.7%" },
-    { "level": 4, "stat": "Break Effect", "value": "16.0%" },
-    { "level": 5, "stat": "Break Effect", "value": "21.3%" },
-    { "level": 6, "stat": "Break Effect", "value": "26.7%" }
-  ]
+  "ascensionStats": []
 }

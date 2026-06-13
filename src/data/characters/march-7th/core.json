@@ -1,0 +1,18 @@
+{
+  "id": "march-7th",
+  "name": "三月七",
+  "nameEn": "March 7th",
+  "rarity": 4,
+  "element": "Ice",
+  "path": "Preservation",
+  "faction": "Astral Express",
+  "releaseVersion": "1.0",
+  "releaseDate": "",
+  "description": "March 7th is a 4-star Ice character following the Path of Preservation.",
+  "role": "Tank",
+  "tags": [
+    "Tank",
+    "Shield",
+    "Freeze"
+  ]
+}

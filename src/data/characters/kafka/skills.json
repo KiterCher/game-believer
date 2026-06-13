@@ -1,32 +1,28 @@
 {
   "basicAttack": {
-    "name": "Midnight Threnody",
+    "name": "Kafka's Basic Attack",
     "type": "Basic Attack",
-    "description": "Deals Lightning DMG equal to 50%~130% of Kafka's ATK to a single enemy.",
-    "multiplier": "50%~130% ATK"
+    "description": "Deals damage to a single enemy."
   },
   "skill": {
-    "name": "Caressing Moonlight",
+    "name": "Kafka's Skill",
     "type": "Skill",
-    "description": "Deals Lightning DMG equal to 80%~200% of Kafka's ATK to a single enemy and Lightning DMG equal to 30%~75% of Kafka's ATK to adjacent enemies. There is a 100% base chance to inflict Shock on the target and adjacent enemies for 2 turns.",
-    "multiplier": "80%~200% ATK (single) + 30%~75% ATK (adjacent)"
+    "description": "Deals damage to enemies."
   },
   "ultimate": {
-    "name": "Twilight Trill",
+    "name": "Kafka's Ultimate",
     "type": "Ultimate",
-    "description": "Deals Lightning DMG equal to 48%~120% of Kafka's ATK to all enemies. Immediately causes DoT effects on the target to deal 1 instance of DMG equal to 75%~100% of their original DMG.",
-    "energyCost": 120,
-    "multiplier": "48%~120% ATK (AoE)"
+    "description": "Deals massive damage to all enemies.",
+    "energyCost": 100
   },
   "talent": {
-    "name": "Gentle but Cruel",
+    "name": "Kafka's Talent",
     "type": "Talent",
-    "description": "After an ally uses Basic ATK on an enemy target, Kafka immediately launches a follow-up attack, dealing Lightning DMG equal to 42%~105% of Kafka's ATK to that enemy. This effect can only be triggered 1 time per turn.",
-    "multiplier": "42%~105% ATK"
+    "description": "Passive effect."
   },
   "technique": {
-    "name": "Mercy Is No Mercy",
+    "name": "Kafka's Technique",
     "type": "Technique",
-    "description": "Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to inflict Shock on all enemies for 3 turns."
+    "description": "Technique effect."
   }
 }

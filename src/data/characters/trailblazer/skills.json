@@ -1,0 +1,28 @@
+{
+  "basicAttack": {
+    "name": "Trailblazer's Basic Attack",
+    "type": "Basic Attack",
+    "description": "Deals damage to a single enemy."
+  },
+  "skill": {
+    "name": "Trailblazer's Skill",
+    "type": "Skill",
+    "description": "Deals damage to enemies."
+  },
+  "ultimate": {
+    "name": "Trailblazer's Ultimate",
+    "type": "Ultimate",
+    "description": "Deals massive damage to all enemies.",
+    "energyCost": 100
+  },
+  "talent": {
+    "name": "Trailblazer's Talent",
+    "type": "Talent",
+    "description": "Passive effect."
+  },
+  "technique": {
+    "name": "Trailblazer's Technique",
+    "type": "Technique",
+    "description": "Technique effect."
+  }
+}

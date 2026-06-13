@@ -1,0 +1,52 @@
+---
+export interface Props {
+  character: string;
+  currentPage: 'character' | 'build' | 'team' | 'pull-advice';
+}
+
+const { character, currentPage } = Astro.props;
+
+const charName = character.charAt(0).toUpperCase() + character.slice(1);
+
+const quickLinks = [
+  {
+    type: 'character',
+    href: `/characters/${character}`,
+    label: `${charName} Guide`,
+    active: currentPage === 'character',
+  },
+  {
+    type: 'build',
+    href: `/builds/${character}`,
+    label: `${charName} Build`,
+    active: currentPage === 'build',
+  },
+  {
+    type: 'team',
+    href: `/teams/${character}`,
+    label: `${charName} Teams`,
+    active: currentPage === 'team',
+  },
+  {
+    type: 'pull-advice',
+    href: `/pull-advice/${character}`,
+    label: `Pull ${charName}?`,
+    active: currentPage === 'pull-advice',
+  },
+];
+---
+
+<div class="flex flex-wrap gap-2 mb-6">
+  {quickLinks.map(link => (
+    <a
+      href={link.href}
+      class={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+        link.active
+          ? 'bg-primary text-white'
+          : 'bg-dark-100 text-gray-400 hover:bg-dark-200 hover:text-white border border-gray-700'
+      }`}
+    >
+      {link.label}
+    </a>
+  ))}
+</div>

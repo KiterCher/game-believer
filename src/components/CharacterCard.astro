@@ -1,0 +1,75 @@
+---
+export interface Props {
+  name: string;
+  slug: string;
+  rarity: number;
+  element: string;
+  path: string;
+  image?: string;
+}
+
+const { name, slug, rarity, element, path, image } = Astro.props;
+
+const elementColors: Record<string, string> = {
+  Physical: 'bg-gray-200 text-black',
+  Fire: 'bg-orange-500 text-white',
+  Ice: 'bg-sky-400 text-white',
+  Lightning: 'bg-yellow-400 text-black',
+  Wind: 'bg-green-400 text-black',
+  Quantum: 'bg-purple-500 text-white',
+  Imaginary: 'bg-orange-400 text-black',
+};
+
+const elementIcons: Record<string, string> = {
+  Physical: '/images/elements/physical.svg',
+  Fire: '/images/elements/fire.svg',
+  Ice: '/images/elements/ice.svg',
+  Lightning: '/images/elements/lightning.svg',
+  Wind: '/images/elements/wind.svg',
+  Quantum: '/images/elements/quantum.svg',
+  Imaginary: '/images/elements/imaginary.svg',
+};
+
+const pathIcons: Record<string, string> = {
+  Destruction: '/images/paths/destruction.svg',
+  Hunt: '/images/paths/hunt.svg',
+  Erudition: '/images/paths/erudition.svg',
+  Harmony: '/images/paths/harmony.svg',
+  Nihility: '/images/paths/nihility.svg',
+  Preservation: '/images/paths/preservation.svg',
+  Abundance: '/images/paths/abundance.svg',
+};
+
+const rarityStars = '★'.repeat(rarity);
+
+// 角色头像占位符（使用首字母）
+const initials = name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
+---
+
+<a href={`/characters/${slug}`} class="block group">
+  <div class="card card-hover overflow-hidden">
+    <div class="relative">
+      <div class="aspect-[3/4] bg-gradient-to-b from-dark-100 to-dark-200 flex items-center justify-center">
+        {image ? (
+          <img src={image} alt={name} class="w-full h-full object-cover" />
+        ) : (
+          <div class="text-4xl font-bold text-gray-600 opacity-30 group-hover:opacity-50 transition-opacity">
+            {initials}
+          </div>
+        )}
+      </div>
+      <!-- 元素图标 -->
+      <div class="absolute top-2 left-2 w-8 h-8 rounded-full bg-dark-300/80 flex items-center justify-center">
+        <img src={elementIcons[element]} alt={element} class="w-5 h-5" />
+      </div>
+      <!-- 命途图标 -->
+      <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-dark-300/80 flex items-center justify-center">
+        <img src={pathIcons[path]} alt={path} class="w-5 h-5" />
+      </div>
+    </div>
+    <div class="p-4">
+      <h3 class="text-white font-bold text-lg group-hover:text-primary transition-colors">{name}</h3>
+      <p class="text-yellow-400 text-sm mt-1">{rarityStars}</p>
+    </div>
+  </div>
+</a>

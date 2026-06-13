@@ -1,0 +1,18 @@
+{
+  "id": "blade",
+  "name": "刃",
+  "nameEn": "Blade",
+  "rarity": 5,
+  "element": "Wind",
+  "path": "Destruction",
+  "faction": "Stellaron Hunter",
+  "releaseVersion": "1.2",
+  "releaseDate": "",
+  "description": "Blade is a 5-star Wind character following the Path of Destruction.",
+  "role": "DPS",
+  "tags": [
+    "DPS",
+    "AoE",
+    "Wind Shear"
+  ]
+}

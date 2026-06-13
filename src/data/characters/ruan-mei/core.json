@@ -1,0 +1,18 @@
+{
+  "id": "ruan-mei",
+  "name": "阮·梅",
+  "nameEn": "Ruan Mei",
+  "rarity": 5,
+  "element": "Ice",
+  "path": "Harmony",
+  "faction": "Divination Commission",
+  "releaseVersion": "1.6",
+  "releaseDate": "",
+  "description": "Ruan Mei is a 5-star Ice character following the Path of Harmony.",
+  "role": "Support",
+  "tags": [
+    "Support",
+    "Buffer",
+    "Freeze"
+  ]
+}

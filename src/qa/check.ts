@@ -28,8 +28,8 @@ function countH2s(content: string): number {
 }
 
 function countFAQs(content: string): number {
-  // Count questions in FAQ section
-  const faqMatch = content.match(/##\s*FAQ[\s\S]*/i);
+  // Count questions in FAQ section (supports ## FAQ, ## H2: FAQ, **H2: FAQ**, ## Frequently Asked Questions, etc.)
+  const faqMatch = content.match(/(?:##\s*(?:H2:\s*)?(?:FAQ|Frequently Asked Questions)|\*\*H2:\s*FAQ\*\*)[\s\S]*/i);
   if (!faqMatch) return 0;
 
   const faqSection = faqMatch[0];
@@ -39,8 +39,19 @@ function countFAQs(content: string): number {
   for (const line of lines) {
     const trimmed = line.trim();
     // Match lines that look like questions (contain ? and are in FAQ section)
-    if (trimmed.includes('?') && !trimmed.startsWith('A:')) {
-      count++;
+    // Support formats: ### Q: ..., ### 1. ..., **1. Question?**, - Q: ..., * Q: ...
+    if (trimmed.includes('?') && !trimmed.startsWith('A:') && !trimmed.startsWith('**A:')) {
+      // Check if it's a question line
+      if (
+        trimmed.match(/^#{2,3}\s/) ||           // ### Q: ... or ## FAQ
+        trimmed.match(/^\d+\.\s/) ||            // 1. Question?
+        trimmed.match(/^\*\*\d+\.\s/) ||        // **1. Question?**
+        trimmed.match(/^\*\*Q\d*[:.]\s*/) ||    // **Q1:** or **Q:**
+        trimmed.includes('Q:') ||
+        trimmed.includes('Q :')
+      ) {
+        count++;
+      }
     }
   }
   return count;

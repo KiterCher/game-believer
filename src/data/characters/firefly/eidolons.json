@@ -2,33 +2,33 @@
   "eidolons": [
     {
       "level": 1,
-      "name": "Inflammable",
-      "description": "When Firefly enters Complete Combustion state, her ATK increases by 30% for 3 turns."
+      "name": "Eidolon 1",
+      "description": "Effect for Eidolon 1."
     },
     {
       "level": 2,
-      "name": "Self-Combustion",
-      "description": "When Firefly's current HP drops below 50%, she gains 1 extra turn. This effect can only trigger 1 time per battle."
+      "name": "Eidolon 2",
+      "description": "Effect for Eidolon 2."
     },
     {
       "level": 3,
-      "name": "Cauterization",
-      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+      "name": "Eidolon 3",
+      "description": "Effect for Eidolon 3."
     },
     {
       "level": 4,
-      "name": "Melting Point",
-      "description": "When Firefly is in Complete Combustion state, her Weakness Break Efficiency increases by 30%."
+      "name": "Eidolon 4",
+      "description": "Effect for Eidolon 4."
     },
     {
       "level": 5,
-      "name": "Flashover",
-      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+      "name": "Eidolon 5",
+      "description": "Effect for Eidolon 5."
     },
     {
       "level": 6,
-      "name": "Super Nova",
-      "description": "When Firefly uses Enhanced Skill, she ignores 20% of enemy DEF. Additionally, if the enemy is Weakness Broken, the damage of Enhanced Skill increases by 50%."
+      "name": "Eidolon 6",
+      "description": "Effect for Eidolon 6."
     }
   ]
 }

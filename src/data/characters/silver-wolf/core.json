@@ -1,0 +1,18 @@
+{
+  "id": "silver-wolf",
+  "name": "银狼",
+  "nameEn": "Silver Wolf",
+  "rarity": 5,
+  "element": "Quantum",
+  "path": "Nihility",
+  "faction": "Stellaron Hunter",
+  "releaseVersion": "1.1",
+  "releaseDate": "",
+  "description": "Silver Wolf is a 5-star Quantum character following the Path of Nihility.",
+  "role": "Debuffer/Sub-DPS",
+  "tags": [
+    "Debuff",
+    "DoT",
+    "Entanglement"
+  ]
+}

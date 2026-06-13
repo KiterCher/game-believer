@@ -1,0 +1,171 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import QuickNav from '../../components/QuickNav.astro';
+import InternalLinks from '../../components/InternalLinks.astro';
+
+export async function getStaticPaths() {
+  const teams = await getCollection('teams');
+  return teams.map(team => ({
+    params: { slug: team.id },
+    props: { team },
+  }));
+}
+
+const { team } = Astro.props;
+const { Content, headings } = await render(team);
+---
+
+<BaseLayout title={team.data.title} description={team.data.description}>
+  <Navbar />
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- Quick Navigation -->
+    <QuickNav character={team.id} currentPage="team" />
+
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Main Content -->
+      <article class="flex-1 min-w-0">
+        <!-- Breadcrumb -->
+        <Breadcrumbs items={[
+          { label: 'Teams', href: '/teams' },
+          { label: team.data.character },
+        ]} />
+
+        <!-- Article Header -->
+        <header class="mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            {team.data.title}
+          </h1>
+          <p class="text-[#999] text-lg mb-4">{team.data.description}</p>
+          <div class="flex items-center gap-4 text-sm text-[#666]">
+            <span>Last updated: {team.data.updatedAt}</span>
+          </div>
+        </header>
+
+        <!-- Internal Links -->
+        <InternalLinks character={team.id} currentPage="team" />
+
+        <!-- Article Content -->
+        <div class="prose prose-invert max-w-none">
+          <Content />
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="w-full lg:w-72 flex-shrink-0">
+        <div class="space-y-6">
+          <TableOfContents headings={headings} />
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .prose {
+    --tw-prose-body: #ccc;
+    --tw-prose-headings: #fff;
+    --tw-prose-links: #E53935;
+    --tw-prose-bold: #fff;
+    --tw-prose-counters: #999;
+    --tw-prose-bullets: #E53935;
+    --tw-prose-hr: #333;
+    --tw-prose-quotes: #999;
+    --tw-prose-quote-borders: #E53935;
+    --tw-prose-code: #00E5FF;
+    --tw-prose-pre-code: #ccc;
+    --tw-prose-pre-bg: #1a1a1a;
+    --tw-prose-th-borders: #333;
+    --tw-prose-td-borders: #333;
+  }
+
+  .prose h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+  }
+
+  .prose h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .prose ul, .prose ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .prose a:hover {
+    color: #ff6b35;
+  }
+
+  .prose strong {
+    color: #fff;
+  }
+
+  .prose blockquote {
+    border-left: 4px solid #E53935;
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+    color: #999;
+  }
+
+  .prose code {
+    background-color: #2a2a2a;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .prose pre {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+
+  .prose th {
+    background-color: #2a2a2a;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #333;
+  }
+
+  .prose td {
+    padding: 0.75rem;
+    border: 1px solid #333;
+  }
+</style>

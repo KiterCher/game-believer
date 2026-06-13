@@ -2,32 +2,35 @@
   "majorTraces": [
     {
       "id": "trace1",
-      "name": "Plunder",
-      "description": "If an enemy target is currently receiving DoT, when Kafka's Skill hits this enemy, she deals additional Lightning DMG equal to 25% of her ATK to this enemy.",
+      "name": "Major Trace 1",
+      "description": "Unlock at A2.",
       "unlockLevel": "A2"
     },
     {
       "id": "trace2",
-      "name": "Fortissimo",
-      "description": "When using her Ultimate, Kafka's ATK increases by 30% for 2 turns.",
+      "name": "Major Trace 2",
+      "description": "Unlock at A4.",
       "unlockLevel": "A4"
     },
     {
       "id": "trace3",
-      "name": "Tick-Tock",
-      "description": "When entering battle, if there are teammates following the Path of Nihility, Kafka's DMG increases by 30% for each Nihility teammate (up to 2).",
+      "name": "Major Trace 3",
+      "description": "Unlock at A6.",
       "unlockLevel": "A6"
     }
   ],
   "minorTraces": [
-    { "type": "ATK%", "value": "28%" },
-    { "type": "ATK%", "value": "28%" },
-    { "type": "HP%", "value": "18%" },
-    { "type": "ATK%", "value": "28%" },
-    { "type": "DEF%", "value": "12.5%" },
-    { "type": "SPD", "value": "5" },
-    { "type": "ATK%", "value": "28%" },
-    { "type": "HP%", "value": "18%" },
-    { "type": "ATK%", "value": "28%" }
+    {
+      "type": "ATK%",
+      "value": "28%"
+    },
+    {
+      "type": "HP%",
+      "value": "18%"
+    },
+    {
+      "type": "DEF%",
+      "value": "12.5%"
+    }
   ]
 }

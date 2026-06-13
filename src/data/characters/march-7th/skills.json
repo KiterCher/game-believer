@@ -1,0 +1,28 @@
+{
+  "basicAttack": {
+    "name": "March 7th's Basic Attack",
+    "type": "Basic Attack",
+    "description": "Deals damage to a single enemy."
+  },
+  "skill": {
+    "name": "March 7th's Skill",
+    "type": "Skill",
+    "description": "Deals damage to enemies."
+  },
+  "ultimate": {
+    "name": "March 7th's Ultimate",
+    "type": "Ultimate",
+    "description": "Deals massive damage to all enemies.",
+    "energyCost": 100
+  },
+  "talent": {
+    "name": "March 7th's Talent",
+    "type": "Talent",
+    "description": "Passive effect."
+  },
+  "technique": {
+    "name": "March 7th's Technique",
+    "type": "Technique",
+    "description": "Technique effect."
+  }
+}

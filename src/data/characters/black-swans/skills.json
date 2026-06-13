@@ -1,0 +1,28 @@
+{
+  "basicAttack": {
+    "name": "Black Swan's Basic Attack",
+    "type": "Basic Attack",
+    "description": "Deals damage to a single enemy."
+  },
+  "skill": {
+    "name": "Black Swan's Skill",
+    "type": "Skill",
+    "description": "Deals damage to enemies."
+  },
+  "ultimate": {
+    "name": "Black Swan's Ultimate",
+    "type": "Ultimate",
+    "description": "Deals massive damage to all enemies.",
+    "energyCost": 100
+  },
+  "talent": {
+    "name": "Black Swan's Talent",
+    "type": "Talent",
+    "description": "Passive effect."
+  },
+  "technique": {
+    "name": "Black Swan's Technique",
+    "type": "Technique",
+    "description": "Technique effect."
+  }
+}

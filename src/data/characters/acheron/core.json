@@ -1,14 +1,18 @@
 {
   "id": "acheron",
-  "name": "Acheron",
+  "name": "黄泉",
   "nameEn": "Acheron",
   "rarity": 5,
   "element": "Lightning",
   "path": "Nihility",
   "faction": "Galaxy Ranger",
   "releaseVersion": "2.1",
-  "releaseDate": "2024-03-27",
-  "description": "Acheron is a 5-star Lightning character following the Path of Nihility. She is a mysterious Galaxy Ranger who wields a sword and excels as a hypercarry DPS with unique Slash mechanics that bypass enemy defenses.",
-  "role": "Hypercarry DPS",
-  "tags": ["Hypercarry", "Slash", "AoE", "Defense Ignore"]
+  "releaseDate": "",
+  "description": "Acheron is a 5-star Lightning character following the Path of Nihility.",
+  "role": "Debuffer/Sub-DPS",
+  "tags": [
+    "Debuff",
+    "DoT",
+    "Shock"
+  ]
 }

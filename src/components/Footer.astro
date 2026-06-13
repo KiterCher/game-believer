@@ -1,0 +1,37 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-[#111] border-t border-[#333] mt-auto">
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold text-lg mb-4">🎮 GameBeliever</h3>
+        <p class="text-[#999] text-sm">Your ultimate gaming guide platform for Honkai Star Rail and more.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="/characters" class="text-[#999] hover:text-white text-sm transition-colors">Characters</a></li>
+          <li><a href="/builds" class="text-[#999] hover:text-white text-sm transition-colors">Builds</a></li>
+          <li><a href="/teams" class="text-[#999] hover:text-white text-sm transition-colors">Teams</a></li>
+          <li><a href="/pull-advice" class="text-[#999] hover:text-white text-sm transition-colors">Pull Advice</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+        <div class="flex gap-4">
+          <a href="#" class="text-[#999] hover:text-[#E53935] transition-colors">Twitter</a>
+          <a href="#" class="text-[#999] hover:text-[#E53935] transition-colors">Discord</a>
+          <a href="#" class="text-[#999] hover:text-[#E53935] transition-colors">Reddit</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-[#333] mt-8 pt-8 text-center">
+      <p class="text-[#666] text-sm">© {currentYear} GameBeliever. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

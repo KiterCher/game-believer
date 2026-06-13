@@ -1,0 +1,18 @@
+{
+  "id": "boothill",
+  "name": "波提欧",
+  "nameEn": "Boothill",
+  "rarity": 5,
+  "element": "Physical",
+  "path": "Hunt",
+  "faction": "Galaxy Ranger",
+  "releaseVersion": "2.2",
+  "releaseDate": "",
+  "description": "Boothill is a 5-star Physical character following the Path of Hunt.",
+  "role": "Single-Target DPS",
+  "tags": [
+    "Single-Target",
+    "Burst",
+    "Bleed"
+  ]
+}

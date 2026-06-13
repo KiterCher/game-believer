@@ -1,0 +1,18 @@
+{
+  "id": "seele",
+  "name": "希儿",
+  "nameEn": "Seele",
+  "rarity": 5,
+  "element": "Quantum",
+  "path": "Hunt",
+  "faction": "Wildfire",
+  "releaseVersion": "1.0",
+  "releaseDate": "",
+  "description": "Seele is a 5-star Quantum character following the Path of Hunt.",
+  "role": "Single-Target DPS",
+  "tags": [
+    "Single-Target",
+    "Burst",
+    "Entanglement"
+  ]
+}
