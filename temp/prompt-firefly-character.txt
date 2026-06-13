@@ -1,0 +1,131 @@
+# Role
+You are an expert Honkai Star Rail content writer for GameBeliever.com.
+
+# Task
+Write a detailed character guide based on the JSON data below.
+
+# Requirements
+- Language: English (US spelling)
+- Tone: Professional, informative, SEO-optimized
+- Min words: 800~1200
+- FAQ count: 5~8 questions (from longTailFAQs)
+- Internal links: ≥ 5 links to related pages on gamebeliever.com
+- Include meta description: 120~160 characters
+
+# Structure
+## H1: Firefly Guide — Best Builds, Teams & More | GameBeliever
+
+## H2: {Character Name} Overview
+- Rarity, Element, Path, Release Version
+- Role in the meta
+- 2~3 key strengths and weaknesses
+
+## H2: {Character Name} Skills Breakdown
+- Basic Attack, Skill, Ultimate, Talent, Technique
+- Each skill: name + brief description + tactical use
+
+## H2: Best Build for {Character Name}
+- Brief intro: link to full build page /builds/Firefly-general-build
+
+## H2: Best Team Compositions for {Character Name}
+- 2~3 team recommendations with synergy notes
+- Link to full team pages
+
+## H2: Ascension & Trace Materials
+- Material list with quantities
+- Link to farming guides
+
+## H2: FAQ
+- 5~8 questions from the longTailFAQs array
+
+# Keyword Requirements
+- H1 MUST contain: Firefly Build
+- At least 3 H2s must contain words from: Firefly Best Build, Firefly Relics, Firefly Light Cone, Firefly Team, Firefly Guide, Honkai Star Rail Firefly, HSR Firefly, Firefly Break Effect, Firefly Destruction, Firefly Best Team
+- Body text must mention {mainKeyword} at least 3 times
+- {secondaryKeywords} coverage must be ≥ 60%
+
+--- DATA INPUT ---
+## Character Basic Info
+- Name: Firefly
+- Rarity: 5★
+- Element: Fire
+- Path: Destruction
+- Faction: Stellaron Hunter
+- Role: Break DPS
+- Release Version: 2.3
+- Tags: Break Effect, Enhanced State, AoE, Fire
+
+## Description
+Firefly is a 5-star Fire character following the Path of Destruction. She is a member of the Stellaron Hunters who pilots the mecha SAM and excels as a Break Effect DPS with enhanced state mechanics.
+
+## Skills
+### Basic Attack: Order: Flare Propulsion
+Deals Fire DMG equal to 50%~130% of Firefly's ATK to a single enemy.
+
+### Skill: Order: Aerial Bombardment
+Consumes 40% of Firefly's current HP. Deals Fire DMG equal to 100%~250% of Firefly's ATK to a single enemy and adjacent enemies. If current HP is insufficient, HP drops to 1 instead.
+
+### Ultimate: Fyrefly Type-IV: Complete Combustion
+Enters Complete Combustion state for 3 turns. In this state, Firefly's SPD increases by 50, her Skill becomes Enhanced Skill, and her Basic ATK becomes Enhanced Basic ATK. When entering Complete Combustion, immediately takes action.
+Energy Cost: 240
+
+### Talent: Chrysalid Pyron
+When Firefly's current HP percentage is 50% or lower, her Break Effect increases by 50%~125%. After using Enhanced Skill, if the enemy is Weakness Broken, deals additional Fire DMG equal to a percentage of Firefly's Break Effect.
+
+### Technique: Order: Meteoric Incineration
+After using Technique, Firefly enters battle with 50% of her Max HP consumed and immediately enters Complete Combustion state for 3 turns.
+
+## Major Traces
+- **Heat Vent** (A2): When Firefly is in Complete Combustion state, her CRIT Rate increases by 15% and CRIT DMG increases by 30%.
+- **Molten Core** (A4): When Firefly's current HP is 50% or lower, her DMG increases by 40%.
+- **Fuel Injection** (A6): After entering Complete Combustion state, Firefly's Weakness Break Efficiency increases by 50% for 3 turns.
+
+## Eidolons
+- **E1 Inflammable**: When Firefly enters Complete Combustion state, her ATK increases by 30% for 3 turns.
+- **E2 Self-Combustion**: When Firefly's current HP drops below 50%, she gains 1 extra turn. This effect can only trigger 1 time per battle.
+- **E3 Cauterization**: Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10.
+- **E4 Melting Point**: When Firefly is in Complete Combustion state, her Weakness Break Efficiency increases by 30%.
+- **E5 Flashover**: Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15.
+- **E6 Super Nova**: When Firefly uses Enhanced Skill, she ignores 20% of enemy DEF. Additionally, if the enemy is Weakness Broken, the damage of Enhanced Skill increases by 50%.
+
+## Base Stats (Level 80)
+- HP: 1680
+- ATK: 850
+- DEF: 620
+- SPD: 104
+
+## Materials
+### Ascension Materials
+- Extinguished Core: 15
+- Glimmering Core: 15
+- Squirming Core: 15
+- Raging Heart: 65
+- Traveler's Guide: 308
+- Credit: 308,000
+
+### Trace Materials
+- Endurance of Bronze: 18
+- Oath of Steel: 69
+- Safeguard of Amber: 139
+- Lost Echo of the Shared Wish: 12
+- Tracks of Destiny: 8
+- Credit: 3,000,000
+
+--- KEYWORDS ---
+## Main Keyword
+Firefly Build
+
+## Secondary Keywords
+Firefly Best Build, Firefly Relics, Firefly Light Cone, Firefly Team, Firefly Guide, Honkai Star Rail Firefly, HSR Firefly, Firefly Break Effect, Firefly Destruction, Firefly Best Team
+
+## Long-Tail FAQs (use these for FAQ section)
+1. What is the best build for Firefly in HSR?
+2. What relics should I use for Firefly?
+3. What is Firefly's best light cone?
+4. What team is best for Firefly?
+5. Is Firefly good in Honkai Star Rail?
+6. What does Firefly scale with in HSR?
+7. Is Firefly a DPS or support?
+8. What is Firefly's best F2P light cone?
+9. How to build Firefly for Break Effect?
+10. Is Firefly worth pulling in 2026?

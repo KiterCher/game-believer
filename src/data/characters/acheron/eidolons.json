@@ -1,0 +1,34 @@
+{
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Lone Star",
+      "description": "When battle starts, Acheron gains 1 point of Slashed Dream. When Acheron's Slashed Dream is at maximum, her CRIT Rate increases by 15%."
+    },
+    {
+      "level": 2,
+      "name": "Mara",
+      "description": "When an ally uses an ability that inflicts debuff on an enemy, Acheron gains 1 additional point of Slashed Dream. This effect can only trigger 1 time per turn."
+    },
+    {
+      "level": 3,
+      "name": "Red Banner",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Crimson Plum",
+      "description": "When Acheron uses Ultimate, her ATK increases by 50% for 2 turns."
+    },
+    {
+      "level": 5,
+      "name": "Violet Spark",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Final Dream",
+      "description": "When Acheron uses Ultimate, she ignores 20% of enemy DEF. Additionally, each hit of Ultimate has a 50% fixed chance to remove 1 Crimson Knot from the enemy."
+    }
+  ]
+}

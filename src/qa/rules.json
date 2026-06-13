@@ -1,0 +1,54 @@
+{
+  "rules": {
+    "h1_exists": {
+      "enabled": true,
+      "severity": "error",
+      "description": "Content must have exactly one H1 heading"
+    },
+    "faq_count": {
+      "enabled": true,
+      "severity": "error",
+      "min": 5,
+      "max": 8,
+      "description": "FAQ section must have 5-8 questions"
+    },
+    "meta_description": {
+      "enabled": true,
+      "severity": "error",
+      "min_chars": 120,
+      "max_chars": 160,
+      "description": "Meta description must be 120-160 characters"
+    },
+    "word_count": {
+      "enabled": true,
+      "severity": "error",
+      "min": {
+        "character": 800,
+        "build": 800,
+        "team": 600,
+        "pull-advice": 800,
+        "faq": 300
+      },
+      "description": "Minimum word count based on content type"
+    },
+    "internal_links": {
+      "enabled": true,
+      "severity": "warning",
+      "min": 3,
+      "description": "At least 3 internal links to related pages"
+    },
+    "keyword_coverage": {
+      "enabled": true,
+      "severity": "error",
+      "mainKeyword_min": 3,
+      "secondary_coverage_pct": 50,
+      "description": "Main keyword must appear at least 3 times, 50% secondary keyword coverage"
+    },
+    "h2_structure": {
+      "enabled": true,
+      "severity": "warning",
+      "min": 4,
+      "description": "At least 4 H2 headings for good structure"
+    }
+  }
+}

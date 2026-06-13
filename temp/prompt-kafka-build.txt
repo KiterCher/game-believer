@@ -1,0 +1,136 @@
+# Role
+You are an expert HSR theorycrafter writing for GameBeliever.com.
+
+# Task
+Write a build guide based on the JSON data below.
+
+# Requirements
+- Language: English (US spelling)
+- Tone: Authoritative, data-backed, actionable
+- Min words: 800~1200
+- FAQ count: 5~8 questions
+- Internal links: ≥ 5 links to related pages
+
+# Structure
+## H1: Kafka Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+
+## H2: Best {Character Name} Build Overview
+- Role: DoT DPS / Sub-DPS | Element: Lightning | Path: Nihility
+- Build focus in 1~2 sentences
+
+## H2: Best Relics for {Character Name}
+- Primary set (4pc) with reasoning
+- Alternative sets (2pc+2pc)
+- Planar Ornaments recommendation
+- Link to /relics/{best-relic-slug}
+
+## H2: Best Light Cones for {Character Name}
+- Best-in-Slot Light Cone with explanation
+- F2P / Alternative options
+- Link to /lightcones/{best-cone-slug}
+
+## H2: Recommended Stats & Substats
+- Body / Feet / Sphere / Rope main stats
+- Substats priority order
+- Key stat thresholds (e.g., SPD breakpoint)
+
+## H2: Best Team Compositions
+- 2~3 team setups
+- Link to /teams/{team-slug}-team
+
+## H2: {Character Name} Pull Recommendation
+- Is Kafka worth pulling in current meta?
+- Link to /pull-advice/{char}
+
+## H2: FAQ
+- 5~8 questions from longTailFAQs
+
+# Keyword Requirements
+- H1 MUST contain: {char} build
+- At least 3 H2s must contain: best {char}, {char} relics, {char} light cone
+
+--- DATA INPUT ---
+## Character Basic Info
+- Name: Kafka
+- Rarity: 5★
+- Element: Lightning
+- Path: Nihility
+- Faction: Stellaron Hunter
+- Role: DoT DPS / Sub-DPS
+- Release Version: 1.2
+- Tags: DoT, Shock, Debuff, AoE
+
+## Description
+Kafka is a 5-star Lightning character following the Path of Nihility. She is a core member of the Stellaron Hunters and excels as a DoT (Damage over Time) specialist who can apply and detonate Shock effects on enemies.
+
+## Skills
+### Basic Attack: Midnight Threnody
+Deals Lightning DMG equal to 50%~130% of Kafka's ATK to a single enemy.
+
+### Skill: Caressing Moonlight
+Deals Lightning DMG equal to 80%~200% of Kafka's ATK to a single enemy and Lightning DMG equal to 30%~75% of Kafka's ATK to adjacent enemies. There is a 100% base chance to inflict Shock on the target and adjacent enemies for 2 turns.
+
+### Ultimate: Twilight Trill
+Deals Lightning DMG equal to 48%~120% of Kafka's ATK to all enemies. Immediately causes DoT effects on the target to deal 1 instance of DMG equal to 75%~100% of their original DMG.
+Energy Cost: 120
+
+### Talent: Gentle but Cruel
+After an ally uses Basic ATK on an enemy target, Kafka immediately launches a follow-up attack, dealing Lightning DMG equal to 42%~105% of Kafka's ATK to that enemy. This effect can only be triggered 1 time per turn.
+
+### Technique: Mercy Is No Mercy
+Immediately attacks the enemy. After entering battle, deals Lightning DMG equal to 50% of Kafka's ATK to all enemies, with a 100% base chance to inflict Shock on all enemies for 3 turns.
+
+## Major Traces
+- **Plunder** (A2): If an enemy target is currently receiving DoT, when Kafka's Skill hits this enemy, she deals additional Lightning DMG equal to 25% of her ATK to this enemy.
+- **Fortissimo** (A4): When using her Ultimate, Kafka's ATK increases by 30% for 2 turns.
+- **Tick-Tock** (A6): When entering battle, if there are teammates following the Path of Nihility, Kafka's DMG increases by 30% for each Nihility teammate (up to 2).
+
+## Eidolons
+- **E1 Recitatif of Crepuscule**: When an enemy target with Shock is attacked by Kafka, the target's Shock status immediately deals 1 instance of DMG equal to 30% of the original DMG.
+- **E2 Recitatif of Fishes**: When an ally is attacked, Kafka has a 100% base chance to inflict Shock on the attacker for 2 turns. This effect can only trigger 1 time per turn.
+- **E3 Recitatif of Cocoons**: Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10.
+- **E4 Recitatif of Something**: When Kafka's Talent triggers a follow-up attack, there is a 100% base chance to inflict Shock on the enemy for 2 turns.
+- **E5 Recitatif of Birds**: Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15.
+- **E6 Recitatif of the Beginning**: When using Ultimate, the DMG multiplier for immediately triggering DoT increases by 50%.
+
+## Base Stats (Level 80)
+- HP: 1590
+- ATK: 890
+- DEF: 590
+- SPD: 100
+
+## Materials
+### Ascension Materials
+- Extinguished Core: 15
+- Glimmering Core: 15
+- Squirming Core: 15
+- Lightning Crown of the Past Shadow: 65
+- Traveler's Guide: 308
+- Credit: 308,000
+
+### Trace Materials
+- Obsidian of Desolation: 18
+- Obsidian of Dread: 69
+- Obsidian of Obsession: 139
+- Destroyer's Final Road: 12
+- Tracks of Destiny: 8
+- Credit: 3,000,000
+
+--- KEYWORDS ---
+## Main Keyword
+Kafka Build
+
+## Secondary Keywords
+Kafka Best Build, Kafka Relics, Kafka Light Cone, Kafka Team, Kafka Guide, Honkai Star Rail Kafka, HSR Kafka, Kafka DoT, Kafka Nihility, Kafka Best Team
+
+## Long-Tail FAQs (use these for FAQ section)
+1. What is the best build for Kafka in HSR?
+2. What relics should I use for Kafka?
+3. What is Kafka's best light cone?
+4. What team is best for Kafka?
+5. Is Kafka good in Honkai Star Rail?
+6. What does Kafka scale with in HSR?
+7. Is Kafka a DPS or support?
+8. What is Kafka's best F2P light cone?
+9. How to build Kafka for DoT team?
+10. Is Kafka worth pulling in 2026?

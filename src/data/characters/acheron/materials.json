@@ -1,0 +1,18 @@
+{
+  "ascension": [
+    { "name": "Extinguished Core", "amount": 15 },
+    { "name": "Glimmering Core", "amount": 15 },
+    { "name": "Squirming Core", "amount": 15 },
+    { "name": "Shape Shifter's Lightning Staff", "amount": 65 },
+    { "name": "Traveler's Guide", "amount": 308 },
+    { "name": "Credit", "amount": "308,000" }
+  ],
+  "traces": [
+    { "name": "Obsidian of Desolation", "amount": 18 },
+    { "name": "Obsidian of Dread", "amount": 69 },
+    { "name": "Obsidian of Obsession", "amount": 139 },
+    { "name": "Past Evils of the Borehole Planet Disaster", "amount": 12 },
+    { "name": "Tracks of Destiny", "amount": 8 },
+    { "name": "Credit", "amount": "3,000,000" }
+  ]
+}

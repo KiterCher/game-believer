@@ -1,0 +1,34 @@
+{
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Recitatif of Crepuscule",
+      "description": "When an enemy target with Shock is attacked by Kafka, the target's Shock status immediately deals 1 instance of DMG equal to 30% of the original DMG."
+    },
+    {
+      "level": 2,
+      "name": "Recitatif of Fishes",
+      "description": "When an ally is attacked, Kafka has a 100% base chance to inflict Shock on the attacker for 2 turns. This effect can only trigger 1 time per turn."
+    },
+    {
+      "level": 3,
+      "name": "Recitatif of Cocoons",
+      "description": "Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10."
+    },
+    {
+      "level": 4,
+      "name": "Recitatif of Something",
+      "description": "When Kafka's Talent triggers a follow-up attack, there is a 100% base chance to inflict Shock on the enemy for 2 turns."
+    },
+    {
+      "level": 5,
+      "name": "Recitatif of Birds",
+      "description": "Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15."
+    },
+    {
+      "level": 6,
+      "name": "Recitatif of the Beginning",
+      "description": "When using Ultimate, the DMG multiplier for immediately triggering DoT increases by 50%."
+    }
+  ]
+}

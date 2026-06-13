@@ -1,0 +1,16 @@
+{
+  "baseStats": {
+    "hp": [162, 324, 486, 648, 810, 972, 1134, 1296, 1458, 1620],
+    "atk": [92, 184, 276, 368, 460, 552, 644, 736, 828, 920],
+    "def": [56, 112, 168, 224, 280, 336, 392, 448, 504, 560],
+    "spd": 101
+  },
+  "ascensionStats": [
+    { "level": 1, "stat": "CRIT Rate", "value": "0%" },
+    { "level": 2, "stat": "CRIT Rate", "value": "2.7%" },
+    { "level": 3, "stat": "CRIT Rate", "value": "5.3%" },
+    { "level": 4, "stat": "CRIT Rate", "value": "8.0%" },
+    { "level": 5, "stat": "CRIT Rate", "value": "10.7%" },
+    { "level": 6, "stat": "CRIT Rate", "value": "13.3%" }
+  ]
+}

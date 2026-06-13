@@ -1,0 +1,18 @@
+{
+  "ascension": [
+    { "name": "Extinguished Core", "amount": 15 },
+    { "name": "Glimmering Core", "amount": 15 },
+    { "name": "Squirming Core", "amount": 15 },
+    { "name": "Lightning Crown of the Past Shadow", "amount": 65 },
+    { "name": "Traveler's Guide", "amount": 308 },
+    { "name": "Credit", "amount": "308,000" }
+  ],
+  "traces": [
+    { "name": "Obsidian of Desolation", "amount": 18 },
+    { "name": "Obsidian of Dread", "amount": 69 },
+    { "name": "Obsidian of Obsession", "amount": 139 },
+    { "name": "Destroyer's Final Road", "amount": 12 },
+    { "name": "Tracks of Destiny", "amount": 8 },
+    { "name": "Credit", "amount": "3,000,000" }
+  ]
+}

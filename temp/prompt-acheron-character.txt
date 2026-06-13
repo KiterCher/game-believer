@@ -1,0 +1,131 @@
+# Role
+You are an expert Honkai Star Rail content writer for GameBeliever.com.
+
+# Task
+Write a detailed character guide based on the JSON data below.
+
+# Requirements
+- Language: English (US spelling)
+- Tone: Professional, informative, SEO-optimized
+- Min words: 800~1200
+- FAQ count: 5~8 questions (from longTailFAQs)
+- Internal links: ≥ 5 links to related pages on gamebeliever.com
+- Include meta description: 120~160 characters
+
+# Structure
+## H1: Acheron Guide — Best Builds, Teams & More | GameBeliever
+
+## H2: {Character Name} Overview
+- Rarity, Element, Path, Release Version
+- Role in the meta
+- 2~3 key strengths and weaknesses
+
+## H2: {Character Name} Skills Breakdown
+- Basic Attack, Skill, Ultimate, Talent, Technique
+- Each skill: name + brief description + tactical use
+
+## H2: Best Build for {Character Name}
+- Brief intro: link to full build page /builds/Acheron-general-build
+
+## H2: Best Team Compositions for {Character Name}
+- 2~3 team recommendations with synergy notes
+- Link to full team pages
+
+## H2: Ascension & Trace Materials
+- Material list with quantities
+- Link to farming guides
+
+## H2: FAQ
+- 5~8 questions from the longTailFAQs array
+
+# Keyword Requirements
+- H1 MUST contain: Acheron Build
+- At least 3 H2s must contain words from: Acheron Best Build, Acheron Relics, Acheron Light Cone, Acheron Team, Acheron Guide, Honkai Star Rail Acheron, HSR Acheron, Acheron Hypercarry, Acheron Nihility, Acheron Best Team
+- Body text must mention {mainKeyword} at least 3 times
+- {secondaryKeywords} coverage must be ≥ 60%
+
+--- DATA INPUT ---
+## Character Basic Info
+- Name: Acheron
+- Rarity: 5★
+- Element: Lightning
+- Path: Nihility
+- Faction: Galaxy Ranger
+- Role: Hypercarry DPS
+- Release Version: 2.1
+- Tags: Hypercarry, Slash, AoE, Defense Ignore
+
+## Description
+Acheron is a 5-star Lightning character following the Path of Nihility. She is a mysterious Galaxy Ranger who wields a sword and excels as a hypercarry DPS with unique Slash mechanics that bypass enemy defenses.
+
+## Skills
+### Basic Attack: Trilateral Slash
+Deals Lightning DMG equal to 50%~130% of Acheron's ATK to a single enemy.
+
+### Skill: Octobolt Flash
+Deals Lightning DMG equal to 84%~210% of Acheron's ATK to a single enemy and gains 1 point of Slashed Dream. If the enemy is inflicted with debuff, gains 1 additional point of Slashed Dream.
+
+### Ultimate: Slashed Dream Cries in Red
+When Acheron has 3 points of Slashed Dream, she can use Ultimate. Deals Lightning DMG multiple times to all enemies. Each hit has a 100% base chance to inflict Crimson Knot on enemies. When Crimson Knot is removed, deals additional Lightning DMG equal to a percentage of Acheron's ATK.
+Energy Cost: 0
+
+### Talent: The Abyss
+When an ally uses an ability that inflicts debuff on an enemy, Acheron gains 1 point of Slashed Dream. At the start of each wave, gains 1 point of Slashed Dream. When Acheron has 3 points of Slashed Dream, her Ultimate becomes available.
+
+### Technique: Quadrilateral Ascension
+After using Technique, immediately attacks enemies in a large area. After entering battle, deals Lightning DMG equal to 100% of Acheron's ATK to all enemies and gains 1 point of Slashed Dream.
+
+## Major Traces
+- **Red Oni** (A2): When Acheron's Slashed Dream reaches maximum, her CRIT Rate increases by 15% for 2 turns.
+- **Blue Oni** (A4): When an ally inflicts a debuff on an enemy, Acheron's DMG increases by 30% for 2 turns.
+- **The Storm** (A6): At the start of battle, Acheron gains 1 point of Slashed Dream. When Acheron uses Ultimate, her CRIT DMG increases by 50% for 1 turn.
+
+## Eidolons
+- **E1 Lone Star**: When battle starts, Acheron gains 1 point of Slashed Dream. When Acheron's Slashed Dream is at maximum, her CRIT Rate increases by 15%.
+- **E2 Mara**: When an ally uses an ability that inflicts debuff on an enemy, Acheron gains 1 additional point of Slashed Dream. This effect can only trigger 1 time per turn.
+- **E3 Red Banner**: Skill Lv. +2, up to a maximum of Lv. 15. Basic ATK Lv. +1, up to a maximum of Lv. 10.
+- **E4 Crimson Plum**: When Acheron uses Ultimate, her ATK increases by 50% for 2 turns.
+- **E5 Violet Spark**: Ultimate Lv. +2, up to a maximum of Lv. 15. Talent Lv. +2, up to a maximum of Lv. 15.
+- **E6 Final Dream**: When Acheron uses Ultimate, she ignores 20% of enemy DEF. Additionally, each hit of Ultimate has a 50% fixed chance to remove 1 Crimson Knot from the enemy.
+
+## Base Stats (Level 80)
+- HP: 1620
+- ATK: 920
+- DEF: 560
+- SPD: 101
+
+## Materials
+### Ascension Materials
+- Extinguished Core: 15
+- Glimmering Core: 15
+- Squirming Core: 15
+- Shape Shifter's Lightning Staff: 65
+- Traveler's Guide: 308
+- Credit: 308,000
+
+### Trace Materials
+- Obsidian of Desolation: 18
+- Obsidian of Dread: 69
+- Obsidian of Obsession: 139
+- Past Evils of the Borehole Planet Disaster: 12
+- Tracks of Destiny: 8
+- Credit: 3,000,000
+
+--- KEYWORDS ---
+## Main Keyword
+Acheron Build
+
+## Secondary Keywords
+Acheron Best Build, Acheron Relics, Acheron Light Cone, Acheron Team, Acheron Guide, Honkai Star Rail Acheron, HSR Acheron, Acheron Hypercarry, Acheron Nihility, Acheron Best Team
+
+## Long-Tail FAQs (use these for FAQ section)
+1. What is the best build for Acheron in HSR?
+2. What relics should I use for Acheron?
+3. What is Acheron's best light cone?
+4. What team is best for Acheron?
+5. Is Acheron good in Honkai Star Rail?
+6. What does Acheron scale with in HSR?
+7. Is Acheron a DPS or support?
+8. What is Acheron's best F2P light cone?
+9. How to build Acheron for maximum damage?
+10. Is Acheron worth pulling in 2026?

@@ -1,0 +1,33 @@
+{
+  "majorTraces": [
+    {
+      "id": "trace1",
+      "name": "Heat Vent",
+      "description": "When Firefly is in Complete Combustion state, her CRIT Rate increases by 15% and CRIT DMG increases by 30%.",
+      "unlockLevel": "A2"
+    },
+    {
+      "id": "trace2",
+      "name": "Molten Core",
+      "description": "When Firefly's current HP is 50% or lower, her DMG increases by 40%.",
+      "unlockLevel": "A4"
+    },
+    {
+      "id": "trace3",
+      "name": "Fuel Injection",
+      "description": "After entering Complete Combustion state, Firefly's Weakness Break Efficiency increases by 50% for 3 turns.",
+      "unlockLevel": "A6"
+    }
+  ],
+  "minorTraces": [
+    { "type": "ATK%", "value": "28%" },
+    { "type": "Break Effect", "value": "20%" },
+    { "type": "HP%", "value": "18%" },
+    { "type": "ATK%", "value": "28%" },
+    { "type": "DEF%", "value": "12.5%" },
+    { "type": "SPD", "value": "5" },
+    { "type": "ATK%", "value": "28%" },
+    { "type": "Break Effect", "value": "20%" },
+    { "type": "ATK%", "value": "28%" }
+  ]
+}

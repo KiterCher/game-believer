@@ -1,0 +1,33 @@
+{
+  "majorTraces": [
+    {
+      "id": "trace1",
+      "name": "Red Oni",
+      "description": "When Acheron's Slashed Dream reaches maximum, her CRIT Rate increases by 15% for 2 turns.",
+      "unlockLevel": "A2"
+    },
+    {
+      "id": "trace2",
+      "name": "Blue Oni",
+      "description": "When an ally inflicts a debuff on an enemy, Acheron's DMG increases by 30% for 2 turns.",
+      "unlockLevel": "A4"
+    },
+    {
+      "id": "trace3",
+      "name": "The Storm",
+      "description": "At the start of battle, Acheron gains 1 point of Slashed Dream. When Acheron uses Ultimate, her CRIT DMG increases by 50% for 1 turn.",
+      "unlockLevel": "A6"
+    }
+  ],
+  "minorTraces": [
+    { "type": "ATK%", "value": "28%" },
+    { "type": "CRIT Rate", "value": "12%" },
+    { "type": "HP%", "value": "18%" },
+    { "type": "ATK%", "value": "28%" },
+    { "type": "DEF%", "value": "12.5%" },
+    { "type": "SPD", "value": "5" },
+    { "type": "ATK%", "value": "28%" },
+    { "type": "CRIT Rate", "value": "12%" },
+    { "type": "ATK%", "value": "28%" }
+  ]
+}

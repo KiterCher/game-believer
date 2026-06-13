@@ -1,0 +1,35 @@
+{
+  "name": "gamebeliever-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prompt:build": "tsx src/scripts/build-prompt.ts",
+    "generate": "tsx src/scripts/generate.ts",
+    "generate:all": "tsx src/scripts/generate.ts --all-chars",
+    "qa": "tsx src/qa/check.ts --all",
+    "qa:file": "tsx src/qa/check.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^6.4.6",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
