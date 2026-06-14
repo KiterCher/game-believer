@@ -52,11 +52,7 @@ const daysLeft = Math.max(0, Math.ceil((endDate.getTime() - now.getTime()) / (10
               alt={char.name}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               loading="lazy"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
             />
-            <div class="absolute inset-0 flex items-center justify-center bg-dark-300 hidden">
-              <span class="text-4xl font-bold text-gray-600 opacity-30">{char.name[0]}</span>
-            </div>
             {/* 元素标签 */}
             <div class="absolute top-2 left-2 px-2 py-1 rounded bg-dark-300/80 backdrop-blur-sm">
               <span class="text-xs text-white font-medium">{char.element}</span>

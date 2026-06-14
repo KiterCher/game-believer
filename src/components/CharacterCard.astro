@@ -63,11 +63,7 @@ const imagePath = image || imageData?.card || `/images/characters/${slug}/card.w
           alt={name}
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           loading="lazy"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
         />
-        <div class="absolute inset-0 flex items-center justify-center hidden">
-          <span class="text-4xl font-bold text-gray-600 opacity-30">{initials}</span>
-        </div>
       </div>
       <!-- 元素图标 -->
       <div class="absolute top-2 left-2 w-8 h-8 rounded-full bg-dark-300/80 flex items-center justify-center">
