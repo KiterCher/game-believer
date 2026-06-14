@@ -10,19 +10,25 @@ const popularBuilds = [
 ];
 
 const elementColors: Record<string, string> = {
-  Lightning: 'text-yellow-400',
-  Fire: 'text-orange-500',
-  Wind: 'text-green-400',
-  Imaginary: 'text-orange-400',
-  Ice: 'text-sky-400',
-  Quantum: 'text-purple-400',
-  Physical: 'text-gray-300',
+  Lightning: 'bg-yellow-500/20 text-yellow-400',
+  Fire: 'bg-orange-500/20 text-orange-400',
+  Wind: 'bg-green-500/20 text-green-400',
+  Imaginary: 'bg-orange-400/20 text-orange-300',
+  Ice: 'bg-sky-500/20 text-sky-400',
+  Quantum: 'bg-purple-500/20 text-purple-400',
+  Physical: 'bg-gray-400/20 text-gray-300',
+};
+
+const tierStyles: Record<string, string> = {
+  S: 'bg-gradient-to-r from-yellow-500 to-amber-500 text-white',
+  A: 'bg-gradient-to-r from-orange-500 to-red-500 text-white',
+  B: 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white',
 };
 ---
 
 <div class="bg-dark-200 rounded-xl p-6 border border-gray-800">
   <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
-    <span class="text-2xl">⚔️</span>
+    <img src="/images/icons/inventory.png" alt="" class="w-6 h-6" />
     Popular Builds
   </h2>
 
@@ -32,32 +38,40 @@ const elementColors: Record<string, string> = {
         href={`/builds/${build.slug}`}
         class="group flex items-center gap-4 p-3 bg-dark-100 rounded-lg hover:bg-primary/20 hover:border-primary border border-transparent transition-all"
       >
-        {/* Rank */}
-        <span class="text-lg font-bold text-gray-600 w-6 text-center">
-          {index + 1}
-        </span>
+        {/* Rank Number */}
+        <div class={`w-8 h-8 rounded-lg ${index < 3 ? 'bg-primary/20' : 'bg-dark-300'} flex items-center justify-center flex-shrink-0`}>
+          <span class={`text-sm font-bold ${index < 3 ? 'text-primary' : 'text-gray-500'}`}>
+            {index + 1}
+          </span>
+        </div>
+
+        {/* Character Avatar */}
+        <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+          <img
+            src={`/images/characters/${build.slug}/card.webp`}
+            alt={build.name}
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
 
         {/* Info */}
-        <div class="flex-1">
+        <div class="flex-1 min-w-0">
           <div class="flex items-center gap-2">
-            <h3 class="text-white font-bold group-hover:text-primary transition-colors">
+            <h3 class="text-white font-bold group-hover:text-primary transition-colors truncate">
               {build.name}
             </h3>
-            <span class={`text-xs ${elementColors[build.element]}`}>
-              {build.element}
-            </span>
+            <div class={`px-2 py-0.5 rounded ${elementColors[build.element]}`}>
+              <img src={`/images/elements/${build.element.toLowerCase()}.png`} alt={build.element} class="w-4 h-4" />
+            </div>
           </div>
           <p class="text-xs text-gray-500">{build.role}</p>
         </div>
 
         {/* Tier Badge */}
-        <span class={`px-2 py-1 rounded text-xs font-bold ${
-          build.tier === 'S' ? 'bg-yellow-500/20 text-yellow-400' :
-          build.tier === 'A' ? 'bg-orange-500/20 text-orange-400' :
-          'bg-blue-500/20 text-blue-400'
-        }`}>
-          {build.tier}
-        </span>
+        <div class={`px-3 py-1 rounded-lg ${tierStyles[build.tier]} flex items-center gap-1 shadow-lg`}>
+          <span class="text-sm font-black">{build.tier}</span>
+        </div>
       </a>
     ))}
   </div>
