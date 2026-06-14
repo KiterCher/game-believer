@@ -1,0 +1,289 @@
+---
+// Character Showcase 组件 - 参考 Prydwen.gg 风格
+interface Character {
+  id: string;
+  name: string;
+  element: string;
+  path: string;
+  rarity: number;
+}
+
+interface Props {
+  characters: Character[];
+}
+
+const { characters } = Astro.props;
+
+// 元素颜色映射
+const elementColors: Record<string, string> = {
+  Physical: 'rgba(180,180,180,0.25)',
+  Fire: 'rgba(255,107,53,0.25)',
+  Ice: 'rgba(107,197,255,0.25)',
+  Lightning: 'rgba(255,215,0,0.25)',
+  Wind: 'rgba(125,206,130,0.25)',
+  Quantum: 'rgba(199,125,255,0.25)',
+  Imaginary: 'rgba(255,170,0,0.25)',
+};
+
+// 元素类名映射
+const elementClasses: Record<string, string> = {
+  Physical: 'ele-physical',
+  Fire: 'ele-fire',
+  Ice: 'ele-ice',
+  Lightning: 'ele-lightning',
+  Wind: 'ele-wind',
+  Quantum: 'ele-quantum',
+  Imaginary: 'ele-imaginary',
+};
+---
+
+<div class="character-showcase">
+  {characters.map(char => (
+    <div class={`character-card ${elementClasses[char.element] || ''}`}>
+      <div class="character-bg"></div>
+
+      {/* 角色立绘 - 突破卡片边界 */}
+      <img
+        class="character-art"
+        src={`/images/characters/${char.id}/full.webp`}
+        alt={char.name}
+        loading="lazy"
+        onerror="this.src='/images/characters/${char.id}/card.webp'"
+      />
+
+      {/* 底部渐变 */}
+      <div class="character-gradient"></div>
+
+      {/* 角色信息 */}
+      <div class="character-info">
+        <h3>{char.name}</h3>
+        <div class="stars">{'★'.repeat(char.rarity)}</div>
+        <div class="tags">
+          <span class="tag-element">
+            <img src={`/images/elements/${char.element.toLowerCase()}.png`} alt="" class="tag-icon" />
+            {char.element}
+          </span>
+          <span class="tag-path">
+            <img src={`/images/paths/${char.path.toLowerCase()}.png`} alt="" class="tag-icon" />
+            {char.path}
+          </span>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  /* 容器 */
+  .character-showcase {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    overflow-x: auto;
+    padding: 40px 0 80px;
+    scrollbar-width: none;
+  }
+
+  .character-showcase::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 卡片 */
+  .character-card {
+    position: relative;
+    flex-shrink: 0;
+    width: 240px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: visible;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    isolation: isolate;
+  }
+
+  .character-card:hover {
+    transform: translateY(-10px);
+  }
+
+  /* 背景 */
+  .character-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background:
+      radial-gradient(circle at top, rgba(255,255,255,0.1), transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.85));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    z-index: 1;
+    transition: box-shadow 0.4s ease;
+  }
+
+  /* 元素发光效果 */
+  .character-card.ele-fire .character-bg {
+    box-shadow: 0 0 20px rgba(255,107,53,0.2);
+  }
+  .character-card.ele-fire:hover .character-bg {
+    box-shadow: 0 0 35px rgba(255,107,53,0.35);
+  }
+
+  .character-card.ele-ice .character-bg {
+    box-shadow: 0 0 20px rgba(107,197,255,0.2);
+  }
+  .character-card.ele-ice:hover .character-bg {
+    box-shadow: 0 0 35px rgba(107,197,255,0.35);
+  }
+
+  .character-card.ele-lightning .character-bg {
+    box-shadow: 0 0 20px rgba(255,215,0,0.2);
+  }
+  .character-card.ele-lightning:hover .character-bg {
+    box-shadow: 0 0 35px rgba(255,215,0,0.35);
+  }
+
+  .character-card.ele-wind .character-bg {
+    box-shadow: 0 0 20px rgba(125,206,130,0.2);
+  }
+  .character-card.ele-wind:hover .character-bg {
+    box-shadow: 0 0 35px rgba(125,206,130,0.35);
+  }
+
+  .character-card.ele-quantum .character-bg {
+    box-shadow: 0 0 20px rgba(199,125,255,0.2);
+  }
+  .character-card.ele-quantum:hover .character-bg {
+    box-shadow: 0 0 35px rgba(199,125,255,0.35);
+  }
+
+  .character-card.ele-imaginary .character-bg {
+    box-shadow: 0 0 20px rgba(255,170,0,0.2);
+  }
+  .character-card.ele-imaginary:hover .character-bg {
+    box-shadow: 0 0 35px rgba(255,170,0,0.35);
+  }
+
+  .character-card.ele-physical .character-bg {
+    box-shadow: 0 0 20px rgba(180,180,180,0.15);
+  }
+  .character-card.ele-physical:hover .character-bg {
+    box-shadow: 0 0 35px rgba(180,180,180,0.25);
+  }
+
+  /* 角色立绘 - 突破卡片边界 */
+  .character-art {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 75%;
+    object-fit: contain;
+    object-position: top center;
+    z-index: 3;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+  }
+
+  .character-card:hover .character-art {
+    transform: translateX(-50%) scale(1.08);
+  }
+
+  /* 底部渐变 */
+  .character-gradient {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,0.95));
+    border-radius: 0 0 20px 20px;
+    z-index: 2;
+  }
+
+  /* 角色信息 */
+  .character-info {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 4;
+  }
+
+  .character-info h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  .stars {
+    margin-top: 8px;
+    color: #ffd54f;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  }
+
+  .tags {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  .tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.9);
+    font-size: 11px;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+  }
+
+  .tag-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* 响应式 */
+  @media (max-width: 1200px) {
+    .character-card {
+      width: 200px;
+      height: 420px;
+    }
+    .character-info h3 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .character-showcase {
+      gap: 12px;
+      padding: 20px 0 60px;
+    }
+    .character-card {
+      width: 160px;
+      height: 360px;
+    }
+    .character-art {
+      top: -20px;
+    }
+    .character-info h3 {
+      font-size: 16px;
+    }
+    .stars {
+      font-size: 14px;
+    }
+    .tags span {
+      padding: 3px 8px;
+      font-size: 10px;
+    }
+  }
+</style>

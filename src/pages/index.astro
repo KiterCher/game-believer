@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import CharacterCard from '../components/CharacterCard.astro';
+import CharacterShowcase from '../components/CharacterShowcase.astro';
 import TierList from '../components/TierList.astro';
 import CurrentBanner from '../components/CurrentBanner.astro';
 import PopularBuilds from '../components/PopularBuilds.astro';
@@ -40,90 +41,6 @@ const characterData: Record<string, { rarity: number; element: string; path: str
   <style is:global>
     /* 移除所有链接下划线 */
     a { text-decoration: none !important; }
-
-    /* 元素颜色定义 */
-    :root {
-      --element-fire: #e85d3a;
-      --element-ice: #5ba3d9;
-      --element-lightning: #d4b84a;
-      --element-wind: #6ab87a;
-      --element-quantum: #9b6fc7;
-      --element-imaginary: #d4a03a;
-      --element-physical: #8a8a8a;
-    }
-
-    /* 角色卡片基础样式 */
-    .character-card {
-      position: relative;
-      transition: all 0.3s ease;
-      border-radius: 10px;
-      overflow: visible;
-      background: #1a1a1a;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    /* 默认微弱边框 */
-    .character-card::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      border-radius: 11px;
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* 悬停时 - 间断流动边框 */
-    .character-card:hover {
-      transform: translateY(-6px);
-      border-color: transparent;
-    }
-
-    /* 流动光线 - 使用 conic-gradient */
-    .character-card:hover::before {
-      border-color: transparent;
-      background: conic-gradient(
-        from var(--rotation, 0deg),
-        transparent 0%,
-        var(--glow-color, #e85d3a) 8%,
-        transparent 16%,
-        transparent 100%
-      ) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      animation: border-rotate 2s linear infinite;
-    }
-
-    .character-card:hover .character-img {
-      transform: scale(1.06) translateY(-6px);
-    }
-
-    .character-img {
-      transition: transform 0.3s ease;
-    }
-
-    /* 边框旋转动画 */
-    @keyframes border-rotate {
-      0% { --rotation: 0deg; }
-      100% { --rotation: 360deg; }
-    }
-
-    @property --rotation {
-      syntax: '<angle>';
-      initial-value: 0deg;
-      inherits: false;
-    }
-
-    /* 元素特定的发光颜色 */
-    .element-fire { --glow-color: var(--element-fire); }
-    .element-ice { --glow-color: var(--element-ice); }
-    .element-lightning { --glow-color: var(--element-lightning); }
-    .element-wind { --glow-color: var(--element-wind); }
-    .element-quantum { --glow-color: var(--element-quantum); }
-    .element-imaginary { --glow-color: var(--element-imaginary); }
-    .element-physical { --glow-color: var(--element-physical); }
   </style>
 
   <main>
@@ -161,47 +78,25 @@ const characterData: Record<string, { rarity: number; element: string; path: str
 
     <!-- Featured Characters -->
     <section class="py-12 container mx-auto px-4">
-      <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center justify-between mb-4">
         <h2 class="text-2xl md:text-3xl font-bold text-white">Featured Characters</h2>
         <a href="/characters" class="text-primary hover:text-red-400 transition-colors font-medium">
           View All →
         </a>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-        {characters.map(character => {
+      <CharacterShowcase
+        characters={characters.map(character => {
           const data = characterData[character.id] || { rarity: 5, element: 'Unknown', path: 'Unknown' };
-          const elementClass = `element-${data.element.toLowerCase()}`;
-          return (
-            <a href={`/characters/${character.id}`} class={`character-card ${elementClass} group block`}>
-              <div class="relative bg-dark-200 rounded-xl overflow-visible pt-4 pb-2 px-3">
-                {/* 角色图片 - 延伸到卡片外部 */}
-                <div class="relative -mt-8 mb-3">
-                  <img
-                    src={`/images/characters/${character.id}/card.webp`}
-                    alt={character.data.character}
-                    class="character-img w-full h-48 object-cover object-top rounded-lg"
-                    loading="lazy"
-                  />
-                  {/* 元素标签 */}
-                  <div class="absolute top-2 left-2 w-8 h-8 rounded-full bg-dark-300/90 flex items-center justify-center backdrop-blur-sm">
-                    <img src={`/images/elements/${data.element.toLowerCase()}.png`} alt={data.element} class="w-5 h-5" />
-                  </div>
-                  {/* 命途标签 */}
-                  <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-dark-300/90 flex items-center justify-center backdrop-blur-sm">
-                    <img src={`/images/paths/${data.path.toLowerCase()}.png`} alt={data.path} class="w-5 h-5" />
-                  </div>
-                </div>
-                {/* 角色信息 */}
-                <div class="text-center">
-                  <h3 class="text-white font-bold text-sm group-hover:text-primary transition-colors">{character.data.character}</h3>
-                  <p class="text-yellow-400 text-xs mt-1">{'★'.repeat(data.rarity)}</p>
-                </div>
-              </div>
-            </a>
-          );
+          return {
+            id: character.id,
+            name: character.data.character,
+            element: data.element,
+            path: data.path,
+            rarity: data.rarity,
+          };
         })}
-      </div>
+      />
     </section>
 
     <!-- Popular Builds -->
