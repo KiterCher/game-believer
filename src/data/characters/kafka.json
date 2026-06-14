@@ -1,0 +1,100 @@
+{
+  "id": "kafka",
+  "name": "Kafka",
+  "nameEn": "Kafka",
+  "rarity": 5,
+  "element": "Lightning",
+  "path": "Nihility",
+  "faction": "",
+  "releaseVersion": "",
+  "description": "Best guide and build forKafkafrom HSR (Honkai: Star Rail).Kafkais a5★character from theLightningelement who follows thePath of Nihility.On the Interastral Peace Corporation's wanted list, Kafka's only has two things — her name, and a single sentence: \"Likes collecting coats.\" Little is known about this Stellaron Hunter, other than that she is one of Destiny's Slave Elio's most trusted members. In order to achieve Elio's envisioned future, Kafka gets to work.To learn more aboutKafkacheck the sect",
+  "role": "",
+  "tags": [],
+  "skills": [
+    {
+      "name": "Midnight Tumult",
+      "type": "Basic",
+      "description": "Single Target"
+    },
+    {
+      "name": "Caressing Moonlight",
+      "type": "Skill",
+      "description": "Blast"
+    },
+    {
+      "name": "Twilight Trill",
+      "type": "Ultimate",
+      "description": "AoE|120 energy cost"
+    },
+    {
+      "name": "Gentle but Cruel",
+      "type": "Talent",
+      "description": "Single Target"
+    },
+    {
+      "name": "Mercy Is Not Forgiveness",
+      "type": "Technique",
+      "description": ""
+    }
+  ],
+  "traces": [
+    {
+      "id": "trace_0",
+      "name": "Plunder",
+      "description": "Last updated:01/June/2026",
+      "unlock_level": "Unlock at A2"
+    },
+    {
+      "id": "trace_1",
+      "name": "Thorns",
+      "description": "Last updated:01/June/2026",
+      "unlock_level": "Unlock at A4"
+    },
+    {
+      "id": "trace_2",
+      "name": "Da Capo",
+      "description": "Last updated:01/June/2026",
+      "unlock_level": "Unlock at A6"
+    }
+  ],
+  "eidolons": [
+    {
+      "level": 1,
+      "name": "Fortississimo",
+      "description": "Last updated:01/June/2026"
+    },
+    {
+      "level": 2,
+      "name": "Capriccio",
+      "description": "Last updated:01/June/2026"
+    },
+    {
+      "level": 3,
+      "name": "Recitativo",
+      "description": "Last updated:01/June/2026"
+    },
+    {
+      "level": 4,
+      "name": "Doloroso",
+      "description": "Last updated:01/June/2026"
+    },
+    {
+      "level": 5,
+      "name": "Leggiero",
+      "description": "Last updated:01/June/2026"
+    }
+  ],
+  "stats": {
+    "hp": [
+      1086
+    ],
+    "atk": [
+      679
+    ],
+    "def": [
+      485
+    ],
+    "spd": 160
+  },
+  "images": {}
+}
