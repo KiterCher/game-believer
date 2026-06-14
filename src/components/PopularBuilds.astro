@@ -36,7 +36,7 @@ const tierStyles: Record<string, string> = {
     {popularBuilds.map((build, index) => (
       <a
         href={`/builds/${build.slug}`}
-        class="group flex items-center gap-4 p-3 bg-dark-100 rounded-lg hover:bg-primary/20 hover:border-primary border border-transparent transition-all"
+        class="group flex items-center gap-4 p-3 bg-dark-100 rounded-lg hover:bg-primary/20 transition-all"
       >
         {/* Rank Number */}
         <div class={`w-8 h-8 rounded-lg ${index < 3 ? 'bg-primary/20' : 'bg-dark-300'} flex items-center justify-center flex-shrink-0`}>
@@ -45,8 +45,8 @@ const tierStyles: Record<string, string> = {
           </span>
         </div>
 
-        {/* Character Avatar */}
-        <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+        {/* Character Avatar - 圆形头像 */}
+        <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-700 group-hover:border-primary flex-shrink-0 transition-all">
           <img
             src={`/images/characters/${build.slug}/card.webp`}
             alt={build.name}

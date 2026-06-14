@@ -58,34 +58,33 @@ const elementColors: Record<string, string> = {
 
   <div class="space-y-4">
     {tiers.map(tier => (
-      <div class="flex items-start gap-4">
+      <div class="flex items-center gap-4">
         {/* Tier Rank Badge */}
         <div class={`w-12 h-12 rounded-xl ${tier.color} flex items-center justify-center flex-shrink-0 shadow-lg`}>
           <span class="text-white font-black text-xl drop-shadow-md">{tier.rank}</span>
         </div>
 
-        {/* Characters */}
-        <div class="flex-1">
-          <div class="flex flex-wrap gap-2">
-            {tier.characters.map(char => (
-              <a
-                href={`/characters/${char.slug}`}
-                class="group flex items-center gap-3 px-4 py-3 bg-dark-100 rounded-lg hover:bg-primary/20 hover:border-primary border border-transparent transition-all"
-              >
-                <div class={`w-8 h-8 rounded-full ${elementColors[char.element]} flex items-center justify-center`}>
-                  <img src={`/images/elements/${char.element.toLowerCase()}.png`} alt={char.element} class="w-5 h-5" />
-                </div>
-                <div>
-                  <span class="text-white text-sm font-medium group-hover:text-primary transition-colors block">
-                    {char.name}
-                  </span>
-                  <span class="text-xs text-gray-500">
-                    {char.role}
-                  </span>
-                </div>
-              </a>
-            ))}
-          </div>
+        {/* Character Avatars - 小圆形头像 */}
+        <div class="flex-1 flex items-center gap-2 flex-wrap">
+          {tier.characters.map(char => (
+            <a
+              href={`/characters/${char.slug}`}
+              class="group relative"
+            >
+              <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-700 group-hover:border-primary transition-all group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(229,57,53,0.5)]">
+                <img
+                  src={`/images/characters/${char.slug}/card.webp`}
+                  alt={char.name}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              {/* Tooltip */}
+              <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-dark-300 px-2 py-1 rounded text-xs text-white whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
+                {char.name}
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     ))}

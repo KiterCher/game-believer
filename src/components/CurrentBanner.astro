@@ -44,27 +44,32 @@ const daysLeft = Math.max(0, Math.ceil((endDate.getTime() - now.getTime()) / (10
       {currentBanner.characters.map(char => (
         <a
           href={`/pull-advice/${char.slug}`}
-          class="group relative overflow-hidden rounded-lg bg-dark-100 hover:bg-primary/20 hover:border-primary border border-transparent transition-all"
+          class="character-card group relative overflow-visible rounded-xl bg-dark-100 border border-gray-700 hover:border-primary transition-all"
         >
-          <div class="relative aspect-[3/4]">
-            <img
-              src={`/images/characters/${char.slug}/card.webp`}
-              alt={char.name}
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-            />
-            {/* 元素标签 */}
-            <div class="absolute top-2 left-2 px-2 py-1 rounded bg-dark-300/80 backdrop-blur-sm">
-              <span class="text-xs text-white font-medium">{char.element}</span>
+          <div class="relative pt-4 px-2">
+            {/* 角色图片 - 延伸到卡片外部 */}
+            <div class="relative -mt-16 mb-4">
+              <img
+                src={`/images/characters/${char.slug}/full.webp`}
+                alt={char.name}
+                class="character-img w-full h-64 object-cover object-top rounded-lg"
+                loading="lazy"
+                onerror="this.src='/images/characters/${char.slug}/card.webp'"
+              />
+              {/* 元素标签 */}
+              <div class="absolute top-2 left-2 px-2 py-1 rounded bg-dark-300/90 backdrop-blur-sm">
+                <span class="text-xs text-white font-medium">{char.element}</span>
+              </div>
+              {/* 稀有度标签 */}
+              <div class="absolute top-2 right-2 px-2 py-1 rounded bg-yellow-500/90 backdrop-blur-sm">
+                <span class="text-xs text-white font-bold">{char.rarity}★</span>
+              </div>
             </div>
-            {/* 稀有度标签 */}
-            <div class="absolute top-2 right-2 px-2 py-1 rounded bg-yellow-500/80 backdrop-blur-sm">
-              <span class="text-xs text-white font-bold">{char.rarity}★</span>
+            {/* 角色信息 */}
+            <div class="text-center pb-2">
+              <h3 class="text-white font-bold group-hover:text-primary transition-colors">{char.name}</h3>
+              <p class="text-xs text-gray-500">{char.path}</p>
             </div>
-          </div>
-          <div class="p-3">
-            <h3 class="text-white font-bold group-hover:text-primary transition-colors">{char.name}</h3>
-            <p class="text-xs text-gray-500">{char.path}</p>
           </div>
         </a>
       ))}

@@ -37,6 +37,35 @@ const characterData: Record<string, { rarity: number; element: string; path: str
 <BaseLayout title="GameBeliever - Your Ultimate Gaming Guide" description="Your ultimate gaming guide platform for Honkai Star Rail. Find character builds, team compositions, and pull recommendations.">
   <Navbar />
 
+  <style is:global>
+    /* 移除所有链接下划线 */
+    a { text-decoration: none !important; }
+
+    /* 角色卡片悬停动画 */
+    @keyframes card-shake {
+      0%, 100% { transform: translateY(-8px) rotate(0deg); }
+      25% { transform: translateY(-10px) rotate(-1deg); }
+      75% { transform: translateY(-6px) rotate(1deg); }
+    }
+
+    .character-card {
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .character-card:hover {
+      animation: card-shake 0.6s ease-in-out;
+      box-shadow: 0 20px 40px rgba(229, 57, 53, 0.3), 0 0 60px rgba(229, 57, 53, 0.1);
+    }
+
+    .character-card:hover .character-img {
+      transform: scale(1.08) translateY(-8px);
+    }
+
+    .character-img {
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  </style>
+
   <main>
     <!-- Hero Section -->
     <section class="relative py-20 overflow-hidden">
@@ -83,14 +112,32 @@ const characterData: Record<string, { rarity: number; element: string; path: str
         {characters.map(character => {
           const data = characterData[character.id] || { rarity: 5, element: 'Unknown', path: 'Unknown' };
           return (
-            <CharacterCard
-              name={character.data.character}
-              slug={character.id}
-              rarity={data.rarity}
-              element={data.element}
-              path={data.path}
-              imageData={{ card: `/images/characters/${character.id}/card.webp` }}
-            />
+            <a href={`/characters/${character.id}`} class="character-card group block">
+              <div class="relative bg-dark-200 rounded-xl border border-gray-800 overflow-visible pt-4 pb-2 px-3">
+                {/* 角色图片 - 延伸到卡片外部 */}
+                <div class="relative -mt-8 mb-3">
+                  <img
+                    src={`/images/characters/${character.id}/card.webp`}
+                    alt={character.data.character}
+                    class="character-img w-full h-48 object-cover object-top rounded-lg"
+                    loading="lazy"
+                  />
+                  {/* 元素标签 */}
+                  <div class="absolute top-2 left-2 w-8 h-8 rounded-full bg-dark-300/90 flex items-center justify-center backdrop-blur-sm">
+                    <img src={`/images/elements/${data.element.toLowerCase()}.png`} alt={data.element} class="w-5 h-5" />
+                  </div>
+                  {/* 命途标签 */}
+                  <div class="absolute top-2 right-2 w-8 h-8 rounded-full bg-dark-300/90 flex items-center justify-center backdrop-blur-sm">
+                    <img src={`/images/paths/${data.path.toLowerCase()}.png`} alt={data.path} class="w-5 h-5" />
+                  </div>
+                </div>
+                {/* 角色信息 */}
+                <div class="text-center">
+                  <h3 class="text-white font-bold text-sm group-hover:text-primary transition-colors">{character.data.character}</h3>
+                  <p class="text-yellow-400 text-xs mt-1">{'★'.repeat(data.rarity)}</p>
+                </div>
+              </div>
+            </a>
           );
         })}
       </div>
