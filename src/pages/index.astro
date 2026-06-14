@@ -41,7 +41,7 @@ const characterData: Record<string, { rarity: number; element: string; path: str
     /* 移除所有链接下划线 */
     a { text-decoration: none !important; }
 
-    /* 元素颜色定义 - 降低饱和度，更柔和 */
+    /* 元素颜色定义 */
     :root {
       --element-fire: #e85d3a;
       --element-ice: #5ba3d9;
@@ -58,36 +58,42 @@ const characterData: Record<string, { rarity: number; element: string; path: str
       transition: all 0.3s ease;
       border-radius: 10px;
       overflow: visible;
-      /* 默认细边框 */
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #1a1a1a;
+      border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    /* 默认微弱荧光 */
+    /* 默认微弱边框 */
     .character-card::before {
       content: '';
       position: absolute;
       inset: -1px;
       border-radius: 11px;
-      border: 1px solid var(--glow-color, rgba(229, 57, 53, 0.2));
-      opacity: 0.4;
-      z-index: -1;
-      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+      z-index: 0;
     }
 
-    /* 悬停时荧光流动 */
+    /* 悬停时 - 间断流动边框 */
     .character-card:hover {
       transform: translateY(-6px);
       border-color: transparent;
-      box-shadow:
-        0 15px 30px rgba(0, 0, 0, 0.4),
-        0 0 15px rgba(0, 0, 0, 0.2);
     }
 
+    /* 流动光线 - 使用 conic-gradient */
     .character-card:hover::before {
-      opacity: 1;
-      border-color: var(--glow-color, rgba(229, 57, 53, 0.5));
-      box-shadow: 0 0 8px var(--glow-color, rgba(229, 57, 53, 0.2));
-      animation: glow-pulse 1.5s ease-in-out infinite;
+      border-color: transparent;
+      background: conic-gradient(
+        from var(--rotation, 0deg),
+        transparent 0%,
+        var(--glow-color, #e85d3a) 8%,
+        transparent 16%,
+        transparent 100%
+      ) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      animation: border-rotate 2s linear infinite;
     }
 
     .character-card:hover .character-img {
@@ -98,14 +104,16 @@ const characterData: Record<string, { rarity: number; element: string; path: str
       transition: transform 0.3s ease;
     }
 
-    /* 荧光脉冲动画 */
-    @keyframes glow-pulse {
-      0%, 100% {
-        box-shadow: 0 0 5px var(--glow-color, rgba(229, 57, 53, 0.15));
-      }
-      50% {
-        box-shadow: 0 0 12px var(--glow-color, rgba(229, 57, 53, 0.3));
-      }
+    /* 边框旋转动画 */
+    @keyframes border-rotate {
+      0% { --rotation: 0deg; }
+      100% { --rotation: 360deg; }
+    }
+
+    @property --rotation {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
     }
 
     /* 元素特定的发光颜色 */
