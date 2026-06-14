@@ -89,6 +89,7 @@ const characterData: Record<string, { rarity: number; element: string; path: str
               rarity={data.rarity}
               element={data.element}
               path={data.path}
+              imageData={{ card: `/images/characters/${character.id}/card.webp` }}
             />
           );
         })}

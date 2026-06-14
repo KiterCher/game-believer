@@ -79,6 +79,7 @@ const itemList = sortedCharacters.map(char => ({
             rarity={data.rarity}
             element={data.element}
             path={data.path}
+            imageData={{ card: `/images/characters/${character.id}/card.webp` }}
           />
         );
       })}

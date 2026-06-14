@@ -6,9 +6,13 @@ export interface Props {
   element: string;
   path: string;
   image?: string;
+  imageData?: {
+    card?: string;
+    full?: string;
+  };
 }
 
-const { name, slug, rarity, element, path, image } = Astro.props;
+const { name, slug, rarity, element, path, image, imageData } = Astro.props;
 
 const elementColors: Record<string, string> = {
   Physical: 'bg-gray-200 text-black',
@@ -44,19 +48,26 @@ const rarityStars = '★'.repeat(rarity);
 
 // 角色头像占位符（使用首字母）
 const initials = name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
+
+// 确定图片路径
+// 优先级：image prop > imageData.card > 默认路径
+const imagePath = image || imageData?.card || `/images/characters/${slug}/card.webp`;
 ---
 
 <a href={`/characters/${slug}`} class="block group">
   <div class="card card-hover overflow-hidden">
     <div class="relative">
-      <div class="aspect-[3/4] bg-gradient-to-b from-dark-100 to-dark-200 flex items-center justify-center">
-        {image ? (
-          <img src={image} alt={name} class="w-full h-full object-cover" />
-        ) : (
-          <div class="text-4xl font-bold text-gray-600 opacity-30 group-hover:opacity-50 transition-opacity">
-            {initials}
-          </div>
-        )}
+      <div class="aspect-[3/4] bg-gradient-to-b from-dark-100 to-dark-200 flex items-center justify-center overflow-hidden">
+        <img
+          src={imagePath}
+          alt={name}
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+        />
+        <div class="absolute inset-0 flex items-center justify-center hidden">
+          <span class="text-4xl font-bold text-gray-600 opacity-30">{initials}</span>
+        </div>
       </div>
       <!-- 元素图标 -->
       <div class="absolute top-2 left-2 w-8 h-8 rounded-full bg-dark-300/80 flex items-center justify-center">
