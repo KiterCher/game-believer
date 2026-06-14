@@ -7,10 +7,10 @@ export interface Props {
 const { currentSlug, currentType } = Astro.props;
 
 const relatedLinks = [
-  { type: 'characters', label: 'Character Guide', icon: '👤' },
-  { type: 'builds', label: 'Build Guide', icon: '⚔️' },
-  { type: 'teams', label: 'Team Guide', icon: '👥' },
-  { type: 'pull-advice', label: 'Pull Advice', icon: '🎰' },
+  { type: 'characters', label: 'Character Guide', icon: '/images/icons/avatar.png' },
+  { type: 'builds', label: 'Build Guide', icon: '/images/icons/inventory.png' },
+  { type: 'teams', label: 'Team Guide', icon: '/images/icons/team.png' },
+  { type: 'pull-advice', label: 'Pull Advice', icon: '/images/icons/shop.png' },
 ].filter(link => link.type !== currentType);
 ---
 
@@ -23,7 +23,7 @@ const relatedLinks = [
           href={`/${link.type}/${currentSlug}`}
           class="flex items-center gap-3 p-2 rounded hover:bg-[#2a2a2a] transition-colors group"
         >
-          <span class="text-xl">{link.icon}</span>
+          <img src={link.icon} alt="" class="w-5 h-5" />
           <span class="text-sm text-[#999] group-hover:text-white transition-colors">{link.label}</span>
         </a>
       </li>

@@ -11,22 +11,22 @@ const allLinks = {
   character: {
     type: 'characters',
     label: `${character.charAt(0).toUpperCase() + character.slice(1)} Guide`,
-    icon: '👤',
+    icon: '/images/icons/avatar.png',
   },
   build: {
     type: 'builds',
     label: `Best ${character.charAt(0).toUpperCase() + character.slice(1)} Build`,
-    icon: '⚔️',
+    icon: '/images/icons/inventory.png',
   },
   team: {
     type: 'teams',
     label: `${character.charAt(0).toUpperCase() + character.slice(1)} Team Compositions`,
-    icon: '👥',
+    icon: '/images/icons/team.png',
   },
   'pull-advice': {
     type: 'pull-advice',
     label: `Should You Pull ${character.charAt(0).toUpperCase() + character.slice(1)}?`,
-    icon: '🎰',
+    icon: '/images/icons/shop.png',
   },
 };
 
@@ -49,7 +49,7 @@ const links = Object.entries(allLinks)
         href={link.href}
         class="flex items-center gap-3 p-3 rounded-lg bg-dark-100 hover:bg-primary/20 hover:border-primary border border-transparent transition-all group"
       >
-        <span class="text-2xl">{link.icon}</span>
+        <img src={link.icon} alt="" class="w-6 h-6" />
         <span class="text-sm text-gray-400 group-hover:text-white transition-colors">
           {link.label}
         </span>
