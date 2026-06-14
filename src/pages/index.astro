@@ -41,20 +41,64 @@ const characterData: Record<string, { rarity: number; element: string; path: str
     /* 移除所有链接下划线 */
     a { text-decoration: none !important; }
 
-    /* 角色卡片悬停动画 */
-    @keyframes card-shake {
-      0%, 100% { transform: translateY(-8px) rotate(0deg); }
-      25% { transform: translateY(-10px) rotate(-1deg); }
-      75% { transform: translateY(-6px) rotate(1deg); }
+    /* 元素颜色定义 */
+    :root {
+      --element-fire: #ff6b35;
+      --element-ice: #6bc5ff;
+      --element-lightning: #ffd700;
+      --element-wind: #7dce82;
+      --element-quantum: #c77dff;
+      --element-imaginary: #ffaa00;
+      --element-physical: #b0b0b0;
     }
 
+    /* 角色卡片基础样式 */
     .character-card {
+      position: relative;
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border-radius: 12px;
+      overflow: visible;
     }
 
+    /* 默认荧光边框 */
+    .character-card::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 14px;
+      background: linear-gradient(
+        135deg,
+        var(--glow-color, rgba(229, 57, 53, 0.3)) 0%,
+        transparent 50%,
+        var(--glow-color, rgba(229, 57, 53, 0.3)) 100%
+      );
+      opacity: 0.5;
+      z-index: -1;
+      transition: opacity 0.3s ease;
+    }
+
+    /* 悬停时流动动画 */
+    .character-card:hover::before {
+      opacity: 1;
+      background: linear-gradient(
+        var(--angle, 0deg),
+        transparent 0%,
+        var(--glow-color, rgba(229, 57, 53, 0.8)) 25%,
+        transparent 50%,
+        var(--glow-color, rgba(229, 57, 53, 0.8)) 75%,
+        transparent 100%
+      );
+      background-size: 300% 300%;
+      animation: border-flow 2s linear infinite;
+    }
+
+    /* 悬停时卡片效果 */
     .character-card:hover {
-      animation: card-shake 0.6s ease-in-out;
-      box-shadow: 0 20px 40px rgba(229, 57, 53, 0.3), 0 0 60px rgba(229, 57, 53, 0.1);
+      transform: translateY(-8px);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 30px var(--glow-color, rgba(229, 57, 53, 0.3)),
+        0 0 60px var(--glow-color, rgba(229, 57, 53, 0.15));
     }
 
     .character-card:hover .character-img {
@@ -64,6 +108,22 @@ const characterData: Record<string, { rarity: number; element: string; path: str
     .character-img {
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
+
+    /* 边框流动动画 */
+    @keyframes border-flow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 元素特定的发光颜色 */
+    .element-fire { --glow-color: var(--element-fire); }
+    .element-ice { --glow-color: var(--element-ice); }
+    .element-lightning { --glow-color: var(--element-lightning); }
+    .element-wind { --glow-color: var(--element-wind); }
+    .element-quantum { --glow-color: var(--element-quantum); }
+    .element-imaginary { --glow-color: var(--element-imaginary); }
+    .element-physical { --glow-color: var(--element-physical); }
   </style>
 
   <main>
@@ -111,9 +171,10 @@ const characterData: Record<string, { rarity: number; element: string; path: str
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {characters.map(character => {
           const data = characterData[character.id] || { rarity: 5, element: 'Unknown', path: 'Unknown' };
+          const elementClass = `element-${data.element.toLowerCase()}`;
           return (
-            <a href={`/characters/${character.id}`} class="character-card group block">
-              <div class="relative bg-dark-200 rounded-xl border border-gray-800 overflow-visible pt-4 pb-2 px-3">
+            <a href={`/characters/${character.id}`} class={`character-card ${elementClass} group block`}>
+              <div class="relative bg-dark-200 rounded-xl overflow-visible pt-4 pb-2 px-3">
                 {/* 角色图片 - 延伸到卡片外部 */}
                 <div class="relative -mt-8 mb-3">
                   <img
