@@ -7,6 +7,9 @@ import TableOfContents from '../../components/TableOfContents.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuickNav from '../../components/QuickNav.astro';
 import InternalLinks from '../../components/InternalLinks.astro';
+import ArticleSchema from '../../components/ArticleSchema.astro';
+import FAQSchema from '../../components/FAQSchema.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 
 export async function getStaticPaths() {
   const pullAdvice = await getCollection('pull-advice');
@@ -18,10 +21,45 @@ export async function getStaticPaths() {
 
 const { advice } = Astro.props;
 const { Content, headings } = await render(advice);
+
+// 从内容中提取 FAQ
+const faqSection = advice.body?.match(/## FAQ[\s\S]*?(?=## |$)/i);
+const faqQuestions = [];
+
+if (faqSection) {
+  const questionRegex = /\*\*(\d+\.\s*[^*]+)\*\*[\s\S]*?(?=\*\*\d+\.|$)/g;
+  let match;
+  while ((match = questionRegex.exec(faqSection[0])) !== null) {
+    const questionText = match[1].replace(/^\d+\.\s*/, '').trim();
+    const answerStart = match.index + match[0].length;
+    const nextQuestion = faqSection[0].indexOf('**', answerStart);
+    const answer = faqSection[0].substring(answerStart, nextQuestion > -1 ? nextQuestion : undefined).trim();
+    if (questionText && answer) {
+      faqQuestions.push({ question: questionText, answer });
+    }
+  }
+}
 ---
 
 <BaseLayout title={advice.data.title} description={advice.data.description}>
   <Navbar />
+
+  <ArticleSchema
+    title={advice.data.title}
+    description={advice.data.description}
+    url={`/pull-advice/${advice.id}`}
+    datePublished={advice.data.updatedAt}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: '/' },
+    { name: 'Pull Advice', url: '/pull-advice' },
+    { name: advice.data.character, url: `/pull-advice/${advice.id}` },
+  ]} />
+
+  {faqQuestions.length > 0 && (
+    <FAQSchema questions={faqQuestions} />
+  )}
 
   <main class="container mx-auto px-4 py-8">
     <!-- Quick Navigation -->

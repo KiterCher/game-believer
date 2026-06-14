@@ -4,6 +4,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import CharacterCard from '../../components/CharacterCard.astro';
+import ItemListSchema from '../../components/ItemListSchema.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 
 const characters = await getCollection('characters');
 
@@ -36,10 +38,28 @@ const sortedCharacters = characters.sort((a, b) => {
   const dataB = characterData[b.id] || { rarity: 4 };
   return dataB.rarity - dataA.rarity;
 });
+
+// 准备 ItemList 数据
+const itemList = sortedCharacters.map(char => ({
+  name: char.data.character,
+  url: `/characters/${char.id}`,
+  description: char.data.description,
+}));
 ---
 
 <BaseLayout title="Characters | GameBeliever" description="Browse all Honkai Star Rail characters with detailed guides, builds, and team recommendations.">
   <Navbar />
+
+  <ItemListSchema
+    name="Honkai Star Rail Characters"
+    description="Complete list of all Honkai Star Rail characters with detailed guides, builds, and team recommendations."
+    items={itemList}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: '/' },
+    { name: 'Characters', url: '/characters' },
+  ]} />
 
   <main class="container mx-auto px-4 py-8">
     <!-- Page Header -->

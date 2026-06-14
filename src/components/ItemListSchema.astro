@@ -1,0 +1,33 @@
+---
+export interface Props {
+  name: string;
+  description: string;
+  items: {
+    name: string;
+    url: string;
+    description?: string;
+  }[];
+}
+
+const { name, description, items } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": name,
+  "description": description,
+  "numberOfItems": items.length,
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Thing",
+      "name": item.name,
+      "url": new URL(item.url, Astro.site).href,
+      "description": item.description
+    }
+  }))
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

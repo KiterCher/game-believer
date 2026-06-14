@@ -7,6 +7,9 @@ import TableOfContents from '../../components/TableOfContents.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import QuickNav from '../../components/QuickNav.astro';
 import InternalLinks from '../../components/InternalLinks.astro';
+import ArticleSchema from '../../components/ArticleSchema.astro';
+import FAQSchema from '../../components/FAQSchema.astro';
+import BreadcrumbSchema from '../../components/BreadcrumbSchema.astro';
 
 export async function getStaticPaths() {
   const builds = await getCollection('builds');
@@ -18,10 +21,45 @@ export async function getStaticPaths() {
 
 const { build } = Astro.props;
 const { Content, headings } = await render(build);
+
+// 从内容中提取 FAQ
+const faqSection = build.body?.match(/## FAQ[\s\S]*?(?=## |$)/i);
+const faqQuestions = [];
+
+if (faqSection) {
+  const questionRegex = /\*\*(\d+\.\s*[^*]+)\*\*[\s\S]*?(?=\*\*\d+\.|$)/g;
+  let match;
+  while ((match = questionRegex.exec(faqSection[0])) !== null) {
+    const questionText = match[1].replace(/^\d+\.\s*/, '').trim();
+    const answerStart = match.index + match[0].length;
+    const nextQuestion = faqSection[0].indexOf('**', answerStart);
+    const answer = faqSection[0].substring(answerStart, nextQuestion > -1 ? nextQuestion : undefined).trim();
+    if (questionText && answer) {
+      faqQuestions.push({ question: questionText, answer });
+    }
+  }
+}
 ---
 
 <BaseLayout title={build.data.title} description={build.data.description}>
   <Navbar />
+
+  <ArticleSchema
+    title={build.data.title}
+    description={build.data.description}
+    url={`/builds/${build.id}`}
+    datePublished={build.data.updatedAt}
+  />
+
+  <BreadcrumbSchema items={[
+    { name: 'Home', url: '/' },
+    { name: 'Builds', url: '/builds' },
+    { name: build.data.character, url: `/builds/${build.id}` },
+  ]} />
+
+  {faqQuestions.length > 0 && (
+    <FAQSchema questions={faqQuestions} />
+  )}
 
   <main class="container mx-auto px-4 py-8">
     <!-- Quick Navigation -->
