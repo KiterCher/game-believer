@@ -1,161 +1,133 @@
 ---
 title: "Boothill Build Guide | GameBeliever"
 description: "Ultimate boothill build guide for Honkai Star Rail. Best relics, light cones, stat priorities, and team synergies. Updated for 2026."
-updatedAt: "2026-06-13"
+updatedAt: "2026-06-14"
 type: "build"
 character: "boothill"
 ---
 
 # 波提欧 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
 
-## 波提欧 Build Overview
+## 波提欧 (Boothill) Build Overview
+**Role, Element, Path:** 波提欧 is a 5-star Physical Damage Dealer (DPS) following the Path of the Hunt. His kit is defined by explosive single-target burst damage and potent Bleed application, making him a premier boss-killer in Honkai: Star Rail.
 
-**波提欧 (Boothill)** is a 5★ Physical Damage Dealer following the **Path of Hunt**. Released in Version 2.2, this Galaxy Ranger embodies the ultimate single-target specialist, designed to dismantle elite enemies and bosses with ruthless efficiency. His kit revolves around leveraging high **Break Effect** and **Physical DMG** to inflict devastating Bleed damage and achieve massive burst windows.
+**Build Philosophy:** This guide outlines the definitive **Boothill build** focused on maximizing his devastating Break and follow-up attack potential. As a Hunt character, Boothill thrives on stacking critical damage, Physical DMG bonus, and Attack (ATK) to eliminate high-value targets in one or two cycles.
 
-This **Boothill Build** is engineered to maximize his identity as a hyper-carry DPS. The core philosophy is to amplify his exceptional single-target damage through stacking Physical DMG boosts, Break Effect, and Critical stats, while ensuring he acts frequently enough to maintain pressure. His Ultimate, while AoE, primarily serves as a powerful finishing tool or Break enabler.
+**What Makes This Build Work:** Boothill's core gameplay revolves around his enhanced Basic Attack state, triggered after using his Skill. This state significantly amplifies his damage and guarantees a follow-up attack upon defeating an enemy. This build synergizes with that mechanic by providing the necessary stats to ensure kills, thereby fueling his devastating chain reaction. Prioritizing Break Effect also amplifies the Bleed damage from his attacks, adding another layer of burst to his kit.
 
-Why this build works: Boothill's multipliers scale exceptionally well with **Break Effect** and **Physical Damage Bonus**. His Talent provides a massive, unconditional ATK boost, allowing him to focus other stats on damage and Break efficiency. By building him as a Break Effect-focused DPS, you synergize his innate kit to turn enemy Weakness Breaks into catastrophic damage events, while still maintaining high direct damage output. Prioritizing **CRIT Rate, CRIT DMG, Break Effect, and SPD** will ensure Boothill fulfills his role as a premier single-target assassin.
-
-## Best Relics for Boothill
+## Best Relics for 波提欧
 
 ### H3: Best 4pc Set
-**Set Recommendation: 4pc Thief of Shooting Meteor**
+- **Set Recommendation: 4pc Physical DMG Set (Band of Sizzling Thunder)**
+- **Why:** This is the undisputed **Boothill best build** relic set. The 2-piece bonus grants a straightforward 10% Physical DMG increase, which is the primary scaling stat for his entire kit.
+- **Set Bonus Explanation:** The 4-piece effect is tailored perfectly for Boothill. When the wearer uses an attack, their ATK is increased by 5% for each different enemy hit, stacking up to 5 times for a total of 25% ATK. While Boothill's Skill and Ultimate are single-target, his follow-up attack and Talent mechanics allow him to hit multiple enemies in rapid succession, especially when triggering resets. This results in a near-permanent, massive ATK buff that dramatically increases his damage output.
 
-This is the undisputed **best-in-slot set** for Boothill. The set bonuses directly cater to his Break Effect-focused playstyle:
-
-*   **2pc Bonus:** Increases Break Effect by 16%. This is a massive, unconditional stat boost that feeds directly into his primary scaling mechanic.
-*   **4pc Bonus:** Increases Break Effect by an additional 20% after inflicting Weakness Break on an enemy. Furthermore, when the wearer inflicts Weakness Break, they regen 3 Energy. This second part is exceptionally valuable for Boothill, as it significantly improves his Ultimate uptime, allowing for more frequent burst windows and Break applications.
-
-**Why it's best:** Thief of Shooting Meteor is designed for Break-centric DPS like Boothill. It provides unparalleled Break Effect stacking and solves part of his energy regeneration needs, creating a powerful feedback loop: apply Break -> gain Break Effect and Energy -> use Ultimate more often -> apply Break again. For a detailed breakdown, see our [Best Relics Guide](/honkai-star-rail-relic-guide).
-
-### H3: Alternative Sets
-**2pc + 2pc Combinations:**
-
-While the 4pc Thief set is ideal, transitioning to it may take time. Powerful 2pc combinations offer flexibility:
-
-1.  **2pc Thief of Shooting Meteor + 2pc Champion of Streetwise Boxing:**
-    *   **When to use:** This is the best transitional or alternative set. It gives you 16% Break Effect from Thief and a solid 12% ATK boost from Champion. It's a straightforward, reliable combo that boosts both his ATK and Break Effect. Use this while farming the 4pc Thief set.
-2.  **2pc Champion of Streetwise Boxing + 2pc Musketeer of Wild Wheat:**
-    *   **When to use:** This focuses purely on his direct damage output with 12% ATK and 10% Physical DMG Bonus. Choose this if your substats on these pieces are significantly better, especially if they have high Break Effect rolls. However, the lack of Break Effect stacking makes it inferior to the Thief combinations in the long run.
+### H3: Alternative Sets (2pc + 2pc)
+- **Combination:** 2pc Physical DMG Set (Band of Sizzling Thunder) + 2pc ATK% Set (e.g., Musketeer of Wild Wheat).
+- **When to Use:** This is a viable and often more accessible alternative during the early-to-mid game farming phase. It provides the essential 10% Physical DMG and 12% ATK bonuses. Use this if you cannot yet farm a complete 4-piece Band of Sizzling Thunder with optimal substats.
+- **Alternative Combination:** 2pc Physical DMG Set + 2pc Break Effect Set (Talia: Kingdom of Banditry). Use this if you are heavily leaning into a Break Effect playstyle and have excellent ATK% substats on your Physical pieces.
 
 ### H3: Best Planar Ornaments
-*   **Best-in-Slot: Firmament Frontline: Glamoth**
-    *   **Set Bonus:** Increases the wearer's ATK by 12%. When the wearer's SPD is 135/145 or higher, the wearer's DMG dealt increases by 12%/18%.
-    *   **Why:** This set provides a dual boost. The ATK increase synergizes with his high base ATK. The conditional DMG increase is easily activatable with SPD substats or Speed-boosting support, providing a massive damage multiplier that scales perfectly with his high-multiplier attacks. It's the premium choice for maximizing his burst potential. Learn more in our [Planar Ornament Farming Guide](/honkai-star-rail-planar-ornaments).
-*   **Alternative Options:**
-    *   **Space Sealing Station:** A simpler alternative. Provides 12% ATK at base, increasing to 24% ATK when SPD is 120 or higher. It's easier to activate but offers less peak damage than Glamoth.
-    *   **Inert Salsotto:** If your build struggles to reach the high SPD requirements of Glamoth, this is a viable fallback. It increases CRIT Rate by 8% and boosts Ultimate and Follow-up ATK DMG by 15%. While Boothill's main damage isn't from Follow-ups, the Ultimate damage boost is still valuable.
+- **Best-in-SSlot: Firmament Frontline: Glammoth**
+    - **Why:** This planar ornament set is currently the most powerful for raw damage output for characters like Boothill. It increases ATK by 12%, and if the wearer's SPD is 135 or higher, their DMG to enemies with lower current HP is increased by 15%. This incentivizes building SPD on Boothill and provides a massive, unconditional damage multiplier against the bosses he is designed to eliminate.
+- **Alternative Options:**
+    - **Space Sealing Station:** A solid 2-piece alternative that provides a flat 24% ATK bonus if the wearer's SPD is 120 or higher. Excellent for substats.
+    - **Inert Salsotto:** Focuses on Ultimate and follow-up attack damage. While Boothill's follow-up is a key part of his kit, the 8% CRIT Rate and 15% Ultimate/follow-up DMG is slightly less universal than the ATK and conditional DMG from Glammoth for his overall damage profile.
 
 ### H3: Recommended Main Stats
-*   **Body:** **CRIT Rate** or **CRIT DMG**. Choose whichever helps you balance towards the ideal 1:2 ratio. CRIT Rate is often prioritized first to ensure consistency.
-*   **Feet:** **Speed**. Boothill needs to act frequently to apply Breaks and generate Skill Points. Aim for the SPD breakpoints outlined below.
-*   **Planar Sphere:** **Physical DMG Bonus**. This is a direct multiplier to all his damage and is always superior to ATK% for a DPS.
-*   **Link Rope:** **Break Effect**. This is the single most important stat for Boothill's unique scaling. A Break Effect rope is non-negotiable for his optimal build.
+- **Body:** CRIT DMG or CRIT Rate. Your choice here should be determined by your Light Cone and substats to achieve a healthy 1:2 CRIT ratio.
+- **Feet:** ATK% (Preferred) or SPD. **ATK%** is generally superior for maximizing the damage of his empowered attacks. **SPD** is only recommended if you cannot reach the 135 SPD breakpoint for Glammoth or 120 for Space Sealing Station through substats alone.
+- **Planar Sphere:** Physical DMG Bonus. This is non-negotiable for maximizing his damage.
+- **Link Rope:** ATK%. Provides a larger damage increase than an Ultimate DMG or Break Effect rope for his core playstyle. An **Energy Regeneration Rate (ERR)** rope can be considered to ensure Ultimate uptime for the DEF Shred from his A6 Trace, but ATK% is the standard for pure damage.
 
 ### H3: Substats Priority
-1.  **Break Effect:** The top priority. Every roll here directly increases his Break and Bleed damage.
-2.  **CRIT Rate / CRIT DMG:** After securing sufficient Break Effect, balance these to achieve the targets below.
-3.  **Speed:** Essential for meeting breakpoints and improving rotation.
-4.  **ATK%:** A decent tertiary stat that boosts his direct damage.
+1.  **CRIT Rate / CRIT DMG** (Maintain a 1:2 ratio as closely as possible)
+2.  **ATK%**
+3.  **SPD** (Until you hit key breakpoints)
+4.  **Break Effect** (Useful secondary stat)
 
-**Minimum Breakpoint:** Aim for **at least 100% Break Effect** from your gear before any external buffs. This is a baseline to make his mechanics feel impactful. With a 4pc Thief set and a BE rope, this is very achievable.
+**Minimum Breakpoints:** For Planar Ornament efficiency, aim for at least **120 SPD** (for Space Sealing Station) or **135 SPD** (for Firmament Frontline: Glammoth). His base SPD is 100, so this requires investment.
 
-## Best Light Cones for Boothill
+## Best Light Cones for 波提欧
 
 ### H3: 5★ Light Cones
-*   **Signature: [The Untold Victories]** (Implied Name - *Since the specific cone isn't in data, we'll use the meta archetype*)
-    *   This would undoubtedly be his best-in-slot, providing a massive base ATK and a unique effect that likely boosts Break Effect, Physical DMG, or provides a mechanic that synergizes with his Talent or Ultimate.
-*   **Other 5★ Options:**
-    *   **[Sailing Towards a Second Life]:** A strong Hunt cone that increases CRIT DMG and provides a DMG boost when using a Skill. Excellent for boosting his direct damage.
-    *   **[In the Night]:** Boosts CRIT Rate and provides a stacking DMG increase with higher SPD. Very effective if you can meet the SPD thresholds.
-    *   **[But the Battle Isn't Over]:** A supportive-leaning Hunt cone that boosts the wearer's Ultimate DMG and advances their next action. Great for improving his burst potential and turn frequency.
+- **Signature Light Cone: For the Short-Lived Life (Best-in-SLight)**
+    - This Light Cone is tailor-made for Boothill. It provides a massive 42% CRIT DMG increase at Superimposition 1 (S1) for his follow-up attack, which is a core part of his damage rotation. The secondary effect also grants a stacking ATK buff, perfectly complementing the 4-piece relic set.
+- **Other 5★ Options:**
+    - **Worrisome, Blissful:** An excellent option. It provides a high base ATK and a universal DMG increase that ramps up with multiple debuffs on the enemy. Boothill's Bleed counts as a debuff, making this very effective.
+    - **Sleep Like the Dead:** A strong generic CRIT DPS cone. It offers a sizable CRIT DMG buff and has a chance to reset its effect after using an Ultimate, aligning with his burst playstyle.
+    - **Something Irreplaceable:** The standard banner 5-star Hunt cone. It provides good ATK and DMG increases but is outclassed by Boothill-specific or debuff-scaling options.
 
 ### H3: 4★ Light Cones
-*   **Best Choices:**
-    *   **[Swordplay]:** Stacks a powerful DMG buff (up to 5 stacks) when attacking the same enemy. Perfect for Boothill's single-target focus, providing a massive damage increase against bosses.
-    *   **[Only Silence Remains]:** Increases ATK and, if there are 2 or fewer enemies on the field, boosts CRIT DMG. Ideal for his role as an elite/boss killer.
-*   **Event Light Cones:**
-    *   **[Cruising in the Stellar Sea]:** (From Herta Store) A fantastic free-to-play option. Provides ATK and CRIT Rate boosts when attacking enemies with lower HP.
+- **Best Choices:**
+    - **Only Silence Remains:** A phenomenal 4-star option. It grants ATK% and, when there are 1 or 2 enemies on the field (common in boss fights), provides a CRIT Rate increase. This is often his **best 4-star light cone**.
+    - **Swordplay:** If you can consistently hit the same enemy, this cone provides stacking DMG increases that become very powerful. Excellent for single-target boss encounters.
+    - **River Flows in Spring:** A free-to-play friendly option from the Herta Store. It provides SPD and a CRIT DMG boost after attacking, though the effect is lost upon taking damage.
+- **Event Light Cones:** Keep an eye out for event-specific 4-star Hunt cones that may offer competitive stats or unique effects tailored to new content.
 
 ### H3: F2P Light Cones
-*   **Budget Options:**
-    *   **[Arrows]:** A simple 3★ cone that increases CRIT Rate for the first three turns. Useful for early game or quick-burst strategies.
-    *   **[Darting Arrow]:** Grants an ATK boost after a Basic Attack. Decent for consistent, albeit low-impact, damage.
+- **Budget Choices:**
+    - **Arrows:** A basic 3-star cone available early on that provides a simple ATK% boost.
+    - **Luminous Genie (From Herta Store):** After taking damage, it grants a CRIT Rate increase for the next attack. While usable in a pinch, the condition is not ideal for a DPS like Boothill who wants to avoid taking hits.
+    - **Overall:** Farming for 4-star options like *Only Silence Remains* or *Swordplay* from the gacha is a higher priority than using a 3-star long-term.
 
-### H3: Light Cone Comparison
-| Light Cone | Rarity | Key Effect | Best For |
-| :--- | :--- | :--- | :--- |
-| **[The Untold Victories]** | 5★ | Signature, High ATK, Unique Synergy | **Overall Best-in-Slot** |
-| **[Swordplay]** | 4★ | Stacking DMG% vs Single Target | **Boss Killing, High Single-Target Dmg** |
-| **[Sailing Towards a Second Life]** | 5★ | CRIT DMG, Skill DMG Boost | **Balanced Direct & Burst Damage** |
-| **[Cruising in the Stellar Sea]** | 4★ | ATK%, CRIT Rate vs Low HP | **Best Free-to-Play Option** |
-| **[Only Silence Remains]** | 4★ | ATK%, CRIT DMG vs Few Enemies | **Elite Focused Content** |
+### H3: Light Cone Comparison Table
+
+| Light Cone | Rarity | Key Stat | Effect Summary | Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **For the Short-Lived Life** | 5★ | CRIT DMG | Huge follow-up DMG & stacking ATK. | Maximizing Boothill's burst and follow-up damage. |
+| **Worrisome, Blissful** | 5★ | ATK | Universal DMG increase scaling with debuffs. | High synergy with his Bleed debuff. |
+| **Only Silence Remains** | 4★ | ATK/CRIT Rate | ATK% and conditional CRIT Rate in single-target. | The best 4-star alternative, great for bosses. |
+| **Swordplay** | 4★ | DMG | Stacking DMG on the same target. | Sustained single-target fights where you don't switch targets. |
+| **River Flows in Spring** | 4★ | SPD/CRIT DMG | SPD and CRIT DMG boost, lost on hit. | F2P players who can avoid damage. |
 
 ## Stats Breakpoints & Targets
-
-*   **CRIT Rate Target:** **70-80%**. With high multipliers, consistency is key.
-*   **CRIT DMG Target:** **140-160%+**. Aim for roughly double your CRIT Rate. These values are achievable with good substats and a 5★ light cone.
-*   **SPD Breakpoints:**
-    *   **120:** Minimum goal to activate Space Sealing Station and achieve a decent base turn frequency.
-    *   **134:** A major breakpoint. Provides an extra action in the first cycle (Cycle 0) of Memory of Chaos/ Pure Fiction, which is a massive advantage.
-    *   **145+:** The optimal target if using **Firmament Frontline: Glamoth**, unlocking its full 18% DMG bonus.
-*   **Break Effect Target:** **100%+** from gear alone. With external supports like Ruan Mei, this can easily exceed 200-250%, turning his Breaks into nukes.
-*   **ATK/EHR/ERR Targets:**
-    *   **ATK:** With his Talent and ATK% buffs, aim for **2500-3000+** in combat.
-    *   **EHR (Effect Hit Rate):** **Not needed.** Boothill's kit does not rely on landing debuffs (Bleed is applied via Break, not an effect).
-    *   **ERR (Energy Regeneration Rate):** **Not needed.** His 4pc Thief set and natural generation should be sufficient. An ERR rope is not recommended over Break Effect.
+- **CRIT Rate Target:** Aim for **70-80%**. While 100% is ideal, especially for his follow-up to guarantee crits, resources are often better spent on CRIT DMG and ATK once you have a reliable rate.
+- **CRIT DMG Target:** Aim for **140% or higher**. As a hyper-carry DPS, this should be your primary scaling stat after achieving a good CRIT Rate.
+- **SPD Breakpoints:**
+    - **120 SPD:** For Space Sealing Station planar ornament activation.
+    - **135 SPD:** For Firmament Frontline: Glammoth activation (preferred). Achieving this requires SPD boots or significant substat investment.
+- **ATK/EHR/ERR Targets:**
+    - **ATK:** With a 4-piece set and ATK% rope, aim for **2800-3200+ ATK** at Level 80.
+    - **Effect Hit Rate (EHR):** Not a priority. Boothill's kit does not rely on landing debuffs other than Bleed, which has a high base chance.
+    - **Energy Regeneration Rate (ERR):** Only necessary if you are using an ERR rope to ensure an Ultimate every other rotation for the DEF Shred from his A6 Trace. Not a core stat.
 
 ## Best Team Compositions
 
-Boothill is a selfish hyper-carry. Teams are built to enable his Breaks and maximize his personal damage.
-
 ### H3: Premium Team
-*   **Members:** **Boothill, Ruan Mei, Silver Wolf, Huohuo**
-*   **Why it works:** This is the ultimate Boothill engine.
-    *   **Ruan Mei:** Provides team-wide DMG%, Break Efficiency (making him Break faster), and SPD. Her kit is tailor-made for Break DPS.
-    *   **Silver Wolf:** Guarantees the enemy has a Physical Weakness, enabling Boothill to apply Break consistently. Also shreds DEF and reduces All-Type RES.
-    *   **Huohuo:** Cleanses debuffs, provides ERR and ATK buffs to the team, and heals. Ensures smooth rotations and peak damage windows.
+- **Team Members:** 波提欧 + Pela/Ruan Mei + Silver Wolf/Tingyun + Huohuo/Fu Xuan/Lynx
+- **Why it Works:** This team maximizes Boothill's damage through amplification and debuffing. **Ruan Mei** is his premier support, providing DMG Bonus, Break Efficiency, and SPD to hit breakpoints easily. **Pela** or **Silver Wolf** provide DEF Shred, which is a separate, powerful damage multiplier. A sustain like **Huohuo** offers ATK buff and energy, while **Fu Xuan** provides survivability and CRIT Rate.
 
 ### H3: F2P Team
-*   **Members:** **Boothill, Pela, Asta, Lynx/Luocha/Gallagher**
-*   **How to play:** A highly accessible team that still works excellently.
-    *   **Pela:** Provides consistent DEF shred and AoE Ice application, which is great for breaking toughness.
-    *   **Asta:** Offers massive SPD and ATK buffs for the entire team, helping Boothill reach high SPD breakpoints and hit harder.
-    *   **Gallagher (or other sustain):** Provides healing and can apply Fire Weakness with his Ultimate, aiding in break management.
+- **Team Members:** 波提欧 + Asta/Hanya + Tingyun + Natasha/Lynx
+- **How to Play:** **Asta** or **Hanya** can provide valuable SPD buffs and ATK/DMG increases, helping Boothill reach important breakpoints. **Tingyun** is a fantastic budget support, providing an ATK buff, energy for faster Ultimates, and a DMG bonus. Any available 4-star sustain will suffice.
 
 ### H3: Alternative Teams
-*   **Break-Focused:** **Boothill, Ruan Mei, Gallagher, Himeko/Herta.** Uses Break Efficiency and toughness reduction to trigger Himeko/Herta's follow-ups, creating a hybrid Break/AoE team for content with multiple elites.
-*   **Dual DPS:** **Boothill, Topaz & Numby, Ruan Mei, Sustain.** Topaz's follow-up vulnerability and personal damage complement Boothill's single-target focus, creating a devastating duo against bosses.
+- **Break Effect Focus:** Boothill + Ruan Mei + Gallagher + Xueyi/Luka. This team leans into Break mechanics, with Ruan Mei amplifying Break Effect and delay, and Gallagher or Luka contributing to Breaks.
+- **Dual DPS:** While not optimal, Boothill can function in a dual-carry setup alongside another single-target DPS like **Seele** or **Argenti** for specific multi-wave content, supported by a strong buffer like **Bronya** or **Sparkle**.
 
 ## Gameplay Tips & Rotation
-
-*   **Skill Rotation:** Your primary goal is to **Break enemies**. Use your **Skill** to increase your own DMG taken (the "Duel" effect). Then, use your **Basic Attack** to build stacks and deal damage. Your **Ultimate** should be used to break an enemy's toughness bar or as a powerful nuke. A simple loop is: Skill (buff) -> Basic Attack (stack/damage) -> Basic Attack -> Ultimate (Break/Burst) -> Repeat.
-*   **Key Combos:**
-    *   **Break & Burst:** Use Ultimate to instantly break a high-toughness enemy, then follow up with a buffed Basic Attack or Skill.
-    *   **Bleed Stacking:** Each Physical Break applies Bleed. Try to break enemies on Boothill's turn to maximize the DoT damage.
-*   **Common Mistakes to Avoid:**
-    *   **Ignoring Break Effect:** Building only CRIT/ATK severely cripples his damage potential. Break Effect is core.
-    *   **Poor Ultimate Timing:** Don't waste the Ultimate on an enemy that's already Broken or about to die from Bleed. Save it for a clutch Break or to finish a high-HP target.
-    *   **Neglecting Speed:** Building him too slow means fewer actions, fewer Breaks, and less overall impact.
+- **Skill Rotation:** The ideal sequence is **Basic Attack (to gain 1 Pocket Trickshot) -> Skill (enter enhanced state & gain 2 more Pocket Trickshots) -> Ultimate (for DEF Shred & massive damage) -> Enhanced Basic Attack -> Follow-up Attack (if it kills) -> Enhanced Basic Attack...** The goal is to enter the enhanced state, apply DEF Shred with your Ultimate, and then unleash empowered attacks.
+- **Key Combos:** Save your Ultimate for after using your Skill to ensure the DEF Shred applies to your enhanced attacks. If an enemy is near death, consider holding your Ultimate to ensure your follow-up attack triggers and resets the cycle.
+- **Common Mistakes to Avoid:**
+    1.  **Not managing Pocket Trickshots:** Your enhanced Basic Attack consumes these charges. Use them wisely.
+    2.  **Using Ultimate out of the empowered state:** Always use Skill -> Ultimate to maximize the damage window.
+    3.  **Ignoring SPD:** Not reaching key SPD breakpoints like 135 drastically reduces his damage potential with the best-in-slot relic set.
 
 ## Investment Priority
-
-*   **E0 Viable?** Absolutely. **Boothill at E0 is a complete and powerful character.** His Eidolons are improvements but not required for him to dominate single-target content.
-*   **Key Eidolons:**
-    *   **E1** is often a strong first vertical investment, frequently enhancing his core mechanic (likely increasing his Talent's ATK boost or adding a new effect to his Breaks).
-    *   **E2 and E6** typically provide significant power spikes, potentially adding new mechanics or drastically scaling his damage.
-*   **Light Cone Priority:** Getting his **Signature Light Cone** is his biggest upgrade. After that, vertical investment shifts to **Eidolons**. A strong 4★ like **Swordplay** is a fantastic placeholder that can rival some 5★ options at higher superimpositions.
+- **E0 Viable?** Absolutely. Boothill is fully functional and powerful at E0. His Eidolons provide significant upgrades, but his core kit is complete.
+- **Key Eidolons:** **E2** and **E6** are his major power spikes. E2 increases the damage of follow-up attacks and adds an ATK buff. E6 transforms his Ultimate into a devastating AoE nuke with guaranteed crits, making him a monster in all content.
+- **Light Cone Priority:** Obtaining his signature Light Cone, **For the Short-Lived Life**, is a higher damage increase than unlocking his Eidolons up to E2. If you have a strong 5-star alternative like *Worrisome, Blissful* or a well-superimposed *Only Silence Remains*, you can prioritize Eidolons.
 
 ## FAQ
 
-1.  **What is the best build for Boothill in HSR?**
-    The best build uses the **4pc Thief of Shooting Meteor** relic set and **Firmament Frontline: Glamoth** planar ornaments. Prioritize **Break Effect, CRIT Rate/DMG, and SPD** on his gear.
-
-2.  **What relics should I use for Boothill?**
-    The **4pc Thief of Shooting Meteor** set is best-in-slot. For alternatives, use **2pc Thief + 2pc Champion**. Planar ornaments should be **Firmament Frontline: Glamoth** or **Space Sealing Station**.
-
-3.  **What is Boothill's best light cone?**
-    His best is his **Signature 5★ Light Cone**. Among readily available options, the 4★ **[Swordplay]** is exceptional for single-target boss killing. For free-to-play, **[Cruising in the Stellar Sea]** is excellent.
-
-4.  **What team is best for Boothill?**
-    The premium team is **Boothill, Ruan Mei, Silver Wolf, and Huohuo**. A great F2P team is **Boothill, Pela, Asta,
+1.  **What is the best build for Boothill in HSR?** The best **Boothill build** is 4pc Physical DMG Set (Band of Sizzling Thunder) with Firmament Frontline: Glammoth planar ornaments. Focus on CRIT DMG/Rate, ATK%, and reaching 135 SPD. Pair him with his signature Light Cone, *For the Short-Lived Life*.
+2.  **What relics should I use for Boothill?** His best relic set is the 4pc **Band of Sizzling Thunder**. A 2pc Physical + 2pc ATK% set is a good starter alternative. For ornaments, aim for **Firmament Frontline: Glammoth**.
+3.  **What is Boothill's best light cone?** His Best-in-SLight is his signature 5-star, **For the Short-Lived Life**. His best 4-star option is **Only Silence Remains**. *Worrisome, Blissful* is a fantastic generalist 5-star alternative.
+4.  **What team is best for Boothill?** The premium team features **Boothill + Ruan Mei + Pela/Silver Wolf + Huohuo/Fu Xuan**. A strong F2P team is **Boothill + Asta + Tingyun + Natasha**.
+5.  **Is Boothill good in Honkai Star Rail?** Yes, Boothill is an exceptionally strong single-target DPS, especially against bosses. His high burst damage and Break Effect synergy make him a top-tier Hunt character for endgame content like Memory of Chaos.
+6.  **What does Boothill scale with in HSR?** Boothill primarily scales with **ATK**, **Physical DMG Bonus**, **CRIT Rate/DMG**, and secondarily with **Break Effect** and **SPD**.
+7.  **Is Boothill a DPS or support?** Boothill is unequivocally a **main DPS** (Damage Per Second) character. His entire kit is designed to deal massive amounts of damage.
+8.  **What is Boothill's best F2P light cone?** For free-to-play players, **Only Silence Remains** (from gacha) or **River Flows in Spring** (from Herta Store) are his best budget options.
+9.  **How to build Boothill for maximum damage?** For maximum damage: use the 4pc **Band of Slicing Thunder** + **Glammoth** ornaments, a CRIT DMG body, ATK% boots, Physical DMG sphere, and ATK% rope. Aim for 135+ SPD, 70%+ CRIT Rate, and 140%+ CRIT DMG.
+10. **Is Boothill worth pulling in 2026?** Boothill remains a powerful and fun single-target Physical DPS as long as his core mechanics are not power-crept. If you need a dedicated boss-killer for the Hunt path, he is an excellent investment.

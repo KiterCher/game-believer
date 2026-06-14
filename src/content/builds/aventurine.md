@@ -1,184 +1,142 @@
 ---
 title: "Aventurine Build Guide | GameBeliever"
 description: "Ultimate aventurine build guide for Honkai Star Rail. Best relics, light cones, stat priorities, and team synergies. Updated for 2026."
-updatedAt: "2026-06-13"
+updatedAt: "2026-06-14"
 type: "build"
 character: "aventurine"
 ---
 
 # 砂金 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
 
-## Aventurine Build Overview
+## 砂金 Build Overview
+Aventurine (砂金) is a 5-star Imaginary character who walks the Path of Preservation. As a tank, his primary role is to protect the team, but unlike traditional Preservation units that offer raw HP scaling, Aventurine’s kit revolves around generating shields that scale with his **CRIT Rate** and **DEF**. His unique mechanic allows him to convert offensive stats into defensive utility, making him a hybrid tank who thrives in teams that can provide a steady stream of positive effects (buffs, debuffs, follow-up attacks).
 
-Aventurine (砂金) is a 5-star Imaginary Preservation character who revolutionizes the tank role in Honkai: Star Rail. Unlike conventional defensive tanks that solely mitigate damage, Aventurine operates as a **sub-DPS shielder**—his shields scale with his DEF, and he deals significant Imaginary damage based on that same stat. This unique hybrid design allows him to fulfill two crucial roles simultaneously: providing robust team-wide protection while contributing meaningful offensive pressure.
+The core philosophy of an optimal 砂金 build is to stack as much CRIT Rate as possible while maintaining high DEF. This maximizes the potency of his shields, which are granted to all allies when he accumulates a certain number of follow-up attack stacks. His Imaginary element also allows him to contribute minor break and imprisonment utility. This guide will detail how to build him to become an unbreakable shield for your team while dishing out respectable personal damage.
 
-The **Aventurine build** philosophy centers on maximizing his DEF stat, which serves a dual purpose: increasing both his shield potency and his personal damage output. His kit synergizes exceptionally well with follow-up attack teams, as his Talent provides shields to allies when follow-up attacks are triggered. This makes him a cornerstone for compositions featuring characters like Dr. Ratio, Topaz, or Numby.
-
-Why this build works so effectively lies in Aventurine’s scaling mechanics. His Skill grants a shield proportional to his DEF, his Ultimate deals Imaginary DMG based on his DEF, and his follow-up attack (triggered after allies launch follow-up attacks) scales with his DEF as well. By stacking DEF, you’re simultaneously increasing his survivability, team protection, and offensive capabilities—a rare trifecta that makes Aventurine one of the most efficient Preservation units in HSR.
-
-**What stats to prioritize:** DEF% is king, followed by CRIT Rate and CRIT DMG to maximize his damage potential. Speed is also valuable to help him generate Skill Points and take more turns to refresh shields. Effect Hit Rate isn’t needed since his Imprisonment effect from his Ultimate has a guaranteed base chance.
-
-## Best Relics for Aventurine
+## Best Relics for 砂金
 
 ### Best 4pc Set
-**Knight of Purity Palace (4pc)** is the undisputed best-in-slot for Aventurine. This set is tailor-made for his kit:
-- **2pc Bonus:** Increases DEF by 15%.
-- **4pc Bonus:** Increases the shielded character's DMG dealt by 20%. Additionally, when Aventurine has a shield, his CRIT DMG increases by 20% for each different ally type in the party (max 3 stacks).
-
-This set perfectly complements Aventurine’s playstyle. The DEF increase directly boosts his shields and damage. The 4pc bonus provides two massive buffs: a teamwide DMG increase when allies are shielded, and a personal CRIT DMG boost for Aventurine himself when he’s protected. Since Aventurine frequently shields the entire team (especially with his follow-up attacks), maintaining both bonuses is straightforward.
+The undisputed best-in-slot 4-piece set for 砂金 is **The Wondrous Banyan**.
+*   **Why:** The 2-piece bonus grants a 15% DEF boost, which directly scales his shield strength and personal damage. The 4-piece bonus is where the true power lies: when a shielded ally is attacked, 砂金 gains a stack of "Dreamy," up to 4 stacks. At maximum stacks, his follow-up attack deals 25% increased CRIT DMG. Since his core gameplay loop is built around generating follow-up attacks to refresh team shields, this set is universally synergistic and provides a massive offensive boost without sacrificing defense.
 
 ### Alternative Sets
-**2pc + 2pc Combinations:** If you’re farming for a complete 4pc Knight set (which resides in the Path of Darkness domain), these hybrid sets work well during the transition period:
-
-1. **Knight of Purity Palace (2pc) + Messenger Traversing Hackerspace (2pc)**
-   - **When to use:** This combination is ideal if you need extra SPD to hit important breakpoints while still boosting DEF. The 2pc Messenger bonus provides 6% SPD, which can help Aventurine reach 120 or even 134 SPD without relying heavily on substats or Speed boots.
-
-2. **Knight of Purity Palace (2pc) + Wuthering Snow (2pc)**
-   - **When to use:** This is the defensive option. The Wuthering Snow 2pc bonus reduces DMG taken by 8%, making Aventurine even tankier. Use this if you’re struggling to keep him alive in high-level content like Memory of Chaos.
-
-3. **Guard of Wuthering Snow (2pc) + Messenger Traversing Hackerspace (2pc)**
-   - **When to use:** A pure survival and utility option that sacrifices some damage for maximum survivability and team support. Only recommended for the toughest end-game content where Aventurine’s personal damage isn’t the priority.
+If you are farming for multiple characters or lack a good Wondrous Banyan 4-piece, you can use a **2pc + 2pc combination**:
+*   **The Wondrous Banyan (2pc) + The Wind-Soaring Valorous (2pc):** This combination provides +15% DEF and +8% CRIT Rate. It's an excellent stepping stone that directly boosts his two most important stats.
+*   **The Wondrous Banyan (2pc) + Messenger Traversing Hackerspace (2pc):** Use this if your team is severely lacking SPD. The +6% SPD from Hackerspace can help 砂金 reach important breakpoints to generate his stacks faster.
+*   **The Guard of Wuthering Snow (2pc) + The Wondrous Banyan (2pc):** A purely defensive option. The 15% DEF and damage reduction/Healing when HP is low can make him incredibly durable, though it sacrifices personal damage.
 
 ### Best Planar Ornaments
-**Best-in-Slot: Belobog of the Architects**
-- This set is perfect for Aventurine. The 2pc bonus increases DEF by 15% when the wearer’s DEF is 1500 or higher. Given that Aventurine will easily surpass this threshold, this is a free, unconditional DEF boost that enhances both his shields and damage.
-
-**Alternative Options:**
-1. **Penacony, Land of the Dreams:** Increases Energy Regeneration Rate by 5% and provides a 10% DMG boost to all allies of the same Type as the wearer. Since Aventurine is Imaginary, this boosts Imaginary allies like Dr. Ratio or Luocha. Excellent for Imaginary-focused teams.
-2. **Fleet of the Ageless:** Increases max HP by 12% and provides a teamwide ATK boost when the wearer’s SPD is 120+. Good for hybrid teams where the ATK buff benefits multiple characters.
-3. **Sprightly Vonwacq:** Increases Energy Regeneration Rate by 5% and grants an action advance at the start of battle if SPD is ≥120. Useful for getting Aventurine’s Ultimate online faster, but generally outclassed by Belobog’s DEF boost.
+*   **Best-in-Slot: Belobog of the Architects.** The 2-piece set grants 15% DEF and, if his DEF is 1500 or higher, an additional 15% DEF. This is the most straightforward and powerful set to maximize his shield and damage scaling.
+*   **Alternative Option: Fleet of the Ageless.** If you find yourself unable to hit the 1500 DEF breakpoint or want more team utility, this set provides 8% Max HP and, when his SPD is 120 or higher, an 8% ATK boost to all allies. This is less personal damage but aids the team's overall output.
+*   **Situational Option: Penacony, Land of the Dreams.** If you are running him in a dual Imaginary carry team (e.g., with Dr. Ratio), this set can provide an 18% DMG boost to Imaginary characters and an extra 5% Energy Regeneration Rate for the wearer.
 
 ### Recommended Main Stats
-- **Body:** DEF% (Primary stat)
-- **Feet:** Speed (Primary stat) – Speed boots are essential to ensure Aventurine can generate Skill Points and take turns to refresh shields. In very niche cases, DEF% boots can be used if you have exceptional Speed substats.
-- **Planar Sphere:** DEF% (Primary stat)
-- **Link Rope:** DEF% (Primary stat) or Energy Regeneration Rate%
-   - **DEF% rope** is preferred for maximizing shield strength and damage.
-   - **ERR rope** is an option if you’re struggling to have his Ultimate ready for critical moments, especially in shorter fights or with minimal hit generation.
+*   **Body:** CRIT Rate is the **non-negotiable priority**. Your goal is to stack as much as possible to fuel his shield mechanic and damage.
+*   **Feet:** **SPD** is the standard choice to help him act more frequently, generate energy, and build his follow-up stacks. **DEF%** is an alternative if you have godly SPD substats elsewhere and can hit 134+ SPD from substats alone.
+*   **Planar Sphere:** **DEF%** for maximum shield strength and damage.
+*   **Link Rope:** **Energy Regeneration Rate (ERR)** is highly recommended to ensure his Ultimate is available often. His Ultimate provides significant DMG and generates follow-up stacks. **DEF%** is the alternative for a more personal damage-focused build.
 
 ### Substats Priority
-1. **DEF%** – The core stat. Aim for as much as possible.
-2. **CRIT Rate / CRIT DMG** – To maximize his personal damage. Aim for a 1:2 ratio.
-3. **Speed** – To reach important breakpoints (120, 134).
-4. **Flat DEF** – Provides a small boost.
-5. **HP%** – Minor survivability increase.
-6. **Break Effect** – A low priority but not useless, as his Imaginary Break can delay enemies.
+1.  **CRIT Rate** (to reach the breakpoints listed below)
+2.  **DEF%** (to increase shield and damage)
+3.  **SPD** (to reach key breakpoints)
+4.  **CRIT DMG** (to capitalize on his multipliers)
+5.  **Break Effect** (a nice luxury stat for his Imaginary Breaks)
 
-**Minimum Breakpoints:** Aim for at least 120 SPD with substats or Speed boots. 134 SPD is a significant breakpoint for an extra turn in the first cycle of Memory of Chaos.
+**Minimum Breakpoint:** Your absolute first goal is to get 砂金's DEF to **1500** to activate the Belobog of the Architects bonus. Beyond that, stack CRIT Rate.
 
-## Best Light Cones for Aventurine
+## Best Light Cones for 砂金
 
 ### 5★ Light Cones
-1. **Moment of Victory (Signature)** – This is his signature Light Cone and best-in-slot by a significant margin.
-   - Increases DEF by 24% (at S1).
-   - When the wearer is attacked, their DEF is increased by an additional 24% until the end of their turn.
-   - When the wearer provides a shield to an ally, their CRIT DMG is increased by 30% for 2 turns.
-   This LC perfectly synergizes with his kit: massive DEF boost, even more DEF when taking damage (which he wants), and a huge CRIT DMG buff when shielding allies.
-
-2. **She Already Shut Her Eyes** – A strong generalist option.
-   - Increases DEF by 20% (at S1).
-   - When the wearer takes DMG, increases all allies' DMG by 10% for 2 turns.
-   Provides a teamwide DMG buff, making it excellent for hybrid offensive-defensive play.
-
-3. **Moment of Victory alternatives (other 5★ options):**
-   - **Sleep Like the Dead:** Increases CRIT DMG. Situational but viable for pure damage builds.
-   - **Time Waits for No One:** Increases HP and ATK, but less ideal since Aventurine scales with DEF.
+*   **Signature Light Cone: Incessant Rain.** This is tailor-made for him. It provides a massive **32% DEF boost** and a **20% CRIT DMG** increase to all allies when the wearer inflicts a debuff. Since 砂金's Ultimate inflicts "Blind Bet," this is almost always active, providing unparalleled team utility.
+*   **Other 5★ Options: Moment of Victory.** An excellent alternative, offering **32% DEF** and increasing the effect hit rate of the wearer's Ultimate. While the aggro increase is less relevant for a tank, the raw DEF stat is fantastic.
+*   **Texture of Memory.** A strong defensive 5★ option. Grants a **24% Max HP** increase and creates a damage-reducing shield when the wearer's turn begins. This makes him incredibly hard to kill but provides no offensive or team benefits.
 
 ### 4★ Light Cones
-1. **We Are Wildfire** – The best 4★ option for shield-focused builds.
-   - Increases DEF by 16% (at S1).
-   - When the wearer provides a shield to an ally, the shielded ally's DMG taken is reduced by 12% for 2 turns.
-   This LC is almost a budget version of his signature, offering DEF and a valuable defensive buff.
-
-2. **Day One of My New Life** – Excellent for survivability.
-   - Increases DEF by 16% (at S1).
-   - At the start of battle, grants a shield to all allies equal to 20% of the wearer's max HP for 2 turns.
-   Provides an immediate team shield, useful against AoE damage openers.
-
-3. **Defense of the Wasteland** – A pure DEF stick.
-   - Increases DEF by 16% (at S1).
-   Simple but effective for maximizing shield strength.
-
-**Event Light Cones:** **This Is Me!** (from the Aetherium Wars event) is a fantastic F2P alternative. It increases DEF by 16% and increases the wearer's DMG by 15% for each debuff on the enemy (max 3 stacks). Since Aventurine can implant Imprisonment (a debuff) with his Ultimate, this is often active.
+*   **Best 4★ Choices: Day One of My New Life.** This is the king of 4-star Preservation Light Cones. It provides a **16% DEF** boost and, when an ally is attacked, increases the DEF of all allies by **16%** for 2 turns. The team-wide DEF buff is incredible and scales well into the late game.
+*   **Event/Alternative Options: This Is Me!** From the Nameless Honor battle pass. It gives **16% DEF** and increases the wearer's DMG by **20%** for 2 turns after using their Ultimate. A great personal damage option if you have the pass.
+*   **Landau's Choice.** A niche but effective option for pure survivability. The wearer becomes the target of enemy attacks and takes **24% less DMG**. This forces enemies to attack your tank, protecting squishier teammates.
 
 ### F2P Light Cones
-1. **This Is Me!** – As mentioned, the event LC is top-tier F2P.
-2. **Trends of the Universal Market** – Increases DEF by 16% and has a chance to burn enemies when hit.
-3. **Amber (3★)** – The ultimate budget option. Increases DEF by 16% at max Superimposition. It’s a 3★ LC but the high DEF% makes it surprisingly usable if you have no other options.
+*   **Budget Choice: Trend of the Universal Market.** Obtained from the Simulated Universe World Store. Provides **16% DEF** and, when the wearer is attacked, has a high chance to burn the attacker. This adds a nice bit of damage and minor Break effect.
+*   **Other F2P Option: We Will Meet Again.** From the Herta Store. Provides **16% DEF** and increases the wearer's DMG dealt by **20%** after using a Basic ATK or Skill. Easy to superimpose and a solid stat stick.
 
-### Light Cone Comparison Table
-
-| Light Cone | Rarity | DEF Boost (S1) | Additional Effect | Best For |
-|------------|--------|----------------|-------------------|----------|
-| Moment of Victory | 5★ | 24% (+24% when hit) | +30% CRIT DMG when shielding | Optimal damage & shield build |
-| She Already Shut Her Eyes | 5★ | 20% | Teamwide +10% DMG when hit | Hybrid damage/support |
-| We Are Wildfire | 4★ | 16% | -12% DMG taken for shielded ally | Budget shield focus |
-| Day One of My New Life | 4★ | 16% | Team shield at battle start | Defensive utility |
-| This Is Me! (Event) | 4★ | 16% | +45% DMG against debuffed enemies | F2P damage build |
-| Amber | 3★ | 16% | None | Emergency F2P option |
+### Light Cone Comparison
+| Light Cone | Rarity | Key Stat | Notable Passive | Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **Incessant Rain** | 5★ | +32% DEF | +20% Allied CRIT DMG on debuff infliction | Ultimate team support, BiS |
+| **Moment of Victory** | 5★ | +32% DEF | +24% EHR on Ultimate | High personal DEF, F2P 5★ option |
+| **Day One of My New Life** | 4★ | +16% DEF | +16% Allied DEF on ally being hit | Best 4★, team support |
+| **This Is Me!** | 4★ | +16% DEF | +20% Self DMG after Ultimate | Personal damage focus |
+| **Trend of the Universal Market** | 3★ | +16% DEF | Burn on being hit | F2P, adds DoT/Break |
 
 ## Stats Breakpoints & Targets
-
-- **CRIT Rate Target:** 70% minimum for consistent damage, ideally 80%+ to maximize his follow-up attacks and Ultimate.
-- **CRIT DMG Target:** Aim for 140%+ after accounting for the 4pc Knight set bonus and Light Cone effects.
-- **SPD Breakpoints:**
-   - **120 SPD:** Minimum for comfortable Skill Point generation and turn cycling.
-   - **134 SPD:** Ideal for an extra turn in the first cycle of Memory of Chaos, allowing for faster Ultimate uptime and shield refreshes.
-   - **143 SPD:** A luxury breakpoint for even faster cycling.
-- **DEF Target:** 3000+ is achievable and recommended for strong shields. With his signature Light Cone, 3500+ is possible.
-- **ERR Target:** Only if using an ERR rope. 119.4% ERR with an ERR rope plus basic attacks will guarantee his Ultimate in 3-4 turns (depending on hit generation).
+*   **CRIT Rate Target:** Aim for **70%** minimum. Since his shields scale directly with CRIT Rate, this is his most important stat. Going higher to 80-90% is excellent if substats allow.
+*   **CRIT DMG Target:** With 70% CRIT Rate, aim for **140%** as a soft goal. He has decent multipliers, so this will contribute meaningfully to his personal damage.
+*   **SPD Breakpoints:** The most important breakpoint is **134 SPD**, which allows him to act twice in the first cycle of Memory of Chaos. If using Fleet of the Ageless, you need **120 SPD**. 143 SPD is the next major breakpoint for three actions in the first two cycles.
+*   **Other Important Stats:**
+    *   **DEF:** **2500-3000** is a solid endgame target. This ensures his shields are robust. His DEF must be at least **1500** to activate Belobog.
+    *   **Effect Hit Rate (EHR):** Only needed if you want to ensure his Ultimate's imprisonment lands consistently. Around **40-50%** is sufficient against most enemies.
 
 ## Best Team Compositions
+砂金 excels in teams that can provide consistent buffs, debuffs, or follow-up attacks to fuel his stack generation.
 
 ### Premium Team
-**Aventurine + Dr. Ratio + Topaz & Numby + Ruan Mei**
-- **Why it works:** This is the premier follow-up attack team. Aventurine’s Talent provides shields every time an ally launches a follow-up attack. Dr. Ratio and Topaz/Numby are built around follow-up attacks, generating constant shields for the entire party. Ruan Mei provides teamwide DMG and Break Efficiency, further boosting the team’s offensive output while Aventurine keeps everyone protected. This team has exceptional synergy, as every character enables the others.
+*   **Team:** Aventurine, Dr. Ratio, Silver Wolf, Ruan Mei
+*   **Why It Works:** This is a premier Single-Target focused team. Silver Wolf provides consistent debuffs, activating Dr. Ratio's and Aventurine's bonuses (like Incessant Rain). Ruan Mei provides massive DMG buffs and Weakness Break efficiency. Dr. Ratio and Aventurine form a devastating follow-up attack duo. Aventurine's shields keep the team alive while contributing significant Imaginary Break and personal damage.
 
 ### F2P Team
-**Aventurine + Dr. Ratio + Pela/Tingyun + Natasha/Gallagher**
-- **How to play:** This team maintains the follow-up core with Dr. Ratio while using accessible supports. Pela shreds enemy DEF, increasing Dr. Ratio’s and Aventurine’s damage. Tingyun can buff Dr. Ratio’s ATK and provide energy. Natasha or Gallagher provides the necessary sustain if Aventurine’s shields aren’t enough. The core strategy remains: Dr. Ratio triggers follow-ups, which trigger Aventurine’s shields.
+*   **Team:** Aventurine, March 7th, Dan Heng • Imbibitor Lunae, Asta
+*   **Why It Works:** A hypercarry setup. Dan Heng • Imbibitor Lunae is the primary damage dealer. March 7th provides additional shields and taunt, working synergistically with Aventurine's Preservation path. Asta provides crucial ATK and SPD buffs to the entire team. Aventurine's job is to keep everyone alive and contribute Imaginary Breaks and chips of damage.
 
 ### Alternative Teams
-1. **Mono-Imaginary:** Aventurine + Dr. Ratio + Luocha + Silver Wolf. Silver Wolf implants Imaginary weakness, and Luocha provides healing. Aventurine’s shields complement Luocha’s healing for near-invulnerability.
-2. **Hypercarry Aventurine:** Aventurine + Sparkle/Bronya + Tingyun + Pela. For a meme DPS build. Sparkle/Bronya advance Aventurine’s action, and he attempts to deal damage with his DEF-scaled attacks. Not optimal but fun.
-3. **Standard FUA Team:** Aventurine + Clara/March 7th + Topaz + Flex. Works with any follow-up attack trigger.
+*   **Follow-Up Attack Synergy:** Aventurine, Topaz & Numby, Dr. Ratio, Ruan Mei. All units utilize follow-up attacks, creating a constant barrage that generates Aventurine's stacks instantly.
+*   **Imaginary Break:** Aventurine, Welt, Silver Wolf, Himeko. This team focuses on breaking multiple weaknesses with Imaginary, using Welt and Aventurine to imprison and delay enemies, controlling the battlefield completely.
 
 ## Gameplay Tips & Rotation
-
-**Skill Rotation:**
-1. **Turn 1:** Use his Skill to apply a shield to all allies. This is your priority to prevent incoming damage.
-2. **Follow-up Turns:** Use his Basic Attack to generate Skill Points unless you need to reapply shields immediately.
-3. **Ultimate Timing:** Use his Ultimate when it’s ready or when facing a tough enemy to apply Imprisonment. The Imprisonment delays the enemy’s action and increases the DMG they take from follow-up attacks.
-4. **Shield Maintenance:** Monitor shield uptime. Reapply with his Skill when they’re about to expire or before a major enemy AoE attack.
-
-**Key Combos:**
-- **Skill → Ultimate → Follow-up:** A classic sequence. Shield the team, immediately hit enemies with his Ultimate to Imprison and deal damage, then his follow-up attack (if conditions are met) will also deal damage and provide another shield.
-- **Avenge All Evils (Follow-up):** This triggers after allies use follow-up attacks. Don’t try to force it; build teams that naturally generate follow-up attacks.
-
-**Common Mistakes to Avoid:**
-1. **Ignoring Speed:** Building Aventurine too slow makes him a passive shielder. He needs turns to generate SP and refresh shields.
-2. **Neglecting CRIT Stats:** While DEF is important, ignoring CRIT Rate/DMG wastes his significant damage potential.
-3. **Poor Ultimate Timing:** Don’t hold his Ultimate forever. Using it to apply Imprisonment at the start of a boss phase or before a big attack can be more valuable than saving it for damage.
-4. **Forgetting Team Synergy:** Aventurine shines with follow-up attackers. Putting him in a team with no follow-up attacks reduces his shield generation frequency.
+*   **Skill Rotation:** Your rotation is straightforward. Use your **Basic ATK** to generate Skill Points when your team is fully shielded and healthy. Use your **Skill** to grant a fresh shield to the entire team when it's depleted or about to expire. Always use your **Ultimate** when available, as it generates follow-up stacks and deals AoE Imaginary DMG.
+*   **Key Combos:** The key is timing. After an ally with a shield is attacked, Aventurine's follow-up attack is triggered. This is automatic, so your gameplay focus is on using his Skill preemptively to ensure shields are up before the enemy attacks. Against bosses with AoE attacks, this can trigger his follow-up multiple times in one turn.
+*   **Common Mistakes to Avoid:**
+    1.  **Ignoring DEF:** Building pure CRIT without enough DEF will result in paper-thin shields.
+    2.  **Hoarding his Skill:** Don't wait until shields break. Apply it proactively before powerful enemy attacks or AoEs.
+    3.  **Forgetting his Ult's Debuff:** His Ultimate inflicts "Blind Bet," a debuff. This is crucial for activating certain Light Cone effects (like Incessant Rain) and ally abilities (like Dr. Ratio's).
 
 ## Investment Priority
-
-**E0 Viable?** Yes, absolutely. Aventurine is fully functional at E0 and is considered one of the best Preservation units in the game at base investment. His core kit of providing shields and dealing DEF-based damage is complete without any Eidolons.
-
-**Key Eidolons:**
-- **E1:** Increases the CRIT DMG dealt by his follow-up attack and makes it easier to trigger. A solid damage increase.
-- **E2:** When an ally with his shield launches a follow-up attack, they gain a CRIT DMG boost. This further enhances team synergy.
-- **E6:** His Ultimate now also provides a shield to all allies. This is a massive quality-of-life and defensive boost, making his Ultimate provide both damage and protection.
-
-**Light Cone Priority:** **Signature Light Cone > We Are Wildfire (4★) > This Is Me! (Event 4★) > Defense of the Wasteland.** His signature is a significant upgrade over all other options due to the massive DEF and CRIT DMG bonuses. However, the 4★ options are very viable.
+*   **E0 Viable?** Absolutely. Aventurine is completely functional and top-tier at E0. His core shield-generating mechanic is inherent to his kit.
+*   **Key Eidolons:**
+    *   **E1 (Crisis Rebate):** A strong quality-of-life Eidolon. After using his Ultimate, all allies receive a shield equal to 100% of his DEF. This guarantees shield uptime.
+    *   **E2 (High Stakes):** When an ally with his shield inflicts a debuff, Aventurine gains 1 stack of Blind Bet. This dramatically increases his follow-up attack frequency in debuff-heavy teams.
+    *   **E6 (All-In):** When using his Ultimate, he gains 6 stacks of Blind Bet, guaranteeing an immediate follow-up attack and massive personal DMG. It's a powerful but luxury damage-focused Eidolon.
+*   **Light Cone Priority:** **Incessant Rain > Moment of Victory > Day One of My New Life.** If you have a 5-star option, use it. If not, a superimposed Day One of My New Life is incredibly competitive and team-friendly.
 
 ## FAQ
 
-1. **What is the best build for Aventurine in HSR?**
-   The best build for Aventurine focuses on maximizing his DEF while maintaining good Speed (134+) and CRIT stats. Use the 4pc Knight of Purity Palace relic set with Belobog of the Planar Ornaments. Main stats should be DEF% Body, Speed Feet, DEF% Sphere, and DEF% Rope. His signature Light Cone, Moment of Victory, is optimal.
+1.  **What is the best build for Aventurine in HSR?**
+    The best build focuses on maximizing **CRIT Rate and DEF**. Use the **4pc The Wondrous Banyan** relic set and the **Belobog of the Architects** planar ornament. Main stats should be CRIT Rate Body, SPD Feet, DEF% Sphere, and ERR Rope.
 
-2. **What relics should I use for Aventurine?**
-   Aventurine’s best relics are the 4pc Knight of Purity Palace set. If farming that set, use 2pc Knight + 2pc Messenger Traversing Hackerspace as a transitional set. For Planar Ornaments, Belobog of the Architects is best-in-slot.
+2.  **What relics should I use for Aventurine?**
+    The Best-in-Slot is the 4-piece **The Wondrous Banyan** set. A strong alternative is a 2-piece Banyan combined with 2-piece Wind-Soaring Valorous (for CRIT) or Messenger Hackerspace (for SPD). For planar ornaments, aim for **Belobog of the Architects** or **Fleet of the Ageless**.
 
-3. **What is Aventurine's best light cone?**
-   Aventurine’s best Light Cone is his signature 5★
+3.  **What is Aventurine's best light cone?**
+    His signature 5-star Light Cone, **Incessant Rain**, is the absolute best, providing massive DEF and a team-wide CRIT DMG buff. For 4-star alternatives, **Day One of My New Life** is exceptional due to its team DEF buff.
+
+4.  **What team is best for Aventurine?**
+    A premium team is **Aventurine, Dr. Ratio, Silver Wolf, and Ruan Mei**. This composition maximizes debuff application for synergy and provides immense single-target damage. He also shines in any team with multiple follow-up attackers.
+
+5.  **Is Aventurine good in Honkai Star Rail?**
+    Yes, Aventurine is an excellent and versatile Preservation character. He offers a unique blend of robust team shielding, significant personal damage, and Imaginary Break utility, making him a top-tier tank for most content.
+
+6.  **What does Aventurine scale with in HSR?**
+    Aventurine's kit uniquely scales with both **DEF** (for shield strength) and **CRIT Rate** (for shield potency and follow-up attack frequency). Building both stats is essential for his performance.
+
+7.  **Is Aventurine a DPS or support?**
+    He is a **defensive support (tank)** who contributes meaningful sub-DPS damage. His primary role is to protect the team with shields, but his kit allows him to deal respectable personal damage, blurring the lines slightly.
+
+8.  **What is Aventurine's best F2P light cone?**
+    The best free-to-play option is **Trend of the Universal Market**, obtained from the Simulated Universe store. It provides good DEF and adds a burn effect for extra damage and Break potential.
+
+9.  **How to build Aventurine for maximum damage?**
+    For a damage-focused build, prioritize CRIT Rate and CRIT DMG substats, use a DEF% Rope instead of ERR, and pair him with characters who can frequently apply debuffs (like Silver Wolf or Pela) to activate effects like Incessant Rain's CRIT DMG bonus.
+
+10. **Is Aventurine worth pulling in 2026?**
+    As of his release in Version 2.1, Aventurine is considered a high-value pull for any player needing a premium, damage-oriented tank. His unique mechanics and synergy with popular characters like Dr. Ratio and Topaz ensure

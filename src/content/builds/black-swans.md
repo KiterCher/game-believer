@@ -1,141 +1,142 @@
 ---
 title: "Black-swans Build Guide | GameBeliever"
 description: "Ultimate black-swans build guide for Honkai Star Rail. Best relics, light cones, stat priorities, and team synergies. Updated for 2026."
-updatedAt: "2026-06-13"
+updatedAt: "2026-06-14"
 type: "build"
 character: "black-swans"
 ---
 
-# H1: 黑天鹅 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
+# 黑天鹅 Build Guide — Best Relics, Light Cones & Teams | GameBeliever
 
-## H2: Black Swan Build Overview
+## 黑天鹅 Build Overview
+Black Swan is a premier 5-star **Wind** character on the **Nihility** Path, serving as a hybrid **Debuffer and Sub-DPS**. Her core identity revolves around applying and detonating **Wind Shear**, a powerful Damage-over-Time (DoT) effect, while providing significant defensive shred and damage amplification to your entire team. This **Black Swan build** is designed to maximize her **DoT damage**, **debuff uptime**, and overall team utility, making her a flexible and potent addition to any Honkai: Star Rail roster.
 
-Black Swan is a 5-star Wind Nihility character who excels as a Debuffer and Sub-DPS in Honkai Star Rail. Her unique gameplay revolves around applying and detonating stacks of her **Arcana** debuff, which deals massive Damage over Time (DoT) and amplifies the damage enemies take from all sources. This build guide is the definitive resource for maximizing her potential, focusing on a Debuffer/Sub-DPS hybrid role that turns her into a cornerstone for high-level DoT teams.
+The philosophy behind this build is to stack her unique **Ephemeral Stack** mechanic as high and as fast as possible. Each Ephemeral Stack increases the damage of her Ultimate and enhances her Talent's ability to apply Wind Shear. Therefore, our priority is stacking **Effect Hit Rate (EHR)** to ensure her debuffs land against all enemies, followed by **ATK%** to scale her DoT damage, and **Speed** to increase her turn frequency for more applications and detonations. This **HSR Black Swan** build transforms her from a mere debuffer into a core offensive engine for DoT-focused teams.
 
-**Role & Playstyle:** Black Swan is not a traditional hypercarry. Her power comes from setting up the battlefield with persistent debuffs. She applies **Arcana** stacks (a special Wind Shear) via her Skill and Ultimate, and these stacks detonate when she uses her Basic Attack or Ultimate, dealing significant Wind damage. Her Talent passively increases the damage of all DoT effects on enemies affected by Arcana. Therefore, the optimal **Black Swan build** prioritizes stats that increase her personal DoT damage, her debuff application rate (Effect Hit Rate), and her ability to take turns quickly to manage stacks.
+## Best Relics for Black Swan
+Choosing the **best relics for Black Swan** is crucial to amplifying her DoT potential and debuff efficiency. Her kit benefits immensely from both personal damage stats and utility-enhancing set bonuses.
 
-**Why This Build Works:** This build philosophy centers on three pillars:
-1.  **Effect Hit Rate (EHR):** To reliably apply and maintain Arcana stacks against high-resistance enemies.
-2.  **Attack (ATK):** As her DoT damage, including Arcana detonations, scales directly with her ATK stat.
-3.  **Speed (SPD):** To generate Skill Points, refresh Arcana, and detonate stacks more frequently.
-By balancing these stats with complementary Relic sets and Light Cones, Black Swan transforms from a simple debuffer into a devastating engine of sustained damage.
+### Best 4pc Set
+- **Set Recommendation: Prisoner in Deep Confinement**
+- **Why:** This is undeniably **Black Swan's best relic set**. The 4-piece bonus increases the damage of your DoT effects by 6% for each different DoT effect currently applied on the target, up to a maximum of 18% (3 effects). Black Swan inherently applies Wind Shear, and in a well-built team, you can easily have at least two other distinct DoTs (e.g., Bleed, Shock, Burn) active, granting a massive and consistent 18% damage multiplier to her primary damage source. It synergizes perfectly with her role as a DoT specialist.
 
-## H2: Best Relics for Black Swan
+### Alternative Sets
+- **2pc + 2pc Combinations:**
+    - **Eagle of Twilight Line (2pc) + Thief of Shooting Meteor (2pc):** This combination is excellent for maximizing Black Swan's personal damage. The Wind set provides a 10% Wind DMG Boost, while the Thief set offers a 10% Break Effect bonus, further empowering the Wind Shear breaks she facilitates. Use this when your team already provides sufficient debuffs or if you lack a good 4-piece Prisoner set.
+    - **Eagle of Twilight Line (2pc) + Pioneer Diver of Dead Waters (2pc):** A great alternative if you need more EHR. The Pioneer set gives +10% EHR, making it easier to reach the required breakpoints to land her debuffs against high-Effect-Resistance enemies. Use this during early game or when facing Memory of Chaos with high RES bosses.
 
-Selecting the **best relics for Black Swan** is crucial for unlocking her full potential. Her ideal sets focus on amplifying DoT damage and providing team-wide utility.
+### Best Planar Ornaments
+- **Best-in-Space: Firmament Frontline: Glamoth**
+- **Why:** The 2-piece bonus provides a 12% ATK boost. When your team's average SPD is 135 or higher, it further increases all damage dealt by 12%. This is a straightforward and powerful stat stick for Black Swan, and reaching the SPD threshold is very achievable with Speed boots and substats.
+- **Alternative Options:**
+    - **Fleet of the Ageless:** A solid defensive-support option. It grants 8% HP and, when your team's average SPD is 120+, increases all allies' ATK by 8%. This is useful in hypercarry teams where Black Swan is more of a pure support, or if survivability is a major concern.
+    - **Pan-Cosmic Commercial Enterprise:** If you are struggling to hit EHR substat goals, this set provides 10% EHR and increases ATK by 25% of the EHR, up to a maximum of 25%. It's a good bridge to help you meet the EHR requirements before transitioning to a more damage-focused ornament.
 
-### H3: Best 4pc Set
-*   **Set Name:** **Prisoner in Deep Confinement (4pc)**
-*   **Why:** This is Black Swan's undisputed best-in-slot set. The 4pc bonus, "After the wearer inflicts a debuff on an enemy, the target receives a Cutthroat effect, increasing the DoT damage taken by 6% per stack. This effect lasts for 3 turns and stacks up to 3 times." This perfectly synergizes with her core gameplay. By simply using her Skill or Ultimate to apply Arcana, she triggers this powerful vulnerability multiplier, significantly boosting her own and her allies' DoT damage. The 2pc bonus also provides a 12% ATK increase, directly feeding her damage scaling.
+### Recommended Main Stats
+- **Body:** **%ATK**. This is the premier choice for maximizing her DoT and Ultimate damage.
+- **Feet:** **Speed (SPD)**. Essential for increasing turn frequency, which means more skill uses for stacking Ephemeral and more Ultimate activations. It also helps trigger the SPD-based bonuses from Planar Ornaments and some Light Cones.
+- **Planar Sphere:** **Wind DMG Boost%**. Directly increases all her damage sources.
+- **Link Rope:** **Energy Regeneration Rate (ERR)**. This is **critical**. An ERR rope ensures she can use her powerful Ultimate (which increases all DoT damage taken by enemies) more frequently, drastically increasing team DPS. ATK% rope is only considered if you can already achieve a 3-turn Ultimate with ERR rope and other sources.
 
-### H3: Alternative Sets
-If you are still farming the Prisoner set, these **2pc + 2pc** combinations are viable transitional options:
-*   **2pc Prisoner in Deep Confinement + 2pc Musketeer of Wild Wheat:** Provides a balanced boost of +12% ATK (Prisoner) and +12% ATK + 6% SPD (Musketeer). This is a solid stat-stick combination.
-*   **2pc Thief of Shooting Meteor + 2pc Musketeer of Wild Wheat:** The Thief set's +12% Wind DMG bonus directly increases Arcana's damage. Paired with Musketeer's ATK and SPD, this is excellent if you have exceptional ATK% and EHR substats on these pieces.
-*   **When to Use Each:** Use the 2pc+2pc sets while you farm the Prisoner cavern. Prioritize the combination where your best individual pieces lie. Once you have a viable 4pc Prisoner set with good substats, transition immediately.
+### Substats Priority
+1.  **Effect Hit Rate (EHR):** Your **absolute top priority** until you reach the target breakpoint (see below). Missing a debuff application is a massive loss of damage and utility.
+2.  **Speed (SPD):** After meeting EHR goals, stack Speed to hit important breakpoints (120, 134, 145) for more actions, SP generation, and ornament bonuses.
+3.  **ATK%:** The primary damage-scaling stat for her DoT and Ultimate.
+4.  **CRIT Rate / CRIT DMG:** While DoTs cannot CRIT, her Ultimate *can*. These stats become valuable only after you have comfortably met the EHR and SPD breakpoints, as they only boost a portion of her kit.
+5.  **Break Effect:** A nice bonus that increases the initial Break DMG from applying Wind Shear.
 
-### H3: Best Planar Ornaments
-*   **Best-in-Slot:** **Firmament Frontline: Glamoth (2pc)** - The +12% ATK is universally beneficial. The conditional +12% DMG for 3 turns when your SPD is 135 or higher is consistently achievable with her ideal SPD builds and provides a massive damage spike.
-*   **Alternative Options:**
-    *   **Inert Salsotto (2pc):** Excellent if you are building a CRIT-focused Black Swan. The +8% CRIT Rate and +15% Ultimate/Follow-up DMG boost her burst potential.
-    *   **Sprightly Vonwacq (2pc):** The +5% Energy Regeneration Rate helps her reach her Ultimate (100 Energy) faster, and the +20% Action Advance when SPD > 120 guarantees she can apply debuffs early in the fight.
-    *   **Pan-Cosmic Commercial Enterprise (2pc):** A great supportive option if you need to hit EHR thresholds. Provides +10% EHR and converts it into up to 25% ATK for the team.
+## Best Light Cones for Black Swan
+Selecting the **best Light Cone for Black Swan** is vital for balancing her high EHR requirement with damage output. Her signature cone is exceptional, but several excellent 4-star and F2P options exist.
 
-### H3: Recommended Main Stats
-*   **Body:** **ATK%** is the primary choice for maximizing DoT damage. A **CRIT Rate** body can be used in a crit-focused build with Inert Salsotto.
-*   **Feet:** **Speed (SPD)** is essential for increasing turn frequency, SP generation, and stack management. ATK% feet are only viable in very slow, hyper-invested teams where you can guarantee sufficient speed from substats.
-*   **Planar Sphere:** **Wind DMG Boost** is the best-in-slot for raw damage. ATK% is a viable alternative if you have exceptional Wind DMG% substats.
-*   **Link Rope:** **Energy Regeneration Rate (ERR)** is the top choice to ensure smooth Ultimate uptime for constant Arcana application and detonation. ATK% can be considered if you are hitting breakpoints without ERR, but ERR is generally more valuable for her rotation.
+### 5★ Light Cones
+- **Signature: Reforged Remembrance:** This is her **Best-in-Slot Light Cone by a significant margin**. It provides a massive 36% EHR at Superimposition 1, instantly solving her biggest stat hurdle. Furthermore, when Black Swan attacks an enemy afflicted with DoT, she increases her ATK by 24% and the DoT damage dealt by that enemy by 12%. It's tailor-made for her kit.
+- **Other 5★ Options:**
+    - **In the Name of the World:** A strong generalist Nihility cone. It grants +18% ATK against debuffed enemies and a 24% DMG boost to her Skill. A very powerful option if you lack her signature.
+    - **Patience Is All You Need:** Excellent for teams that can frequently Break enemies. It provides SPD and, after attacking a Weakness-Broken enemy, boosts all DMG by 12% and adds an extra hit of Wind DMG.
 
-### H3: Substats Priority
-Prioritize substats in this order to build the perfect **Black Swan**:
-1.  **Effect Hit Rate (EHR):** Your most critical substat. You need enough to guarantee her debuffs land on endgame content.
-2.  **Attack (ATK%)** and **Speed (SPD):** Directly boost her damage and turn economy.
-3.  **Flat Attack:** Provides a smaller but direct boost to her DoT scaling.
-4.  **Break Effect:** Can be a valuable niche substat, especially in Super Break teams.
-5.  **CRIT Rate / CRIT DMG:** Only if building a crit-focused variant.
+### 4★ Light Cones
+- **Best Choices:**
+    - **Eyes of the Prey (Gacha):** The **best 4-star option**. At Superimposition 5, it provides **36% EHR** and increases DoT DMG by 24%. It directly mimics her signature LC's stats and is the go-to for non-whale players.
+    - **Tutorial Mission (Event - Past Event):** A fantastic F2P-friendly option if you acquired it. It provides 20% EHR and regenerates 8 Energy after using Basic ATK or Skill on a debuffed enemy, helping with Ultimate uptime.
+    - **A Secret Vow (Gacha):** A straightforward damage boost. It increases DMG dealt by 20% (at S1) and further increases DMG taken by enemies whose current HP% is equal to or higher than your character's. Good for maintaining high personal damage.
 
-*Minimum Breakpoint: A general target is **75% EHR** to consistently land debuffs on high-resistance enemies. Aim for **120+ SPD** as a baseline, with **134 or 143** being major breakpoints for extra actions.*
+### F2P Light Cones
+- **Budget Choices:**
+    - **Loop (Gacha/Shop):** A basic but effective starter. Increases DMG against debuffed enemies by 16% (at S5). Easy to obtain and Superimpose.
+    - **Fermata (Forgotten Hall Shop):** Increases Break Effect by 16% (at S1) and DMG against Shocked or Wind Shear afflicted enemies by 24% (at S5). Very synergistic for DoT teams.
+    - **Before the Tutorial (Past Event):** If you missed Tutorial Mission, this is a direct, though slightly weaker, replacement. Provides 15% EHR.
 
-## H2: Best Light Cones for Black Swan
+### Light Cone Comparison Table
 
-Choosing the **best light cones for Black Swan** will define her damage ceiling and utility. Her options range from powerful signature weapons to highly effective free alternatives.
+| Light Cone | Rarity | Key Stat & Effect | Best For |
+| :--- | :--- | :--- | :--- |
+| **Reforged Remembrance** | 5★ | +36% EHR; Boosts ATK & DoT DMG on debuffed enemies | **Best-in-Slot**, solves EHR, massive damage ceiling |
+| **Eyes of the Prey** | 4★ | +36% EHR (S5); +24% DoT DMG (S5) | **Best 4★ Option**, perfect EHR/Damage balance |
+| **In the Name of the World** | 5★ | +18% ATK vs. debuffed; +24% Skill DMG | Strong alternative if lacking signature |
+| **Tutorial Mission** | 4★ (Event) | +20% EHR; Energy on debuffed enemy attack | F2P, great for Ultimate frequency |
+| **Loop** | 3★ | +16% DMG vs. debuffed (S5) | Budget starting option |
 
-### H3: 5★ Light Cones
-*   **Signature: Reforged Remembrance (5★)** - The best **Black Swan Light Cone** by a significant margin. The high base ATK is fantastic. The EHR% is practically mandatory for her build, and the unique effect "After the wearer inflicts a debuff on an enemy, the target's DEF is reduced by 20% for 2 turns" provides massive, universal damage amplification for the entire team's damage, not just DoTs. The secondary effect further boosts DoT damage by consuming the DEF reduction. It's a perfect synergy of stats and effect.
-*   **Other 5★ Options:**
-    *   **In the Name of the World (5★, Himeko's Signature):** While not ideal, its high ATK and Effect Hit Rate for debuffed enemies are useful. The Skill DMG boost is less impactful but still provides a solid stat stick.
-    *   **Time Waits for No One (5★, Bronya's Signature):** The ERR helps with Ultimate uptime. The Crit DMG boost to allies can be useful in hybrid teams, but it doesn't directly enhance her core DoT identity as well as other options.
+## Stats Breakpoints & Targets
+Hitting these **Black Swan stats** thresholds will ensure she performs at her peak.
+- **CRIT Rate Target:** Not a primary focus for her DoT, but aim for **~40-50%** if possible to boost Ultimate damage without sacrificing core stats.
+- **CRIT DMG Target:** Similarly, aim for **~80-100%** as a secondary goal after EHR/SPD/ATK are secured.
+- **Effect Hit Rate Target:** **Minimum 100%** is non-negotiable for endgame content like Memory of Chaos. Her Skill's DEF Shred requires **120% EHR** to apply the maximum -36% shred against a boss with 40% Effect RES. Always calculate: `Required EHR = (Target RES - (Debuff Base Chance - Trace Bonus)) / (1 - Debuff RES Reduction)`.
+- **Speed Breakpoints:**
+    - **120 SPD:** Minimum for activating **Fleet of the Ageless** and most SPD-based bonuses.
+    - **134 SPD:** The crucial breakpoint to get **2 turns in the first cycle** of Memory of Chaos, generating more energy and stacks.
+    - **145 SPD:** Activates the **Glamoth** ornament bonus and allows for more flexible rotations.
+- **ATK / ERR Targets:** Aim for **2,600+ ATK** as a baseline. For **ERR**, ensure you have an ERR rope (19.4%) and ideally 4-6% from substats to hit the ~24% needed for consistent 3-turn Ultimates with her Skill usage pattern.
 
-### H3: 4★ Light Cones
-*   **Best Choices:**
-    *   **After the Charmony Fall (4★, Event Light Cone):** Often considered the best 4★ option. It provides ATK% and a team-wide DMG boost after using an Ultimate, which aligns perfectly with Black Swan's rotation. It's universally helpful.
-    *   **Eyes on the Universe (4★, Silver Wolf's Light Cone):** Excellent for meeting EHR requirements, providing 24% EHR at Superimposition 5. The Ult DMG boost is a nice bonus.
-    *   **Patience Is All You Need (4★, Kafka's Signature):** The SPD boost is valuable for hitting breakpoints, and the additional DoT application synergizes with her kit, though it's less potent than on Kafka.
-*   **Event Light Cones:** Always check current events for limited-time Light Cones, as they are often powerful free options.
+## Best Team Compositions
+Black Swan thrives in teams that can apply multiple DoTs and provide defensive support. Here are the **best Black Swan teams**.
 
-### H3: F2P Light Cones
-*   **Budget Choices:**
-    *   **Loop (3★):** A surprisingly effective starter option. The Energy Regeneration Rate helps with Ultimate uptime, and the damage boost after using a Skill is exactly what Black Swan does.
-    *   **Data Bank (3★):** Provides a pure ATK% boost, making it a reliable, if simple, damage increase.
+### Premium Team
+- **Members:** **Black Swan + Kafka + Ruan Mei + Luocha/Huohuo**
+- **Why it works:** This is the ultimate **DoT Team**. **Kafka**'s Skill and Ultimate detonate all current DoTs instantly, perfectly capitalizing on the Wind Shear stacks Black Swan builds. **Ruan Mei** provides unparalleled DMG% and RES PEN buffs, amplifying everyone's damage. A sustain like **Luocha** or **Huohuo** (who also provides ATK% and Energy) keeps the team alive and fueled. This team has incredible synergy, AoE damage, and is a top-tier meta composition.
 
-### H3: Light Cone Comparison
+### F2P Team
+- **Members:** **Black Swan + Sampo/Guinaifen + Asta/Pela + Natasha/Lynx**
+- **How to play:** This team uses accessible 4-stars. **Sampo** or **Guinaifen** act as secondary DoT appliers (Wind Shear/Burn). **Asta** provides team-wide SPD and ATK buffs, while **Pela** offers DEF Shred and SP generation, complementing Black Swan's shred. A 4-star healer keeps the team alive. Focus on applying as many DoTs as possible and using Black Swan's Ultimate during burst windows.
 
-| Light Cone | Rarity | Key Stat | Unique Effect | Best For |
-| :--- | :--- | :--- | :--- | :--- |
-| **Reforged Remembrance** | 5★ | EHR, ATK | DEF Reduction, DoT DMG boost | **Best-in-Slot,** Max Damage |
-| **After the Charmony Fall** | 4★ | ATK% | Team DMG boost after Ult | Best 4★ / F2P Option |
-| **Eyes on the Universe** | 4★ | EHR | Ult DMG boost | Hitting EHR Thresholds |
-| **Loop** | 3★ | ERR | DMG boost after Skill | Early-Game / Budget |
+### Alternative Teams
+- **Debuff/Debuffer Hypercarry:** **Black Swan + Silver Wolf + Pela + Seele/Argenti**. In this setup, Black Swan is the primary debuffer, using her Skill and Ultimate to massively shred enemy DEF, enabling a main DPS to deal incredible damage. This works well against single-target bosses.
+- **Break Effect Focus:** **Black Swan + Luka/Sushang + Gallagher + Harmony Buffer**. Here, Black Swan focuses on applying Wind Shear to increase Break Effect damage, while other characters target Physical or Fire Weaknesses to trigger Breaks. This is a more niche but fun playstyle.
 
-## H2: Stats Breakpoints & Targets
+## Gameplay Tips & Rotation
+Mastering Black Swan's rotation is key to maximizing her output.
+- **Skill Rotation:** The core loop is: **Basic Attack** on a new enemy to apply Wind Shear -> Use **Skill** on the same target to increase its Ephemeral Stack count and extend Wind Shear duration -> Use **Ultimate** when available to detonate and amplify all DoTs. In AoE scenarios, use Skill to hit multiple enemies.
+- **Key Combos:**
+    - **Single-Target Burst:** Skill -> Ultimate -> Enhanced Basic Attack.
+    - **AoE Clear:** Ultimate -> Skill (hit multiple targets) -> Basic Attack on a new target.
+- **Common Mistakes to Avoid:**
+    1.  **Ignoring EHR:** Not building enough EHR is the most critical error. Your debuffs will miss, crippling your damage and utility.
+    2.  **Wasting Ultimate:** Using her Ultimate when few DoTs are on the enemy wastes its massive damage amplification. Wait for at least 2-3 DoTs to be active.
+    3.  **Misusing Skill:** Don't use her Skill on a target already at 5 Ephemeral Stacks unless for SP generation or to hit a new enemy. Prioritize Basic Attacks to generate SP.
 
-Hitting specific **Black Swan stats breakpoints** is essential for her to function effectively in endgame content like Memory of Chaos.
+## Investment Priority
+Is **Black Swan E0 viable?** Absolutely. She is fully functional and powerful at E0. However, her Eidolons provide significant upgrades.
+- **Key Eidolons:**
+    - **E1:** A massive quality-of-life and damage boost. It increases the number of Ephemeral Stacks her Ultimate can apply and reduces the enemy's Effect RES, making it easier to land debuffs and allowing you to potentially build less EHR.
+    - **E2:** Greatly enhances her AoE capabilities by spreading Wind Shear when an enemy dies. Excellent for pure fiction and multi-wave content.
+    - **E6:** The ultimate investment. Her Ultimate gains a powerful follow-up attack, significantly increasing her personal damage ceiling.
+- **Light Cone Priority:** For most players, obtaining her signature **Reforged Remembrance** is a higher priority than Eidolons (especially E1), as it solves her stat needs and provides a larger direct damage increase. **Eyes of the Prey (S5)** is a fantastic substitute that lowers this priority.
 
-*   **CRIT Rate Target:** Not a priority unless using Inert Salsotto. If building crit, aim for **50%+ CRIT Rate** to activate the planar set bonus consistently.
-*   **CRIT DMG Target:** Also not a priority. A **1:2 CRIT Ratio** to your CRIT Rate is standard if building crit. Otherwise, focus on ATK and EHR.
-*   **Speed (SPD) Breakpoints:**
-    *   **120:** A basic target for activating certain planar set bonuses (e.g., Sprightly Vonwacq).
-    *   **134:** The first major breakpoint, granting an extra action in the first cycle of Memory of Chaos. This is a **critical breakpoint** for Black Swan.
-    *   **143:** The next major breakpoint for another action over a standard cycle.
-    *   **160+:** For advanced cycling, often requiring Speed boots + many substats or a Speed buffer.
-*   **Effect Hit Rate (EHR) Target:** **75% - 100%.** This is the most important stat. You need enough EHR to ensure her Ultimate and Skill apply Arcana on enemies with high Effect RES in endgame modes. Check the specific resistance of enemies in the content you're tackling.
-*   **Attack (ATK) Target:** While there's no hard cap, aim for **3000+ ATK** as a solid baseline for her personal damage to be meaningful. With good substats and ATK% main pieces, reaching 3500-4000 is achievable and recommended.
-
-## H2: Best Team Compositions
-
-Black Swan thrives in teams that can consistently apply debuffs and exploit DoT. Her **best team** compositions amplify her Arcana stacks.
-
-### H3: Premium Team
-*   **Core:** Black Swan + Kafka + Ruan Mei + Sustain (Huohuo or Luocha)
-*   **Why it works:** This is the pinnacle DoT team. **Kafka** detonates all DoT effects, including Black Swan's Arcana, with her Skill and Ultimate, creating explosive burst windows. **Ruan Mei** provides universal DMG%, All-Type RES PEN, and SPD buffs, massively amplifying the team's damage. **Huohuo** supplies ATK buffs, healing, and crucial Energy to keep Black Swan and Kafka's Ultimates online. This team creates a synergistic loop of debuff application and detonation.
-
-### H3: F2P Team
-*   **Core:** Black Swan + Sampo/Guinaifen + Asta/Tingyun + Sustain (Lynx/Natasha)
-*   **How to play:** **Sampo** is the best free alternative to Kafka for DoT detonation. **Guinaifen** adds more debuffs (Firekiss, Vulnerability) and contributes her own DoT. **Asta** provides massive team-wide SPD to cycle turns faster, while **Tingyun** can battery Black Swan's ATK and Energy. This team focuses on stacking multiple debuffs and letting Black Swan and Sampo's DoTs whittle down enemies over time.
-
-### H3: Alternative Teams
-*   **Super Break Team:** Black Swan + Harmony Trailblazer + Ruan Mei + Luka/Gallagher. Black Swan's frequent debuff application helps generate Break points, and her Wind Break DoT benefits from the Break effect.
-*   **Debuff Stacking Team:** Black Swan + Silver Wolf + Pela + DPS. Uses multiple DEF shredding and debuffing Nihility characters to make enemies take colossal damage, with Black Swan contributing her DoT and vulnerability.
-
-## H2: Gameplay Tips & Rotation
-
-Mastering Black Swan's rotation is key to maximizing her **gameplay**.
-*   **Skill Rotation:** Start the fight with her **Ultimate** if available to apply Arcana to all enemies and enter her "Epiphany" state. Otherwise, use her **Skill** to apply Arcana to a priority target. Her primary loop is: **Skill** (apply Arcana) -> **Basic Attack** (detonate Arcana for damage) -> **Basic Attack/Skill** (as needed for SP and stack management). Use her **Ultimate** whenever it's off cooldown to reapply Arcana, trigger the massive AoE detonation, and extend the duration of all Arcana stacks on all enemies.
-*   **Key Combos:** Against single elites, use **Skill** to apply Arcana, then **Basic Attack** to detonate. In AoE situations, prioritize using her **Ultimate** to detonate Arcana on all enemies at once. Weaving Basic Attacks between Skills is crucial for generating SP and maintaining damage.
-*   **Common Mistakes to Avoid:**
-    1.  **Ignoring EHR:** Building without enough EHR will cause her debuffs to miss, crippling her entire kit. Prioritize it.
-    2.  **Neglecting Speed:** Building her too slow means fewer detonations, fewer debuff refreshes, and less team SP generation.
-    3.  **Forgetting to Detonate:** Don't just apply Arcana and forget it. You must use her Basic Attack or Ultimate to detonate the stacks for damage. Leaving stacks unused is a massive loss in DPS.
-    4.  **Poor Ultimate Timing:** Don't use her Ultimate if all enemies already have max Arcana stacks unless you need the immediate AoE damage. It's better to save it to reapply stacks or during vulnerability windows.
-
-## H2: Investment Priority
-
-*   **E0 Viable?** **Absolutely.** Black Swan is fully functional and powerful at E0. Her core mechanics are intact, and she is a top-tier Nihility character without any Eidolons.
-*   **Key Eidolons:** Her most impactful Eidolons are **E1** (increases Arcana's DoT multiplier) and **E6** (massively boosts her personal damage by converting EHR to ATK). E1 is a very strong early stopping point if you are considering vertical investment.
-*   **Light Cone Priority:** Getting her signature **Reforged Remembrance** is a massive power spike that improves her damage and utility significantly. However, the 4-star event Light Cone **After the Charmony Fall** is an excellent and sufficient alternative. Pulling for the LC is a higher priority than pulling for Eidolons for overall account strength.
-
-## H2: FAQ
+## FAQ
 
 1.  **What is the best build for Black Swan in HSR?**
-    The best **Black Swan build** focuses on a Debuffer/Sub-DPS hybrid role. Use the **4pc Prisoner in Deep Confinement** relic set and **Firmament Frontline: Glamoth** planar ornaments. Prioritize main stats: ATK% Body, SPD Feet, Wind DMG Sphere, and ERR Rope. The most important substats are Effect Hit Rate (aim for 75-100%), Attack%, and Speed
+    The best build uses a **4-piece Prisoner in Deep Confinement** relic set and **Firmament Frontline: Glamoth** planar ornaments. Prioritize main stats of **ATK% Body, SPD Feet, Wind DMG Sphere, and ERR Rope**. Substats should focus on **EHR > SPD > ATK%**.
+
+2.  **What relics should I use for Black Swan?**
+    The top choice is the **4-piece Prisoner set** for DoT damage. Alternative 2pc combinations include **Eagle of Twilight Line + Thief of Shooting Meteor** for damage, or **Eagle + Pioneer** for easier EHR stacking. For ornaments, **Glamoth** is best, with **Fleet** or **Pan-Cosmic** as alternatives.
+
+3.  **What is Black Swan's best light cone?**
+    Her signature 5-star **Reforged Remembrance** is her undeniable Best-in-Slot. The best 4-star alternative is **Eyes of the Prey (Superimposition 5)**, which provides identical EHR and great DoT damage.
+
+4.  **What team is best for Black Swan?**
+    The premium **DoT Team** of **Black Swan, Kafka, Ruan Mei, and a Sustain (Luocha/Huohuo)** is the strongest and most synergistic composition. A strong F2P alternative uses **Sampo/Guinaifen and Asta/Pela**.
+
+5.  **Is Black Swan good in Honkai Star Rail?**
+    Yes, Black Swan is a top-tier character, especially for the **Memory of Chaos** endgame. Her ability to provide strong DEF shred, apply consistent DoT, and amplify team damage makes her a flexible and powerful addition to many team compositions.
+
+6.  **What does Black Swan scale with in HSR?**
+    Black Swan's DoT damage (Wind Shear) scales
